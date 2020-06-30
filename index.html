@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+		 
+<body>
+
+<table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
+<tbody>
+<tr>
+<td style="width: 50%;">
+<label for="emtext"><font class="headlines">Text (paste it below)</font></label><br/>
+<div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
+<button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
+</td>
+<td style="width: 50%;">
+<label for="contar"><font class="headlines">Highlighted from text</font></label><br/>
+<div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br/>
+
+</td>
+</tr>
+<td style="width: 50%;">
+<br><br><br>
+<label for="wordlist"><font class="headlines">Word List (to look for)</font></label><br/>
+<textarea id="divwl" name="divwl" type="text" class="wrdlst"></textarea><br/><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')" >Copy Text</button><br/>
+</td>
+<td style="width: 50%;">
+<br><br><br>
+<label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label><br/>
+<div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)" >Copy Text</button><button style="float: right" class="clearField" onClick="clearFields();">Clear Fields</button>
+</td>
+</tr>
+<td style="width: 50%;">
+ <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button> 
+</td>
+</tr>
+  </table>
+ </body>
+  
+  
+</head>
+</html>
