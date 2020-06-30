@@ -93,6 +93,7 @@ var rr = arrwl[i].substr(1);
 if(strippedText.indexOf(arrwl[i]) > -1) {
 
 	document.getElementById("divsl").innerHTML += arrwl[i] + '</br>';
+//	document.getElementById("divsl").innerHTML +=  '<p><a href="https://www.morfix.co.il/' + '"' + arrwl[i] + '"' +'>' +arrwl[i] + '</a></p>' + '</br>';
 	document.getElementById("divsl").style.color = 'red';
 	}
 }
@@ -135,6 +136,7 @@ arrtext = strippedText.toString().split(',');
 		newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>') )
 
 		document.getElementById("divca").innerHTML = newHTML;
+		
         } 
 	}
    }
@@ -166,6 +168,8 @@ answer3 = 'unFormattedText';
 
 return answer + answer1 + answer2 + answer3;
 }
+
+
   </script>
   
  <style>
