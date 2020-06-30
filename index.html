@@ -49,6 +49,7 @@ function popMeUp() {
 
 	document.getElementById("divca").innerHTML = "";
 	document.getElementById("divsl").innerHTML = "";
+	document.getElementById("divurl").innerHTML = "";
 	
 	var text = document.getElementById("divetext").innerHTML;
 	var wordlist = document.getElementById("divwl").value;
@@ -93,7 +94,7 @@ var rr = arrwl[i].substr(1);
 if(strippedText.indexOf(arrwl[i]) > -1) {
 
 	document.getElementById("divsl").innerHTML += arrwl[i] + '</br>';
-//	document.getElementById("divsl").innerHTML +=  '<p><a href="https://www.morfix.co.il/' + '"' + arrwl[i] + '"' +'>' +arrwl[i] + '</a></p>' + '</br>';
+	document.getElementById("divurl").innerHTML +=  '<div><a href="https://www.morfix.co.il/' + arrwl[i] +'"target="_blank">' +arrwl[i] + '</a></div>'//; + '</br>';
 	document.getElementById("divsl").style.color = 'red';
 	}
 }
@@ -260,6 +261,21 @@ cursor: pointer;
  cursor: pointer;
  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+.divurl{
+ position: relative;
+  right: 400px;
+  height: 300px;
+  width: 20%;
+  color: black;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+.divURLheadlines {
+position: relative;
+  right: 470px;
+font: 20px Arial, sans-serif;
+}
 
 .headlines{
 font: 20px Arial, sans-serif;
@@ -288,15 +304,20 @@ font: 20px Arial, sans-serif;
 </td>
 <td style="width: 50%;">
 <br><br><br>
-<label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label><br/>
-<div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button><button style="float: right" class="clearField" onClick="clearFields();">Clear Fields</button>
+<label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
+<!-- thi is the URL side -->
+<label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br/><br/>
+<div style="float: right; mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
+<div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
 </td>
+
+
 </tr>
 <td style="width: 50%;">
 <input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="underlineText" name="underlineText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
- <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button> 
+ <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up<!--</button> <button style="float: right" class="clearField" onClick="clearFields();">Clear Fields</button> -->
 </td>
 </tr>
   </table>
@@ -305,3 +326,52 @@ font: 20px Arial, sans-serif;
   
 </head>
 </html>
+<!--
+Clarence Ridgley is the most popular guy in his neighborhood, and it's all thanks to the
+patch of land in front of his home. In April, Ridgley transformed his pretty green lawn
+into a garden of tomatoes, strawberries and lettuce. And because the garden is right out
+front, the crops are visible – and available – to anyone who passes by. "People come
+into my yard, pick a tomato and start eating it on the spot," he says. "I've met more
+people in the past two months than I have in the last five years.  
+
+
+have
+come
+people
+spot
+five
+yeart
+notr
+more
+is 
+the 
+most 
+popular 
+guy 
+in 
+his 
+neighborhood
+and 
+it's 
+all 
+thanks 
+to 
+the
+patch 
+of 
+land 
+in 
+front 
+of 
+his 
+home
+In 
+April
+
+Ridgley 
+transformed 
+his 
+pretty 
+green 
+lawn
+-->
