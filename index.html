@@ -56,7 +56,7 @@ function popMeUp() {
 
 /*	var highlightText = (document.getElementById("highlightText").checked);
 	var colorText = document.getElementById("colorText").checked;
-	var underlineText = document.getElementById("underlineText").checked;
+	var ulText = document.getElementById("ulText").checked;
 */
 
 if(text =="") {
@@ -146,7 +146,7 @@ arrtext = strippedText.toString().split(',');
 function myCSSclass() {
 	var highlightText = document.getElementById("highlightText").checked;
 	var colorText = document.getElementById("colorText").checked;
-	var underlineText = document.getElementById("underlineText").checked;
+	var ulText = document.getElementById("ulText").checked;
 
 
 var answer = '';
@@ -160,10 +160,10 @@ answer = ' highlightText ';
 if(colorText == true) {
 answer1 = ' colorText ';
 }
-if(underlineText == true) {
-answer2 = ' underlineText ';
+if(ulText == true) {
+answer2 = ' ulText ';
 } 
-if (highlightText == false && colorText == false && underlineText == false) {
+if (highlightText == false && colorText == false && ulText == false) {
 answer3 = 'unFormattedText'; 
 }
 
@@ -195,7 +195,7 @@ return answer + answer1 + answer2 + answer3;
 .colorText {
    color: red;
 }
-.underlineText {
+.ulText {
    text-decoration: underline;
 }
 .unFormattedText {
@@ -325,7 +325,7 @@ font: 20px Arial, sans-serif;
 <td style="width: 50%;">
 <input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
-<input type="checkbox" id="underlineText" name="underlineText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="checkbox" id="ulText" name="ulText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
  <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up<!--</button> <button style="float: right" class="clearField" onClick="clearFields();">Clear Fields</button> -->
 </td>
 </tr>
