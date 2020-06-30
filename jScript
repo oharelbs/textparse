@@ -1,4 +1,3 @@
-
 function copyFunction(id) {
   alert('hi');
 //this copies a regular textarea field
