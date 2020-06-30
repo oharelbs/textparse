@@ -68,8 +68,13 @@ if(strippedText.indexOf(arrwl[i]) > -1) {
 	document.getElementById("divsl").style.color = 'red';
 	}
 }
-alert(arrwl.length);
-document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + 'Words Found in Text - ' +arrwl.length-1 + '</span>';
+var wordsFound = document.getElementById("divsl").innerHTML;
+var count = (wordsFound.match(/<br>/g)).length;//|| []
+if(count > 1  ){
+document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+} else {
+document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
+}
 
 var arrtext = [];
 strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
