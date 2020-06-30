@@ -1,0 +1,84 @@
+.button {
+ background-color: #1c87c9;
+ border: none;
+ border-radius: 8px;
+ color: white;
+ padding: 10px 34px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 25px;
+ margin: 2px 2px;
+ cursor: pointer;
+ box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+	
+.highlight {
+  background-color: yellow;
+  color: red;
+}
+
+.divetext {
+  height: 400px;
+  width: 95%;
+  background-color: #F9DEDD;
+  color: black;
+  border: 1px solid;
+  overflow: scroll;
+  
+}
+
+.divca {
+  height: 400px;
+  width: 95%;
+  background-color: #D1F1F8;
+  color: black;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+.wrdlst {
+  height: 300px;
+  width: 20%;
+  color: black;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+.clearField {
+cursor: pointer;
+ background-color: #FFCCBC;
+ border: 1px;
+ border-radius: 1px;
+ border-color:black;
+ color: black;
+ padding: 1px 1px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 18px;
+ margin: 2px 2px;
+ cursor: pointer;
+ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.copyText {
+cursor: pointer;
+ background-color: #AED6F1;
+ border: 1px;
+ border-radius: 1px;
+ border-color:black;
+ color: black;
+ padding: 1px 1px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 18px;
+ margin: 2px 2px;
+ cursor: pointer;
+ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.headlines{
+font: 20px Arial, sans-serif;
+}
