@@ -26,19 +26,13 @@ document.body.removeChild(myTempTexArea);
 }
 }
 
-function clearFields() {
-	document.getElementById("divetext").innerHTML = "";
-	document.getElementById("divwl").innerHTML = "";
-	document.getElementById("divsl").innerHTML = "";
-	document.getElementById("divca").innerHTML = "";
-}
-
 function clearText(id, labelId) {
 if(id === 'divwl') {
 document.getElementById(id).value = "";
 } else if(id === 'divsl') {
 document.getElementById(id).innerHTML = "";
 document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words found in text</span>';
+document.getElementById("divurl").innerHTML = "";
 
 } else {
 document.getElementById(id).innerHTML = "";
@@ -53,11 +47,6 @@ function popMeUp() {
 	
 	var text = document.getElementById("divetext").innerHTML;
 	var wordlist = document.getElementById("divwl").value;
-
-/*	var highlightText = (document.getElementById("highlightText").checked);
-	var colorText = document.getElementById("colorText").checked;
-	var ulText = document.getElementById("ulText").checked;
-*/
 
 if(text =="") {
 alert('Add some text in the Text field');
@@ -326,8 +315,8 @@ font: 20px Arial, sans-serif;
 <input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="ulText" name="ulText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
- <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up<!--</button> <button style="float: right" class="clearField" onClick="clearFields();">Clear Fields</button> -->
-</td>
+ <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up
+ </td>
 </tr>
   </table>
  </body>
