@@ -1,6 +1,6 @@
 
 function copyFunction(id) {
-  alert('hi')
+  alert('hi');
 //this copies a regular textarea field
 if(id == "divwl") {
 var copyText = document.getElementById(id);
