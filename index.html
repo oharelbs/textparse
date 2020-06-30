@@ -124,7 +124,7 @@ arrtext = strippedText.toString().split(',');
 
 		document.getElementById("divca").innerHTML = newHTML;
         } 
-		}
+	}
    }
 }
   </script>
@@ -229,7 +229,6 @@ font: 20px Arial, sans-serif;
 <td style="width: 50%;">
 <label for="contar"><font class="headlines">Highlighted words from text</font></label><br/>
 <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br/>
-
 </td>
 </tr>
 <td style="width: 50%;">
@@ -244,6 +243,9 @@ font: 20px Arial, sans-serif;
 </td>
 </tr>
 <td style="width: 50%;">
+<input type="checkbox" id="highlight" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
+<input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
+<input type="checkbox" id="underlineText" name="underlineText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;
  <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button> 
 </td>
 </tr>
