@@ -53,6 +53,11 @@ function popMeUp() {
 	var text = document.getElementById("divetext").innerHTML;
 	var wordlist = document.getElementById("divwl").value;
 
+/*	var highlightText = (document.getElementById("highlightText").checked);
+	var colorText = document.getElementById("colorText").checked;
+	var underlineText = document.getElementById("underlineText").checked;
+*/
+
 if(text =="") {
 alert('Add some text in the Text field');
 return;
@@ -87,13 +92,13 @@ if(strippedText.indexOf(arrwl[i]) > -1) {
 	}
 }
 var wordsFound = document.getElementById("divsl").innerHTML;
-var count = (wordsFound.match(/<br>/g)).length; 
-if(count == 1 && wordsFound == '<br>'){
+if(wordsFound == '') {
 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
-} else {
+
+} else if(wordsFound != '') {
+var count = (wordsFound.match(/<br>/g)).length; 
 document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
 }
-
 var arrtext = [];
 strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
 arrtext = strippedText.toString().split(',');
@@ -120,12 +125,30 @@ arrtext = strippedText.toString().split(',');
 		var newHTML1 = document.getElementById('divetext').innerHTML;
 		newHTML = newHTML1.toLowerCase();
 		words.forEach(word => 
-		newHTML = newHTML.replace(word, '<span class="highlight">' + word + '</span>') )
+		newHTML = newHTML.replace(word, '<span class="highlightText">' + word + '</span>') )
+//		newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>') )
 
 		document.getElementById("divca").innerHTML = newHTML;
         } 
 	}
-   }
+   }//alert(myCSSclass());
+}
+
+function myCSSclass() {
+	var highlightText = document.getElementById("highlightText").checked;
+	var colorText = document.getElementById("colorText").checked;
+	var underlineText = document.getElementById("underlineText").checked;
+
+return highlightText;
+/*var answer;
+if(highlightText == true)
+answer = 'highlightText ';
+if(colorText == true)
+answer += 'colorText ';
+if(underlineText == true)
+answer += 'underlineText ';
+
+return answer; */
 }
   </script>
   
@@ -145,9 +168,14 @@ arrtext = strippedText.toString().split(',');
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 	
-.highlight {
+.highlightText {
   background-color: yellow;
-  color: red;
+ }
+.colorText {
+   color: red;
+}
+.underlineText {
+   text-decoration: underline;
 }
 
 .divetext {
@@ -243,9 +271,9 @@ font: 20px Arial, sans-serif;
 </td>
 </tr>
 <td style="width: 50%;">
-<input type="checkbox" id="highlight" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
+<input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
 <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
-<input type="checkbox" id="underlineText" name="underlineText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;
+<input type="checkbox" id="underlineText" name="underlineText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
  <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button> 
 </td>
 </tr>
