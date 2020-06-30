@@ -220,14 +220,14 @@ return answer + answer1 + answer2 + answer3;
   overflow: scroll;
 }
 
-.wrdlst {
+.wrdlstText{
   height: 300px;
   width: 20%;
   color: black;
   border: 1px solid;
   overflow: scroll;
-}
 
+}
 .clearField {
 cursor: pointer;
  background-color: #FFCCBC;
@@ -262,8 +262,17 @@ cursor: pointer;
  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .divurl{
+ position: absolute;
+  right: 250px;
+  height: 300px;
+  width: 10%;
+  color: black;
+  border: 1px solid;
+  overflow: scroll;
+}
+.wrdlst {
  position: relative;
-  right: 400px;
+ left: 1px;
   height: 300px;
   width: 20%;
   color: black;
@@ -272,8 +281,8 @@ cursor: pointer;
 }
 
 .divURLheadlines {
-position: relative;
-  right: 470px;
+position: absolute;
+  right: 320px;
 font: 20px Arial, sans-serif;
 }
 
@@ -300,14 +309,14 @@ font: 20px Arial, sans-serif;
 <td style="width: 50%;">
 <br><br><br>
 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label><br/>
-<textarea id="divwl" name="divwl" type="text" class="wrdlst"></textarea><br/><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')" >Copy Text</button><br/>
+<textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea><br/><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')" >Copy Text</button><br/>
 </td>
 <td style="width: 50%;">
 <br><br><br>
 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
 <!-- thi is the URL side -->
 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br/><br/>
-<div style="float: right; mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
+<div style=" mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
 </td>
 
