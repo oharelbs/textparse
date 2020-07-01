@@ -105,14 +105,14 @@
             // previous version--> //arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/ /g, ",").split('XXX'); //array after split
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
             
-            for (var i = 0; i < arrwl.length; i++) {
+            for (var b = 0; b < arrwl.length; b++) {
 
-                var rr = arrwl[i].substr(1);
+                var rr = arrwl[b].substr(1);
 
-                if (strippedText.indexOf(arrwl[i]) > -1) {
+                if (strippedText.indexOf(arrwl[b]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[i] + ' <br>';
-                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[i] + '" target="_blank">' + arrwl[i] + '</a></div>'//; + '<br>';
+                    document.getElementById("divsl").innerHTML += arrwl[b] + ' <br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>'//; + '<br>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
@@ -140,7 +140,7 @@
 
             for (var q = 0; q < arrtext.length; q++) {
 
-                // we want to know if arrtext[i] is found in arrwl
+                // we want to know if arrtext[b] is found in arrwl
                 for (var s = 0; s < arrwl.length; s++) {
 
                     if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
@@ -342,15 +342,15 @@
             <br><br><br>
             <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
             <div style="width: 20%; float: right" class="checkboxDIV">
-                <div><font style="font-weight: bold">Use lower case only.</font><br>If you are looking for an expression,<br> choose one word and look for it.</div>
-                <br><br>
+                <div><font style="font-weight: bold">Use lower case only.</font></div>
+                <br><br><br>
                 <div>
                     <font style="text-decoration: underline; font-weight: bold">Visibility</font><br><br>
 
                     <input type="checkbox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt">Check All</label><br><br>
                     <input type="checkbox" id="highlightText" name="highlightText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
                     <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
-                    <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br>
+                    <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                     <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
                 </div>
             </div>
