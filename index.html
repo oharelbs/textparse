@@ -88,16 +88,17 @@
 
 
             //get only the text from the word list
-            //var orgwordlist = wordlist.toString().toLowerCase().trim().replace(/ /g,"").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
-            var orgwordlist = wordlist.toString().trim().replace(/ /g, "").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
-
+            // previous version--> //var orgwordlist = wordlist.toString().trim().replace(/ /g, "").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
+            var orgwordlist = wordlist.toString().replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
+            
             var temporalDivElementWl = document.createElement("divwl");
             temporalDivElementWl.innerHTML = orgwordlist;
             var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
 
             var arrwl = new Array(orgwordlist); //array before split
-            arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/ /g, ",").split('XXX'); //array after split
-
+            // previous version--> //arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/ /g, ",").split('XXX'); //array after split
+            arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
+            
             for (var i = 0; i < arrwl.length; i++) {
 
                 var rr = arrwl[i].substr(1);
