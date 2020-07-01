@@ -1,327 +1,383 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript">
-  
-function copyFunction(id) {
+    <script type="text/javascript">
 
-//this copies a regular textarea field
-if(id == "divwl") {
-var copyText = document.getElementById(id);
-copyText.select();
-document.execCommand("copy");
-} else {
-//this copies a div field
-var copiedFrom = document.getElementById(id);
-var copiedText = copiedFrom.innerText;
-var myTempTexArea = document.createElement("textarea");
-myTempTexArea.width = "1px";
-myTempTexArea.height = "1px";
-myTempTexArea.background = "transparent";
-myTempTexArea.value = copiedText;
-document.body.append(myTempTexArea);
-myTempTexArea.select();
-document.execCommand('copy');
-document.body.removeChild(myTempTexArea);
-}
-}
+        function copyFunction(id) {
 
-function clearText(id, labelId) {
-if(id === 'divwl') {
-document.getElementById(id).value = "";
-} else if(id === 'divsl') {
-document.getElementById(id).innerHTML = "";
-document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words found in text</span>';
-document.getElementById("divurl").innerHTML = "";
+            //this copies a regular textarea field
+            if (id == "divwl") {
+                var copyText = document.getElementById(id);
+                copyText.select();
+                document.execCommand("copy");
+            } else {
+                //this copies a div field
+                var copiedFrom = document.getElementById(id);
+                var copiedText = copiedFrom.innerText;
+                var myTempTexArea = document.createElement("textarea");
+                myTempTexArea.width = "1px";
+                myTempTexArea.height = "1px";
+                myTempTexArea.background = "transparent";
+                myTempTexArea.value = copiedText;
+                document.body.append(myTempTexArea);
+                myTempTexArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(myTempTexArea);
+            }
+        }
 
-} else {
-document.getElementById(id).innerHTML = "";
-	}
-}
+        function clearText(id, labelId) {
+            if (id === 'divwl') {
+                document.getElementById(id).value = "";
+            } else if (id === 'divsl') {
+                document.getElementById(id).innerHTML = "";
+                document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words found in text</span>';
+                document.getElementById("divurl").innerHTML = "";
 
-function popMeUp() {
+            } else {
+                document.getElementById(id).innerHTML = "";
+            }
+        }
 
-	document.getElementById("divca").innerHTML = "";
-	document.getElementById("divsl").innerHTML = "";
-	document.getElementById("divurl").innerHTML = "";
-	
-	var text = document.getElementById("divetext").innerHTML;
-	var wordlist = document.getElementById("divwl").value;
+        function checkAllBoxes(element) {
 
-if(text =="") {
-alert('Add some text in the Text field');
-return;
-}
+            var all = element.checked;
 
-if(wordlist =="") {
-alert('Try to add some words first in the Word List field, one per line');
-return;
-}
+            var checkboxes = ["highlightText", "colorText", "ulText"];
+            if (all == true) {
+                for (var h = 0; h < checkboxes.length; h++) {
 
-//get only the text from the text area
-var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g," ");
-var temporalDivElement = document.createElement("div");
-temporalDivElement.innerHTML = orgtext;
-var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
+                    document.getElementById(checkboxes[h]).checked = all;
+                    document.getElementById(checkboxes[h]).disabled = true;
+                }
+            } else {
+                for (var h = 0; h < checkboxes.length; h++) {
 
-
-//get only the text from the word list
-//var orgwordlist = wordlist.toString().toLowerCase().trim().replace(/ /g,"").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
-var orgwordlist = wordlist.toString().trim().replace(/ /g,"").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
-
-var temporalDivElementWl = document.createElement("divwl");
-temporalDivElementWl.innerHTML = orgwordlist;
-var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
-
-var arrwl = new Array(orgwordlist); //array before split
-arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/ /g,",").split('XXX'); //array after split
-
-for (var i = 0; i < arrwl.length; i++) {
-
-var rr = arrwl[i].substr(1);
-
-if(strippedText.indexOf(arrwl[i]) > -1) {
-
-	document.getElementById("divsl").innerHTML += arrwl[i] + '</br>';
-	document.getElementById("divurl").innerHTML +=  '<div><a href="https://www.morfix.co.il/' + arrwl[i] +'"target="_blank">' +arrwl[i] + '</a></div>'//; + '</br>';
-	document.getElementById("divsl").style.color = 'red';
-	}
-}
-var wordsFound = document.getElementById("divsl").innerHTML;
-if(wordsFound == '') {
-document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
-
-} else if(wordsFound != '') {
-var count = (wordsFound.match(/<br>/g)).length; 
-document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
-}
-var arrtext = [];
-strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
-arrtext = strippedText.toString().split(',');
-
-                var orgtextf = text.toString().toLowerCase();
-                var temporalDivElement = document.createElement("divftemp");
-                temporalDivElement.innerHTML = orgtextf;
-                var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
-
-                var html = strippedText1;
+                    document.getElementById(checkboxes[h]).checked = all;
+                    document.getElementById(checkboxes[h]).disabled = false;
+                }
+            }
+/*            document.getElementById("highlightText").checked = all;
+            document.getElementById("highlightText").disabled = true;
+                document.getElementById("colorText").checked = all;
+                document.getElementById("ulText").checked = all; */
+        }
 
 
-   for (var q = 0; q < arrtext.length; q++) {
+        function popMeUp() {
 
-// we want to know if arrtext[i] is found in arrwl
-        for (var s = 0; s < arrwl.length; s++) {
+            document.getElementById("divca").innerHTML = "";
+            document.getElementById("divsl").innerHTML = "";
+            document.getElementById("divurl").innerHTML = "";
 
-    if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
-   
+            var text = document.getElementById("divetext").innerHTML;
+            var wordlist = document.getElementById("divwl").value;
 
-// we have found arrwl[s] in arrtext[q]
+            if (text == "") {
+                alert('Add some text in the Text field');
+                return;
+            }
 
-		var words = arrwl.toString().split(',');
-		
-		var p = document.getElementById('divetext');
-		var newHTML1 = document.getElementById('divetext').innerHTML;
-		newHTML = newHTML1.toLowerCase();
-		words.forEach(word => 
-		newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>') )
+            if (wordlist == "") {
+                alert('Try to add some words first in the Word List field, one per line');
+                return;
+            }
 
-		document.getElementById("divca").innerHTML = newHTML;
-		
-        } 
-	}
-   }
-}
-
-function myCSSclass() {
-	var highlightText = document.getElementById("highlightText").checked;
-	var colorText = document.getElementById("colorText").checked;
-	var ulText = document.getElementById("ulText").checked;
+            //get only the text from the text area
+            var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g, " ");
+            var temporalDivElement = document.createElement("div");
+            temporalDivElement.innerHTML = orgtext;
+            var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
 
-var answer = '';
-var answer1 = '';
-var answer2 = '';
-var answer3 = '';
+            //get only the text from the word list
+            //var orgwordlist = wordlist.toString().toLowerCase().trim().replace(/ /g,"").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
+            var orgwordlist = wordlist.toString().trim().replace(/ /g, "").replace(/\n\s*/g, "XXX"); //removes space from last iem, if it has any
 
-if(highlightText == true) {
-answer = ' highlightText ';
-}
-if(colorText == true) {
-answer1 = ' colorText ';
-}
-if(ulText == true) {
-answer2 = ' ulText ';
-} 
-if (highlightText == false && colorText == false && ulText == false) {
-answer3 = 'unFormattedText'; 
-}
+            var temporalDivElementWl = document.createElement("divwl");
+            temporalDivElementWl.innerHTML = orgwordlist;
+            var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
 
-return answer + answer1 + answer2 + answer3;
-}
+            var arrwl = new Array(orgwordlist); //array before split
+            arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/ /g, ",").split('XXX'); //array after split
 
+            for (var i = 0; i < arrwl.length; i++) {
 
-  </script>
-  
- <style>
- .button {
- background-color: #1c87c9;
- border: none;
- border-radius: 8px;
- color: white;
- padding: 10px 34px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 25px;
- margin: 2px 2px;
- cursor: pointer;
- box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-	
-.highlightText {
-  background-color: yellow;
- }
-.colorText {
-   color: red;
-}
-.ulText {
-   text-decoration: underline;
-}
-.unFormattedText {
-//nothing
-} 
-.divetext {
-  height: 400px;
-  width: 95%;
-  background-color: #F9DEDD;
-  color: black;
-  border: 1px solid;
-  overflow: scroll;
-  
-}
+                var rr = arrwl[i].substr(1);
 
-.divca {
-  height: 400px;
-  width: 95%;
-  background-color: #D1F1F8;
-  color: black;
-  border: 1px solid;
-  overflow: scroll;
-}
+                if (strippedText.indexOf(arrwl[i]) > -1) {
 
-.wrdlstText{
-  height: 300px;
-  width: 20%;
-  color: black;
-  border: 1px solid;
-  overflow: scroll;
+                    document.getElementById("divsl").innerHTML += arrwl[i] + '<br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[i] + '"target="_blank">' + arrwl[i] + '</a></div>'//; + '<br>';
+                    document.getElementById("divsl").style.color = 'red';
+                }
+            }
+            var wordsFound = document.getElementById("divsl").innerHTML;
+            if (wordsFound == '') {
+                document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
 
-}
-.clearField {
-cursor: pointer;
- background-color: #FFCCBC;
- border: 1px;
- border-radius: 1px;
- border-color:black;
- color: black;
- padding: 1px 1px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 18px;
- margin: 2px 2px;
- cursor: pointer;
- box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+            } else if (wordsFound != '') {
+                var count = (wordsFound.match(/<br>/g)).length;
+                document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+            }
+            var arrtext = [];
+            strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
+            arrtext = strippedText.toString().split(',');
 
-.copyText {
-cursor: pointer;
- background-color: #AED6F1;
- border: 1px;
- border-radius: 1px;
- border-color:black;
- color: black;
- padding: 1px 1px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 18px;
- margin: 2px 2px;
- cursor: pointer;
- box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.divurl{
- position: absolute;
-  right: 250px;
-  height: 300px;
-  width: 10%;
-  color: black;
-  border: 1px solid;
-  overflow: scroll;
-}
-.wrdlst {
- position: relative;
- left: 1px;
-  height: 300px;
-  width: 20%;
-  color: black;
-  border: 1px solid;
-  overflow: scroll;
-}
+            var orgtextf = text.toString().toLowerCase();
+            var temporalDivElement = document.createElement("divftemp");
+            temporalDivElement.innerHTML = orgtextf;
+            var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
-.divURLheadlines {
-position: absolute;
-  right: 320px;
-font: 20px Arial, sans-serif;
-}
-
-.headlines{
-font: 20px Arial, sans-serif;
-}
-</style>		 
-		 
-<body>
-
-<table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
-<tbody>
-<tr>
-<td style="width: 50%;">
-<label for="emtext"><font class="headlines">Text (paste it below)</font></label><br/>
-<div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
-<button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
-</td>
-<td style="width: 50%;">
-<label for="contar"><font class="headlines">Highlighted words from text</font></label><br/>
-<div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br/>
-</td>
-</tr>
-<td style="width: 50%;">
-<br><br><br>
-<label for="wordlist"><font class="headlines">Word list (one per line)</font></label><br/>
-<textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea><br/><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')" >Copy Text</button><br/>
-</td>
-<td style="width: 50%;">
-<br><br><br>
-<label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
-<!-- thi is the URL side -->
-<label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br/><br/>
-<div style=" mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
-<div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
-</td>
+            var html = strippedText1;
 
 
-</tr>
-<td style="width: 50%;">
-<input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
-<input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
-<input type="checkbox" id="ulText" name="ulText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp;
- <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up
- </td>
-</tr>
-  </table>
- </body>
-  
-  
+            for (var q = 0; q < arrtext.length; q++) {
+
+                // we want to know if arrtext[i] is found in arrwl
+                for (var s = 0; s < arrwl.length; s++) {
+
+                    if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+
+
+                        // we have found arrwl[s] in arrtext[q]
+
+                        var words = arrwl.toString().split(',');
+
+                        var p = document.getElementById('divetext');
+                        var newHTML1 = document.getElementById('divetext').innerHTML;
+                        newHTML = newHTML1.toLowerCase();
+                        words.forEach(word =>
+                            newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+
+                        document.getElementById("divca").innerHTML = newHTML;
+
+                    }
+                }
+            }
+        }
+
+        function myCSSclass() {
+            var highlightText = document.getElementById("highlightText").checked;
+            var colorText = document.getElementById("colorText").checked;
+            var ulText = document.getElementById("ulText").checked;
+
+
+            var answer = '';
+            var answer1 = '';
+            var answer2 = '';
+            var answer3 = '';
+
+            if (highlightText == true) {
+                answer = ' highlightText ';
+            }
+            if (colorText == true) {
+                answer1 = ' colorText ';
+            }
+            if (ulText == true) {
+                answer2 = ' ulText ';
+            }
+            if (highlightText == false && colorText == false && ulText == false) {
+                answer3 = 'unFormattedText';
+            }
+
+            return answer + answer1 + answer2 + answer3;
+        }
+
+
+    </script>
+
+    <style>
+        .button {
+            background-color: #1c87c9;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 2px 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            float: center; <!--
+            gotta fix this -->
+        }
+
+        .highlightText {
+            background-color: yellow;
+        }
+
+        .colorText {
+            color: red;
+        }
+
+        .ulText {
+            text-decoration: underline;
+        }
+
+        .unFormattedText {
+            //nothing
+        }
+
+        .divetext {
+            height: 400px;
+            width: 95%;
+            background-color: #F9DEDD;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        .divca {
+            height: 400px;
+            width: 95%;
+            background-color: #D1F1F8;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        .wrdlstText {
+            height: 300px;
+            width: 20%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        .clearField {
+            cursor: pointer;
+            background-color: #FFCCBC;
+            border: 1px;
+            border-radius: 1px;
+            border-color: black;
+            color: black;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 2px 2px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .copyText {
+            cursor: pointer;
+            background-color: #AED6F1;
+            border: 1px;
+            border-radius: 1px;
+            border-color: black;
+            color: black;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 2px 2px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .divurl {
+            position: absolute;
+            right: 250px;
+            height: 300px;
+            width: 10%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        .wrdlst {
+            position: relative;
+            left: 1px;
+            height: 300px;
+            width: 20%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
+
+        .divURLheadlines {
+            position: absolute;
+            right: 320px;
+            font: 20px Arial, sans-serif;
+        }
+
+        .headlines {
+            font: 20px Arial, sans-serif;
+        }
+
+        .checkboxDIV {
+            position: absolute;
+            left: 320px;
+        }
+
+        .allAtt {
+            font-weight: bold;
+        }
+    </style>
+
+    <body>
+
+        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="1">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <label for="emtext"><font class="headlines">Text (paste it below)</font></label><br>
+                        <div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
+                        <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
+                    </td>
+                    <td style="width: 50%;">
+                        <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
+                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br>
+                    </td>
+                </tr>
+            <td style="width: 50%;">
+                <br><br><br>
+                <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
+                <div style="width: 20%; float: right" class="checkboxDIV">
+                    Use lower case words only.<br> If you are looking for an expression, type a unique word from it.
+                    <br><br>
+                    Click on any of the checkboxes below to add visibility to the words found.<br><br>
+
+                    <input type="checkbox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt">Check All</label><br><br>
+                    <input type="checkbox" id="highlightText" name="highlightText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
+                    <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
+                    <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br>
+
+                </div>
+                <br>
+<textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
+                <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
+            </td>
+
+            <td style="width: 50%;">
+                <br><br><br>
+                <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
+                <!-- this is the URL side -->
+                <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
+                <div style=" mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
+                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+            </td>
+
+
+            </tr>
+            <td style="width: 50%;">
+                <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
+                <!-- <input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
+                <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
+                <input type="checkbox" id="ulText" name="ulText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp; -->
+
+            </td>
+            </tr>
+        </table>
+    </body>
+
+
 </head>
 </html>
 <!--
@@ -330,7 +386,7 @@ patch of land in front of his home. In April, Ridgley transformed his pretty gre
 into a garden of tomatoes, strawberries and lettuce. And because the garden is right out
 front, the crops are visible – and available – to anyone who passes by. "People come
 into my yard, pick a tomato and start eating it on the spot," he says. "I've met more
-people in the past two months than I have in the last five years.  
+people in the past two months than I have in the last five years.
 
 
 have
@@ -341,35 +397,35 @@ five
 yeart
 notr
 more
-is 
-the 
-most 
-popular 
-guy 
-in 
-his 
-neighborhood
-and 
-it's 
-all 
-thanks 
-to 
+is
 the
-patch 
-of 
-land 
-in 
-front 
-of 
-his 
+most
+popular
+guy
+in
+his
+neighborhood
+and
+it's
+all
+thanks
+to
+the
+patch
+of
+land
+in
+front
+of
+his
 home
-In 
+In
 April
 
-Ridgley 
-transformed 
-his 
-pretty 
-green 
+Ridgley
+transformed
+his
+pretty
+green
 lawn
 -->
