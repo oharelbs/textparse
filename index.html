@@ -145,7 +145,7 @@
                         var newHTML1 = document.getElementById('divetext').innerHTML;
                         newHTML = newHTML1.toLowerCase();
                         words.forEach(word =>
-                            newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+                            newHTML = newHTML.replace(word, '<span style="font-weight: bold;" class="' + myCSSclass() + '">' + word + '</span>'))
 
                         document.getElementById("divca").innerHTML = newHTML;
 
