@@ -336,9 +336,10 @@
                 <br><br><br>
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
-                    Use lower case words only.<br>If you are looking for an expression, choose one word and look for it.
+                <div><font style="font-weight: bold">Use lower case only.</font><br>If you are looking for an expression,<br> choose one word and look for it.</div>
                     <br><br>
-                    Add visibility to the words found.<br><br>
+                    <div>
+                    <font style="text-decoration: underline; font-weight: bold">Visibility</font><br><br>
 
                     <input type="checkbox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt">Check All</label><br><br>
                     <input type="checkbox" id="highlightText" name="highlightText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
@@ -346,6 +347,7 @@
                     <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br>
 
                 </div>
+                    </div>
                 <br>
 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
                 <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
