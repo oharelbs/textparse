@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!--  https://oharelbs.github.io/textparse/ -->
 <head>
     <script type="text/javascript">
 
@@ -83,7 +84,8 @@
             var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g, " ");
             var temporalDivElement = document.createElement("div");
             temporalDivElement.innerHTML = orgtext;
-            var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
+            var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //-->
+ this is the text from the unseen, cleaned of HTML tags
 
 
             //get only the text from the word list
@@ -103,21 +105,28 @@
 
                 if (strippedText.indexOf(arrwl[i]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[i] + '<br>';
-                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[i] + '"target="_blank">' + arrwl[i] + '</a></div>'//; + '<br>';
+                    document.getElementById("divsl").innerHTML += arrwl[i] + '
+<br>';
+                    document.getElementById("divurl").innerHTML += '
+<div><a href="https://www.morfix.co.il/' + arrwl[i] + '" target="_blank">' + arrwl[i] + '</a></div>'//; + '
+<br>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
             var wordsFound = document.getElementById("divsl").innerHTML;
             if (wordsFound == '') {
-                document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
+                document.getElementById("wordsInText").innerHTML = '
+<span class="headlines">Nothing was found</span>';
 
             } else if (wordsFound != '') {
-                var count = (wordsFound.match(/<br>/g)).length;
-                document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+                var count = (wordsFound.match(/
+<br>/g)).length;
+                document.getElementById("wordsInText").innerHTML = '
+<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
             var arrtext = [];
-            strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
+            strippedText = strippedText.replace(/
+<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
 
             var orgtextf = text.toString().toLowerCase();
@@ -144,7 +153,8 @@
                         var newHTML1 = document.getElementById('divetext').innerHTML;
                         newHTML = newHTML1.toLowerCase();
                         words.forEach(word =>
-                            newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+                            newHTML = newHTML.replace(word, '
+<span class="' + myCSSclass() + '">' + word + '</span>'))
 
                         document.getElementById("divca").innerHTML = newHTML;
 
@@ -183,162 +193,162 @@
 
     </script>
 
-    <style>
-        .button {
-            background-color: #1c87c9;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            padding: 10px 34px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 25px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            position: absolute;
-            left: 15%
-        }
+<style>
+    .button {
+        background-color: #1c87c9;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 10px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 2px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        position: absolute;
+        left: 15%
+    }
 
-        .highlightText {
-            background-color: yellow;
-        }
+    .highlightText {
+        background-color: yellow;
+    }
 
-        .colorText {
-            color: red;
-        }
+    .colorText {
+        color: red;
+    }
 
-        .ulText {
-            text-decoration: underline;
-        }
+    .ulText {
+        text-decoration: underline;
+    }
 
-        .unFormattedText {
-            /*leave as is*/
-        }
+    .unFormattedText {
+        /*leave as is*/
+    }
 
-        .divetext {
-            height: 400px;
-            width: 95%;
-            background-color: #F9DEDD;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divetext {
+        height: 400px;
+        width: 95%;
+        background-color: #F9DEDD;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .divca {
-            height: 400px;
-            width: 95%;
-            background-color: #D1F1F8;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divca {
+        height: 400px;
+        width: 95%;
+        background-color: #D1F1F8;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .wrdlstText {
-            height: 300px;
-            width: 20%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .wrdlstText {
+        height: 300px;
+        width: 20%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .clearField {
-            cursor: pointer;
-            background-color: #FFCCBC;
-            border: 1px;
-            border-radius: 1px;
-            border-color: black;
-            color: black;
-            padding: 1px 1px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
+    .clearField {
+        cursor: pointer;
+        background-color: #FFCCBC;
+        border: 1px;
+        border-radius: 1px;
+        border-color: black;
+        color: black;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
-        .copyText {
-            cursor: pointer;
-            background-color: #AED6F1;
-            border: 1px;
-            border-radius: 1px;
-            border-color: black;
-            color: black;
-            padding: 1px 1px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
+    .copyText {
+        cursor: pointer;
+        background-color: #AED6F1;
+        border: 1px;
+        border-radius: 1px;
+        border-color: black;
+        color: black;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
-        .divurl {
-            position: absolute;
-            right: 250px;
-            height: 300px;
-            width: 10%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divurl {
+        position: absolute;
+        right: 250px;
+        height: 300px;
+        width: 10%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .wrdlst {
-            position: relative;
-            left: 1px;
-            height: 300px;
-            width: 20%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .wrdlst {
+        position: relative;
+        left: 1px;
+        height: 300px;
+        width: 20%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .divURLheadlines {
-            position: absolute;
-            right: 320px;
-            font: 20px Arial, sans-serif;
-        }
+    .divURLheadlines {
+        position: absolute;
+        right: 320px;
+        font: 20px Arial, sans-serif;
+    }
 
-        .headlines {
-            font: 20px Arial, sans-serif;
-        }
+    .headlines {
+        font: 20px Arial, sans-serif;
+    }
 
-        .checkboxDIV {
-            position: absolute;
-            left: 320px;
-        }
+    .checkboxDIV {
+        position: absolute;
+        left: 320px;
+    }
 
-        .allAtt {
-            font-weight: bold;
-        }
-    </style>
+    .allAtt {
+        font-weight: bold;
+    }
+</style>
 
-    <body>
+<body>
 
-        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
-            <tbody>
-                <tr>
-                    <td style="width: 50%;">
-                        <label for="emtext"><font class="headlines">Text (paste it below)</font></label><br>
-                        <div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
-                        <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
-                    </td>
-                    <td style="width: 50%;">
-                        <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
-                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br>
-                    </td>
-                </tr>
-            <td style="width: 50%;">
-                <br><br><br>
-                <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
-                <div style="width: 20%; float: right" class="checkboxDIV">
+    <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
+        <tbody>
+            <tr>
+                <td style="width: 50%;">
+                    <label for="emtext"><font class="headlines">Text (paste it below)</font></label><br>
+                    <div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
+                    <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
+                </td>
+                <td style="width: 50%;">
+                    <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
+                    <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br>
+                </td>
+            </tr>
+        <td style="width: 50%;">
+            <br><br><br>
+            <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
+            <div style="width: 20%; float: right" class="checkboxDIV">
                 <div><font style="font-weight: bold">Use lower case only.</font><br>If you are looking for an expression,<br> choose one word and look for it.</div>
-                    <br><br>
-                    <div>
+                <br><br>
+                <div>
                     <font style="text-decoration: underline; font-weight: bold">Visibility</font><br><br>
 
                     <input type="checkbox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt">Check All</label><br><br>
@@ -347,28 +357,28 @@
                     <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br>
 
                 </div>
-                    </div>
-                <br>
+            </div>
+            <br>
 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
-                <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
-            </td>
+            <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
+        </td>
 
-            <td style="width: 50%;">
-                <br><br><br>
-                <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
-                <!-- this is the URL side -->
-                <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
-                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
-                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
-            </td>
+        <td style="width: 50%;">
+            <br><br><br>
+            <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
+            <!-- this is the URL side -->
+            <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
+            <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
+            <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+        </td>
 
-            <tr>
-            </tr>
-            <td style="width: 50%;">
-                <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
-            </td>
-        </table>
-    </body>
+        <tr>
+        </tr>
+        <td style="width: 50%;">
+            <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
+        </td>
+    </table>
+</body>
 
 
 </head>
