@@ -57,10 +57,6 @@
                     document.getElementById(checkboxes[h]).disabled = false;
                 }
             }
-/*            document.getElementById("highlightText").checked = all;
-            document.getElementById("highlightText").disabled = true;
-                document.getElementById("colorText").checked = all;
-                document.getElementById("ulText").checked = all; */
         }
 
 
@@ -201,8 +197,8 @@
             margin: 2px 2px;
             cursor: pointer;
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            float: center; <!--
-            gotta fix this -->
+            position: absolute;
+            left: 15%
         }
 
         .highlightText {
@@ -218,7 +214,7 @@
         }
 
         .unFormattedText {
-            //nothing
+            /*leave as is*/
         }
 
         .divetext {
@@ -360,20 +356,15 @@
                 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
-                <div style=" mouse-pointer: auto;" id="divurl" name="divurl" class="divurl"></div>
+                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
             </td>
 
-
+            <tr>
             </tr>
             <td style="width: 50%;">
                 <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
-                <!-- <input type="checkbox" id="highlightText" name="highlightText"/><label style="background-color: yellow;">Highlight Text</label>&nbsp;&nbsp;
-                <input type="checkbox" id="colorText" name="colorText"/><label style="color: red;">Color Text</label>&nbsp;&nbsp;
-                <input type="checkbox" id="ulText" name="ulText"/><label style="text-decoration: underline;">Underline Text</label>&nbsp;&nbsp;&nbsp;&nbsp; -->
-
             </td>
-            </tr>
         </table>
     </body>
 
