@@ -84,8 +84,7 @@
             var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g, " ");
             var temporalDivElement = document.createElement("div");
             temporalDivElement.innerHTML = orgtext;
-            var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //-->
- this is the text from the unseen, cleaned of HTML tags
+            var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
 
 
             //get only the text from the word list
@@ -105,28 +104,21 @@
 
                 if (strippedText.indexOf(arrwl[i]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[i] + '
-<br>';
-                    document.getElementById("divurl").innerHTML += '
-<div><a href="https://www.morfix.co.il/' + arrwl[i] + '" target="_blank">' + arrwl[i] + '</a></div>'//; + '
-<br>';
+                    document.getElementById("divsl").innerHTML += arrwl[i] + ' <br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[i] + '" target="_blank">' + arrwl[i] + '</a></div>'//; + '<br>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
             var wordsFound = document.getElementById("divsl").innerHTML;
             if (wordsFound == '') {
-                document.getElementById("wordsInText").innerHTML = '
-<span class="headlines">Nothing was found</span>';
+                document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
 
             } else if (wordsFound != '') {
-                var count = (wordsFound.match(/
-<br>/g)).length;
-                document.getElementById("wordsInText").innerHTML = '
-<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+                var count = (wordsFound.match(/<br>/g)).length;
+                document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
             var arrtext = [];
-            strippedText = strippedText.replace(/
-<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
+            strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
 
             var orgtextf = text.toString().toLowerCase();
@@ -153,8 +145,7 @@
                         var newHTML1 = document.getElementById('divetext').innerHTML;
                         newHTML = newHTML1.toLowerCase();
                         words.forEach(word =>
-                            newHTML = newHTML.replace(word, '
-<span class="' + myCSSclass() + '">' + word + '</span>'))
+                            newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
                         document.getElementById("divca").innerHTML = newHTML;
 
@@ -208,7 +199,6 @@
         cursor: pointer;
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         position: absolute;
-        left: 15%
     }
 
     .highlightText {
@@ -355,7 +345,7 @@
                     <input type="checkbox" id="highlightText" name="highlightText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
                     <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
                     <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br>
-
+                    <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
                 </div>
             </div>
             <br>
@@ -374,9 +364,9 @@
 
         <tr>
         </tr>
-        <td style="width: 50%;">
-            <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
-        </td>
+        <!--        <td style="width: 50%;">
+                <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
+            </td>-->
     </table>
 </body>
 
