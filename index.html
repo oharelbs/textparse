@@ -78,12 +78,12 @@
 
             if (text == "") {
                 alert('Let\'s add some text first in the Text field');
-                return;
+                return false;
             }
 
             if (wordlist == "") {
                 alert('Try to add some words in the Word List field, one per line');
-                return;
+                return false;
             }
 
             //if none of the above is empty, populate the word list
