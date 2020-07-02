@@ -142,7 +142,7 @@
 
             } else if (wordsFound != '') {
 
-                var count = (wordsFound.match(/<br>/g)).length;
+                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length+1;
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
             var arrtext = [];
