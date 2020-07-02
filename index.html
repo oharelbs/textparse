@@ -116,7 +116,8 @@
                 } else if (t > 0) { //for the rest of the items in the list
                  nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
                      
-                }document.getElementById("divwl").value += nt;   
+                }
+                document.getElementById("divwl").value += nt;   
             }
                 
 
@@ -130,11 +131,12 @@
 
                 if (strippedText.indexOf(arrwl[b]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[b] + ' <br>';
+                    document.getElementById("divsl").innerHTML += arrwl[b] + '<br>';
                     document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>'//; + '<br>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
+
             var wordsFound = document.getElementById("divsl").innerHTML;
             if (wordsFound == '') {
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
@@ -167,8 +169,8 @@
                         var words = arrwl.toString().split(',');
 
                         var p = document.getElementById('divetext');
-                        var newHTML1 = document.getElementById('divetext').innerHTML;
-                        newHTML = newHTML1;
+                        var newHTML = document.getElementById('divetext').innerHTML;
+                        //newHTML = newHTML1;
                         words.forEach(word =>
                             newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
@@ -204,7 +206,6 @@
 
             return answer + answer1 + answer2 + answer3 + answer4;
         }
-
 
     </script>
 
@@ -246,7 +247,7 @@
         }
 
         .divetext {
-            height: 400px;
+            height: 500px;
             width: 95%;
             background-color: #F9DEDD;
             color: black;
@@ -255,7 +256,7 @@
         }
 
         .divca {
-            height: 400px;
+            height: 500px;
             width: 95%;
             background-color: #D1F1F8;
             color: black;
@@ -347,7 +348,7 @@
 
     <body>
 
-        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
+        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="1">
             <tbody>
                 <tr>
                     <td style="width: 50%;">
@@ -361,7 +362,7 @@
                     </td>
                 </tr>
             <td style="width: 50%;">
-                <br><br><br>
+                
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only.</font></div>
@@ -382,10 +383,10 @@
             </td>
 
             <td style="width: 50%;">
-                <br><br><br>
+                
                 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
                 <!-- this is the URL side -->
-                <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
+                <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
             </td>
