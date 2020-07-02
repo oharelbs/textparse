@@ -161,9 +161,8 @@
                 // we want to know if arrtext[b] is found in arrwl
                 for (var s = 0; s < arrwl.length; s++) {
 
-                //if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
-                    if (arrtext[q] == arrwl[s]) { //this will find the whole word
-
+                if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+                        
                         // we have found arrwl[s] in arrtext[q]
                         var words = arrwl.toString().split(',');
 
