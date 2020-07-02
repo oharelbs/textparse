@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "VSCode Workspace",
+			"path": "D:\\AAWork\\VSCode Workspace"
+		}
+	],
+	"settings": {
+		"workbench.colorCustomizations": {
+			"statusBar.background": "#81b5a1",
+			"statusBar.foreground": "#fff",
+			"activityBar.background": "#81b5a1",
+			"activityBar.foreground": "#fff"
+		},
+		"now.instance.authentication.type": "Basic",
+		"now.instance.user.name": "harel.ben-sheffer",
+		"now.instance.host.url": "https://stratasysdev.service-now.com",
+		"now.instance.OAuth.client.id": "",
+		"now.instance.user.password": "•••••••••••",
+		"now.instance.OAuth.client.secret": "",
+		"editor.defaultFormatter": "HookyQR.beautify"
+	}
+}
