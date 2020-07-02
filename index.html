@@ -69,13 +69,13 @@
             var text = document.getElementById("divetext").innerHTML;
             var wordlist = document.getElementById("divwl").value;
 
-            //          We need to remove commas with spaces after them, as well as single commas. Also, paranthesys and square brackets with everything in them.
+            //   We need to remove commas with spaces after them, as well as single commas. Also, paranthesys and square brackets with everything in them.
             if (wordlist.indexOf(',') > -1) {
                 for (ww = 2000; ww > 0; ww--) {
                     wordlist = wordlist.toLowerCase().replace(/[,]/g, "\n").replace(/[ ]/g, "").replace(/\([^)]*\)|\[[^\]]*\]/g, ''); //remove () and [] and everything in it
                 }
             }
-
+            
             if (text == "") {
                 alert('Let\'s add some text first in the Text field');
                 return false;
@@ -87,13 +87,12 @@
             }
 
             //if none of the above is empty, populate the word list
-            wordlist = '--WordList:--\n' + wordlist;
-            wordlist += '\n--EndOfWordList--';
+
             document.getElementById("divwl").value = wordlist;
 
-
             //get only the text from the text area
-            var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g, " ");
+            //var orgtext = text.toString().toLowerCase().replace(/<br>\s*/g, " ");
+            var orgtext = text.toString().replace(/<br>\s*/g, " ");
             var temporalDivElement = document.createElement("div");
             temporalDivElement.innerHTML = orgtext;
             var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
@@ -105,6 +104,24 @@
             var temporalDivElementWl = document.createElement("divTempwl");
             temporalDivElementWl.innerHTML = orgwordlist;
             var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
+
+            //let's add capital letters
+            var wrds = [];
+            wrds = orgwordlist;
+            wrds = wrds.toString().split('XXX');
+            for (var t = 0; t < wrds.length; t++) {
+                if (t == 0) { //add a new line for the first item in the list, in case there is no line break before
+                    nt = '\n' + wrds[0].charAt(0).toUpperCase() + wrds[0].slice(1)+'\n';
+
+                } else if (t > 0) { //for the rest of the items in the list
+                 nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
+                     
+                }document.getElementById("divwl").value += nt;   
+            }
+                
+
+            wordlist = '--WordList:--\n' + wordlist;
+            wordlist += '\n--EndOfWordList--';
 
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
@@ -132,7 +149,7 @@
             strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
 
-            var orgtextf = text.toString().toLowerCase();
+            var orgtextf = text.toString();
             var temporalDivElement = document.createElement("divftemp");
             temporalDivElement.innerHTML = orgtextf;
             var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
@@ -144,19 +161,18 @@
                 // we want to know if arrtext[b] is found in arrwl
                 for (var s = 0; s < arrwl.length; s++) {
 
-                    if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+                //if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+                    if (arrtext[q] == arrwl[s]) { //this will find the whole word
 
                         // we have found arrwl[s] in arrtext[q]
                         var words = arrwl.toString().split(',');
 
                         var p = document.getElementById('divetext');
                         var newHTML1 = document.getElementById('divetext').innerHTML;
-                        newHTML = newHTML1.toLowerCase();
+                        newHTML = newHTML1;
                         words.forEach(word =>
-                            //newHTML = newHTML.replace(word, '<span style="font-weight: bold;" class="' + myCSSclass() + '">' + word + '</span>'))
                             newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
-                        //remove some words:
                         document.getElementById("divca").innerHTML = newHTML;
                     }
                 }
@@ -373,6 +389,7 @@
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <textarea id="myTempCopiedText" name="myTempCopiedText" type="text" class="someclass"></textarea>
             </td>
 
             <tr>
