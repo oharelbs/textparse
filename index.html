@@ -209,142 +209,159 @@
 
     </script>
 
-    <style>
-        .button {
-            background-color: #1c87c9;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            padding: 10px 34px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 25px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            position: absolute;
-        }
+<style>
+    .button {
+        background-color: #1c87c9;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 10px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        margin: 2px 2px;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        position: absolute;
+    }
 
-        .yellowText {
-            background-color: yellow;
-        }
+    .yellowText {
+        background-color: yellow;
+    }
 
-        .colorText {
-            color: red;
-        }
+    .colorText {
+        color: red;
+    }
 
-        .myText {
-            font-weight: 700;
-        }
+    .myText {
+        font-weight: 700;
+    }
 
-        .ulText {
-            text-decoration: underline;
-        }
+    .ulText {
+        text-decoration: underline;
+    }
 
-        .unFormattedText {
-            color: black;
-        }
+    .unFormattedText {
+        color: black;
+    }
 
-        .divetext {
-            height: 500px;
-            width: 95%;
-            background-color: #F9DEDD;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divetext {
+        height: 500px;
+        width: 95%;
+        background-color: #F9DEDD;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .divca {
-            height: 500px;
-            width: 95%;
-            background-color: #D1F1F8;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divca {
+        height: 500px;
+        width: 95%;
+        background-color: #D1F1F8;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .wrdlstText {
-            height: 300px;
-            width: 20%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .wrdlstText {
+        height: 300px;
+        width: 20%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .clearField {
-            cursor: pointer;
-            background-color: #FFCCBC;
-            border: 1px;
-            border-radius: 1px;
-            border-color: black;
-            color: black;
-            padding: 1px 1px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
+    .clearField {
+        cursor: pointer;
+        background-color: #FFCCBC;
+        border: 1px;
+        border-radius: 1px;
+        border-color: black;
+        color: black;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 2px 2px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
-        .copyText {
-            cursor: pointer;
-            background-color: #AED6F1;
-            border: 1px;
-            border-radius: 1px;
-            border-color: black;
-            color: black;
-            padding: 1px 1px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 2px 2px;
-            cursor: pointer;
-            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        }
+    .copyText {
+        cursor: pointer;
+        background-color: #AED6F1;
+        border: 1px;
+        border-radius: 1px;
+        border-color: black;
+        color: black;
+        padding: 1px 1px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 2px 2px;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 
-        .divurl {
-            position: absolute;
-            right: 250px;
-            height: 300px;
-            width: 10%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .divurl {
+        position: absolute;
+        right: 250px;
+        height: 300px;
+        width: 10%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .wrdlst {
-            position: relative;
-            left: 1px;
-            height: 300px;
-            width: 20%;
-            color: black;
-            border: 1px solid;
-            overflow: scroll;
-        }
+    .wrdlst {
+        position: relative;
+        left: 1px;
+        height: 300px;
+        width: 20%;
+        color: black;
+        border: 1px solid;
+        overflow: scroll;
+    }
 
-        .divURLheadlines {
-            position: absolute;
-            right: 320px;
-            font: 20px Arial, sans-serif;
-        }
+    .divURLheadlines {
+        position: absolute;
+        right: 320px;
+        font: 20px Arial, sans-serif;
+    }
 
-        .headlines {
-            font: 20px Arial, sans-serif;
-        }
+    .headlines {
+        font: 20px Arial, sans-serif;
+    }
 
-        .checkboxDIV {
-            position: absolute;
-            left: 320px;
-        }
+    .checkboxDIV {
+        position: absolute;
+        left: 320px;
+    }
 
-        .allAtt {
-            font-weight: bold;
-        }
-    </style>
+    .allAtt {
+        font-weight: bold;
+    }
+
+    .mail-image {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    .mail-image .imagetooltiptext{
+        visibility: hidden;
+        width: 180px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .mail-image:hover .imagetooltiptext {
+        visibility: visible;
+    }
+</style>
 
     <body>
 
