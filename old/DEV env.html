@@ -72,7 +72,7 @@
             //   We need to remove commas with spaces after them, as well as single commas. Also, paranthesys and square brackets with everything in them.
             if (wordlist.indexOf(',') > -1) {
                 for (ww = 2000; ww > 0; ww--) {
-                    wordlist = wordlist.toLowerCase().replace(/[,]/g, "\n").replace(/[ ]/g, "").replace(/\([^)]*\)|\[[^\]]*\]/g, ''); //remove () and [] and everything in it
+                    wordlist = wordlist.toLowerCase().replace(/[,]/g, "\n").replace(/[ ]/g, " ").replace(/\([^)]*\)|\[[^\]]*\]/g, ''); //remove () and [] and everything in it
                 }
             }
             
@@ -387,7 +387,7 @@
                 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
-                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div><img src="owl60.jpg" style="float:right " alt="email me">
+                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div><!--<img src="owl60.jpg" style="float:right " alt="email me"> -->
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
             </td>
             <tr>

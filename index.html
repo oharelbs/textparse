@@ -72,7 +72,7 @@
             //   We need to remove commas with spaces after them, as well as single commas. Also, paranthesys and square brackets with everything in them.
             if (wordlist.indexOf(',') > -1) {
                 for (ww = 2000; ww > 0; ww--) {
-                    wordlist = wordlist.toLowerCase().replace(/[,]/g, "\n").replace(/[ ]/g, "").replace(/\([^)]*\)|\[[^\]]*\]/g, ''); //remove () and [] and everything in it
+                    wordlist = wordlist.toLowerCase().replace(/[,]/g, "\n").replace(/[ ]/g, " ").replace(/\([^)]*\)|\[[^\]]*\]/g, ''); //remove () and [] and everything in it
                 }
             }
             
