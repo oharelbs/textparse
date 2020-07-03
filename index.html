@@ -2,7 +2,83 @@
 <html>
 <!--  https://oharelbs.github.io/textparse/ -->
 <head>
+<!-- prepare for PDF-->
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- jsPDF library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+<script src="https://unpkg.com/html2canvas@1.0.0-rc.5/dist/html2canvas.js"></script>
+
     <script type="text/javascript">
+
+function createPDF(){
+
+    var doc = new jsPDF();
+    doc.page=1; // use this as a counter.
+    function footer(){
+        doc.setFontSize(12);
+        doc.setTextColor(192, 192, 192);
+        doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
+    doc.page ++;
+};
+
+    var text = document.getElementById('divetext').innerText;
+    var orginalWordList = document.getElementById('divwl').value;
+    var highlightedText = document.getElementById('divca').innerText;
+    var foundWords = document.getElementById('divsl').innerText;
+    var foundURLs = document.getElementById('divurl').innerHTML;
+
+            if (text == "") {
+                alert('Let\'s add some text first in the Text field before clicking buttons...');
+                return false;
+            }
+
+            if (foundWords == "") {
+                alert('Words found in text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
+                return false;
+            }
+
+
+
+/*var img = new Image();
+img.crossOrigin = "Anonymous";
+img.src="emailOwl.png";
+doc.addImage(img, 'png', 1, 2); */
+
+    //set the title
+    var orgText = 'Original text';
+    doc.setFontSize(22);
+    doc.setTextColor(70, 0, 0);
+    doc.setFontType("bold");
+    doc.text(20, 20, orgText);
+    
+    doc.setFontSize(12);
+    doc.setFontType("normal");
+    doc.setTextColor(4, 0, 0);
+    doc.text(20, 30, text);
+    footer();
+    
+    // Add new page for highlighted text
+
+    //Add new page for found words
+    doc.addPage();
+    var wordsFoundInText = 'Words found in the text';
+    doc.setFontSize(22);
+    doc.setTextColor(70, 0, 0);
+    doc.setFontType("bold");
+    doc.text(20, 20, wordsFoundInText);
+    
+    doc.setFontSize(12);
+    doc.setTextColor(4, 0, 0);
+    doc.setFontType("normal");
+    doc.text(20, 40, foundWords);
+    footer();
+    // Save the PDF
+    doc.save('document.pdf');
+
+}
+
 
         function copyFunction(id) {
             //this copies a regular textarea field
@@ -209,159 +285,186 @@
 
     </script>
 
-<style>
-    .button {
-        background-color: #1c87c9;
-        border: none;
-        border-radius: 8px;
-        color: white;
-        padding: 10px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 25px;
-        margin: 2px 2px;
-        cursor: pointer;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        position: absolute;
-    }
+    <style>
+        .button {
+            background-color: #1c87c9;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 2px 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            position: absolute;
+        }
 
-    .yellowText {
-        background-color: yellow;
-    }
+        .yellowText {
+            background-color: yellow;
+        }
 
-    .colorText {
-        color: red;
-    }
+        .colorText {
+            color: red;
+        }
 
-    .myText {
-        font-weight: 700;
-    }
+        .myText {
+            font-weight: 700;
+        }
 
-    .ulText {
-        text-decoration: underline;
-    }
+        .ulText {
+            text-decoration: underline;
+        }
 
-    .unFormattedText {
-        color: black;
-    }
+        .unFormattedText {
+            color: black;
+        }
 
-    .divetext {
-        height: 500px;
-        width: 95%;
-        background-color: #F9DEDD;
-        color: black;
-        border: 1px solid;
-        overflow: scroll;
-    }
+        .divetext {
+            height: 500px;
+            width: 95%;
+            background-color: #F9DEDD;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
 
-    .divca {
-        height: 500px;
-        width: 95%;
-        background-color: #D1F1F8;
-        color: black;
-        border: 1px solid;
-        overflow: scroll;
-    }
+        .divca {
+            height: 500px;
+            width: 95%;
+            background-color: #D1F1F8;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
 
-    .wrdlstText {
-        height: 300px;
-        width: 20%;
-        color: black;
-        border: 1px solid;
-        overflow: scroll;
-    }
+        .wrdlstText {
+            height: 300px;
+            width: 20%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
 
-    .clearField {
-        cursor: pointer;
-        background-color: #FFCCBC;
-        border: 1px;
-        border-radius: 1px;
-        border-color: black;
-        color: black;
-        padding: 1px 1px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        margin: 2px 2px;
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
+        .clearField {
+            cursor: pointer;
+            background-color: #FFCCBC;
+            border: 1px;
+            border-radius: 1px;
+            border-color: black;
+            color: black;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 2px 2px;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
 
-    .copyText {
-        cursor: pointer;
-        background-color: #AED6F1;
-        border: 1px;
-        border-radius: 1px;
-        border-color: black;
-        color: black;
-        padding: 1px 1px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 18px;
-        margin: 2px 2px;
-        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    }
+        .copyText {
+            cursor: pointer;
+            background-color: #AED6F1;
+            border: 1px;
+            border-radius: 1px;
+            border-color: black;
+            color: black;
+            padding: 1px 1px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
+            margin: 2px 2px;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
 
-    .divurl {
-        position: absolute;
-        right: 250px;
-        height: 300px;
-        width: 10%;
-        color: black;
-        border: 1px solid;
-        overflow: scroll;
-    }
+        .divurl {
+            position: absolute;
+            right: 250px;
+            height: 300px;
+            width: 10%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
 
-    .wrdlst {
-        position: relative;
-        left: 1px;
-        height: 300px;
-        width: 20%;
-        color: black;
-        border: 1px solid;
-        overflow: scroll;
-    }
+        .wrdlst {
+            position: relative;
+            left: 1px;
+            height: 300px;
+            width: 20%;
+            color: black;
+            border: 1px solid;
+            overflow: scroll;
+        }
 
-    .divURLheadlines {
-        position: absolute;
-        right: 320px;
-        font: 20px Arial, sans-serif;
-    }
+        .divURLheadlines {
+            position: absolute;
+            right: 320px;
+            font: 20px Arial, sans-serif;
+        }
 
-    .headlines {
-        font: 20px Arial, sans-serif;
-    }
+        .headlines {
+            font: 20px Arial, sans-serif;
+        }
 
-    .checkboxDIV {
-        position: absolute;
-        left: 320px;
-    }
+        .checkboxDIV {
+            position: absolute;
+            left: 320px;
+        }
 
-    .allAtt {
-        font-weight: bold;
-    }
+        .allAtt {
+            font-weight: bold;
+        }
 
-    .mail-image {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
+        .mail-image {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            float: right;
+        }
+ 
+        .mail-image .imagetooltiptext{
+            visibility: hidden;
+            width: 180px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .mail-image:hover .imagetooltiptext {
+            visibility: visible;
+        }
+        .pdfButton {
+            background-color: #1c87c9;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 2px 2px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            
+        }
+        .pdfButton:hover:after { 
+            content: "Export text and found words"; 
+            position: absolute;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 3px;
+            width: 250px;
+            
     }
-
-    .mail-image .imagetooltiptext{
-        visibility: hidden;
-        width: 180px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 3px;
-    }
-    .mail-image:hover .imagetooltiptext {
-        visibility: visible;
-    }
-</style>
+    </style>
 
     <body>
 
@@ -392,6 +495,8 @@
                         <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
                         <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                         <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
+                        <div id="divpdf" style="float: right" button class="pdfButton" onclick="createPDF()">PDF</button>
+                        </div>>
                     </div>
                 </div>
                 <br>
@@ -404,7 +509,7 @@
                 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
-                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div><!--<img src="owl60.jpg" style="float:right " alt="email me"> -->
+                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
                 
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
                 <div class="mail-image"><input type="image" onclick="window.location.href='mailto:oharel@gmail.com?subject=Comments and suggestions';"  src="emailOwl.png"  alt="email me"></input>
