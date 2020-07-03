@@ -169,8 +169,8 @@
                         var words = arrwl.toString().split(',');
 
                         var p = document.getElementById('divetext');
-                        var newHTML = document.getElementById('divetext').innerHTML;
-                        //newHTML = newHTML1;
+                        var newHTML1 = document.getElementById('divetext').innerHTML;
+                        newHTML = newHTML1;
                         words.forEach(word =>
                             newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
@@ -348,7 +348,7 @@
 
     <body>
 
-        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="1">
+        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
             <tbody>
                 <tr>
                     <td style="width: 50%;">
