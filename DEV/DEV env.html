@@ -285,7 +285,6 @@
             display: inline-block;
             font-size: 18px;
             margin: 2px 2px;
-            cursor: pointer;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
@@ -302,7 +301,6 @@
             display: inline-block;
             font-size: 18px;
             margin: 2px 2px;
-            cursor: pointer;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
@@ -343,6 +341,25 @@
 
         .allAtt {
             font-weight: bold;
+        }
+
+        .mail-image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+        }
+ 
+        .mail-image .imagetooltiptext{
+            visibility: hidden;
+            width: 180px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+        }
+        .mail-image:hover .imagetooltiptext {
+            visibility: visible;
         }
     </style>
 
@@ -387,8 +404,12 @@
                 <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
-                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div><!--<img src="owl60.jpg" style="float:right " alt="email me"> -->
+                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
+                
                 <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <div class="mail-image"><input type="image" onclick="location.href='mailto:oharel@gmail.com'" src="owl60.jpg"  alt="email me"></input>
+                    <span class="imagetooltiptext">email me</span>
+                </div>
             </td>
             <tr>
             </tr>
