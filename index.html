@@ -41,8 +41,8 @@ function createPDF(){
 
 var img = new Image();
 img.crossOrigin = "Anonymous";
-img.src="emailOwl.png";
-doc.addImage(img, 'png', 1, 2);
+img.src="owlCircle.png";
+doc.addImage(img, 'png', 1, 280);
 
     //set the title
     var orgText = 'Original text';
@@ -192,11 +192,7 @@ doc.addImage(img, 'png', 1, 2);
                 }
                 document.getElementById("divwl").value += nt;   
             }
-                
-
- //           wordlist = '--WordList:--\n' + wordlist;
-  //          wordlist += '\n--EndOfWordList--';
-
+ 
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
 
@@ -215,7 +211,7 @@ doc.addImage(img, 'png', 1, 2);
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
                 return;
             } else if (wordsFound != '') {
-                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length+1;
+                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length + 1;
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
                 }
 
