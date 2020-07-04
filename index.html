@@ -194,20 +194,20 @@ doc.addImage(img, 'png', 200, 1);
             temporalDivElementWl.innerHTML = orgwordlist;
             var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
 
-            //let's add capital letters
-            var wrds = [];
-            wrds = orgwordlist;
-            wrds = wrds.toString().split('XXX');
-            for (var t = 0; t < wrds.length; t++) {
-                if (t == 0) { //add a new line for the first item in the list, in case there is no line break before
-                    nt = '\n' + wrds[0].charAt(0).toUpperCase() + wrds[0].slice(1)+'\n';
-
-                } else if (t > 0) { //for the rest of the items in the list
-                 nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
-                     
-                }
+           //let's add capital letters if the band three checkbox is false
+           if(document.getElementById('band3').checked == false) {
+               var wrds = [];
+               wrds = orgwordlist;
+               wrds = wrds.toString().split('XXX');
+               for (var t = 0; t < wrds.length; t++) {
+                   if (t == 0) { //add a new line for the first item in the list, in case there is no line break before
+                   nt = '\n' + wrds[0].charAt(0).toUpperCase() + wrds[0].slice(1)+'\n';
+                   } else if (t > 0) { //for the rest of the items in the list
+                   nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
+                   }
                 document.getElementById("divwl").value += nt;
-            }
+                }
+           }
 
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
