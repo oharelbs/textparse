@@ -11,7 +11,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
-    <script type="text/javascript">
+<a href="band3.html"></a>
+
+<script type="text/javascript">
+
+function getBandThreeWords() {
+    var mytext = $( "#divwl" ).load( "band3.html div#BList3");
+ 
+}
+
 
 function createPDF(){
 
@@ -519,7 +527,7 @@ doc.addImage(img, 'png', 200, 1);
                 <div class="mail-image"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions">Click here to email me</a>
                     <br>Version 1.0</span>
 <!--                    <span class="imagetooltiptext">email me</span></div> -->
-            </td>
+            </td> <buton class="button" onclick="getBandThreeWords()"></buton>
             <tr id="521">
             </tr>
         </table>
