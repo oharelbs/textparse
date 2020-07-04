@@ -15,13 +15,15 @@
 
 <script type="text/javascript">
 
-function getBandThreeWords() {
-  //  var mytext = $( "#divwl" ).load( "https://raw.githubusercontent.com/oharelbs/textparse/master/DEV/band3.html div#BList3");
- //alert()
-
+function getBandThreeWords(element) {
+    var boxchecked = element.checked;
+    if(boxchecked == false) {
+        document.getElementById('divwl').value = "";  
+    } else {
  jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
     document.getElementById('divwl').value = data;
 });
+}
 }
 
 
@@ -501,7 +503,8 @@ doc.addImage(img, 'png', 200, 1);
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only.</font></div>
-                    <br><br><br>
+                    <input type="checkbox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label>Band III Words</label>
+                    <br><br>
                     <div>
                         <font style="text-decoration: underline; font-weight: bold">Visibility</font><br><br>
 
@@ -531,7 +534,7 @@ doc.addImage(img, 'png', 200, 1);
                 <div class="mail-image"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions">Click here to email me</a>
                     <br>Version 1.0</span>
 <!--                    <span class="imagetooltiptext">email me</span></div> -->
-            </td> <buton class="button" onclick="getBandThreeWords()"></buton>
+            </td>
             <tr id="521">
             </tr>
         </table>

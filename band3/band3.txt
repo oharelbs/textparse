@@ -1,75 +1,112 @@
-a.m
+a.m.
 absence
 absolute
 abstract
 abuse
-acceptable, acceptance
+acceptable
+acceptance
 access
 accompany
-accordingly
 according to
-accurate, inaccurate, accuracy, accurately
-achieve, achievement
-acknowledge,acknowledgment,acknowledged
-acquire,acquisition
-act,inactive,actor
+accordingly
+accuracy
+accurate
+accurately
+achieve
+achievement
+acknowledge
+acknowledged
+acknowledgment
+acquire
+acquisition
+act
+actor
 actual
-adapt,adapted,adaptation
-additional,additionally
+adapt
+adaptation
+adapted
+additional
+additionally
 address 
-adequate,adequately,inadequate
+adequate
+adequately
+adjustment
 administration
-adopt,adoption
-adust, adjustment
-advance, advanced
+adopt
+adoption
+adust
+advance
+advanced
 advocate
 affair
 affect
-afford, affordable
+afford
+affordable
 afterwards
-agent, agency
-aggression, aggressive behavior
-agreement, in agreement
-agriculture, agricultural
+agency
+agent
+aggression
+aggressivebehavior
+agreement
+agricultural
+agriculture
 aid
 airport
 allow
-alter, alteration
+alter
+alteration
 amongst
 analogy
-analyze, analysis
+analysis
+analyze
 ancient
-announce, announcement
+announce
+announcement
 annual
-anxious, anxiety
+anxiety
+anxious
 anybody
 anymore
 anyway
-apparent,apparently
+apparent
+apparently
 application
-appreciate, appreciation
+appreciate
+appreciation
 approach
 appropriate
-approve, approval
+approval
+approve
 approximately
+as
 Asian
 aspect
-aspire,aspiration
+aspiration
+aspire
 assignment
-assist, assistance
-associate,association
-assume,assumption
-attachment,attach
+assist
+assistance
+associate
+association
+assume
+assumption
+attach
+attachment
 attack
 attempt
-attend, attendance
+attend
+attendance
 attitude
-attract, attraction, attractive
+attract
+attraction
+attractive
 audience
 authentic
 author
 authority
-autonomy,autonomous 
+autonomous
+autonomy
+autumn
 average
 avoid
 award 
@@ -92,12 +129,14 @@ beauty
 beginning
 belief
 beneath
-benefit,beneficial
+beneficial
+benefit
 bias
 bill
 billion
 bind
-biology, biological
+biological
+biology
 bird
 block
 bold
@@ -105,18 +144,22 @@ bond
 bone
 boundary
 break
-breath, breathe
-brief, briefly
+breath
+breathe
+brief
+briefly
 British
 budget
 building
 burn
 cabinet
-calculate, calculation
+calculate
+calculation
 campaign
 cancer
 candidate
-capable, capability
+capability
+capable
 capacity
 capture
 career
@@ -126,96 +169,136 @@ Catholic
 cell
 cellphone
 census
-central,centrally
+central
+centrally
 certainly
 chain
-chair (man, woman, person)
+chair
+chairman
+chairwoman
 challenge
-change (n)
+change 
 channel
 characteristic
-charge (v)
+charge 
 checklist
-chemistry, chemical
+chemical
+chemistry
 chicken 
 chief 
 chief of staff
 Chinese
 Christmas
 church
-circumstance(s)
+circumstance
+circumstances
 cite
-citizen, citizenship
-civil, civilian
-civilized, civilization
+citizen
+citizenship
+civil
+civilian
+civilization
+civilized
 claim
-clarify, clarification
+clarification
+clarify
 classify
 clearly
 client
 colleague
 collection
 college
-combine, combination
+combination
+combine
 commander
 comment
-commerce, commercial
-commit, commitment
+commerce
+commercial
+commit
+commitment
 committee
 community
-comparison, comparative
-compete, competition,competitive
+comparative
+comparison
+compete
+competition
+competitive
 completely
 complex
 component
-compose,composition
-comprehend, comprehension
+compose
+composition
+comprehend
+comprehension
 comprehensive
-comprise, comprised of
-concentrate, concentration
+comprise
+comprisedof
+concentrate
+concentration
 concept
-concern, concerned
-conclusion, conclude
+concern
+concerned
+conclude
+conclusion
 conduct 
 conference
-confident, confidence
-confirm, confirmation
+confidence
+confident
+confirm
+confirmation
 conflict
 consensus
-consequence, consequently
-considerable, considerably
+consequence
+consequently
+considerable
+considerably
 consideration
-considered (as)
+considered 
 consist
-consistent, consistently
-constant, constantly
+consistent
+consistently
+constant
+constantly
 constitution
-construct,  construction
-consume, consumer
-contain, container
+construct
+construction
+consume
+consumer
+contain
+container
 contemporary
 context
-continuous, continuously
+continuous
+continuously
 contradict
 contrast
-contribute, contribution
-convention, conventional
+contribute
+contribution
+convention
+conventional
 convert
 convey
-cooperate, cooperation
-coordinate,coordination
+cooperate
+cooperation
+coordinate
+coordination
 core 
 correspond
 council
 count
 cover
-creative, creation
+creation
+creative
 criminal
 crisis
-criterion (pl: criteria)
-criticize, criticism, critical
+criteria
+criterion
+critical
+criticism
+criticize
 crucial
-current,currently
+current
+currently
 curriculum
 customer
 cut
@@ -223,66 +306,94 @@ cycle
 daily
 damage 
 data 
+death
 debate
 debt
 decade
 decision
-declare, declaration
+declaration
+declare
 decline
 decline 
 decrease 
-defend, defense 
+defend
+defense
 define 
 degree 
 delegation
 demand
-democracy, democratic
-demonstrate, demonstration
-deny, denial
-depart, departure
+democracy
+democratic
+demonstrate
+demonstration
+denial
+deny
+depart
 department
-depress, depressed, depression, depressing
+departure
+depress
+depressed
+depressing
+depression
 derive
 desert
 design
 desire
 despite
-destroy, destruction
-detail, detailed
-detect, detective, detection
-determine, determination
-develop, development
+destroy
+destruction
+detail
+detailed
+detect
+detection
+detective
+determination
+determine
+develop
+development
 device
 devise
 diagram
 dialogue
-die, death
+die
 difference
-differentiate, differentiation
+differentiate
+differentiation
 difficulty
 dilemma
 dimension
 diminish
-direct,  directly
+direct
+directly
 discipline 
 discovery
-discriminate, discrimination
+discriminate
+discrimination
 disease
-dish(es)
+dish
+dishes
 display
-dispose, disposal
+disposal
+dispose
 dissatisfied
-distance, distant
-distinction, distinguish
-distribute,distribution
+distance
+distant
+distinction
+distinguish
+distribute
+distribution
 district
-disturb, disturbance
-diverse,diversity
+disturb
+disturbance
+diverse
+diversity
 division
 document
 domain
 domestic
-dominant, dominate, domination
+dominant
+dominate
+domination
 double
 dozen
 draft
@@ -291,89 +402,138 @@ driver
 drug
 dual
 duty
-dynamic(s)
+dynamic
+dynamics
 e.g
 earn
 easily
 Easter
 eastern
-economic,economically, economics,economy
+economic
+economically
+economics
+economy
 edge
-edit, editor
-educate, educational
+edit
+editor
+educate
+educational
 effective
-efficient,efficiently, efficiency
+efficiency
+efficient
+efficiently
 egg
-elect, election 
+elect
+election
 electronic
 element
 elementary
-eliminate, elimination
+eliminate
+elimination
 elsewhere
-emerge, emergence, emerging
+emerge
+emergence
 emergency
-emotion, emotional
-emphasize, emphasis
-employ, employee, employer, employment
+emerging
+emotion
+emotional
+emphasis
+emphasize
+employ
+employee
+employer
+employment
 enable
 encounter
 end
 end
 enemy
-engage, engagement
-engineer, engineering
+engage
+engagement
+engineer
+engineering
 enhance
+enquire
+enquiry
 ensure
 enterprise
-entire, entirely
+entire
+entirely
 entitled
 entrance
 entry
 environmental
-equally, equality
-equip, equipment
+equality
+equally
+equip
+equipment
 equivalent
 era
 error
 escape
-essential, essentially
-establish, established, establishment
-estimate, estimation
+essential
+essentially
+establish
+established
+establishment
+estimate
+estimation
 etc. 
 ethical
 ethnic
 European
-evaluate, evaluation
+evaluate
+evaluation
 even
 event
 eventually
 everywhere
 evidence
-evident, evidently
-evolve, evolution 
-exceed, excessive
+evident
+evidently
+evolution
+evolve
+exceed
 except 
+excessive
 exchange
-exclude, exclusion
-exclusive, exclusively
+exclude
+exclusion
+exclusive
+exclusively
 executive
 exercise
-exhibit, exhibition
-exist, existing, existence
+exhibit
+exhibition
+exist
+existence
+existing
 exit
-expand, expansion
-expectation(s)
-expense(s), expensive
+expand
+expansion
+expectation
+expectations
+expense
+expenses
+expensive
 experience
 experiment 
-expert, expertise
-explicit, explicitly
-exploit, exploitation
-explore, exploration
+expert
+expertise
+explicit
+explicitly
+exploit
+exploitation
+exploration
+explore
 export
-expose, exposed
+expose
+exposed
 expression
-extend, extended, extension, extent
+extend
+extended
+extension
+extent
 external
 face 
 facilitate
@@ -383,48 +543,67 @@ factor
 factory
 failure
 fairly
-faith, faithful, faithfully
-fall (= autumn)
+faith
+faithful
+faithfully
+fall
 familiar
 fan
-farm, farmer
-fashion, fashionable
-favor, favorable
+farm
+farmer
+fashion
+fashionable
+favor
+favorable
 feature
 fee
-feel, feeling
-female, feminine
+feel
+feeling
+female
+feminine
 figure
 file
-financial, finance
+finance
+financial
 findings
 fire
 firm 
 firm 
 fit 
-flexible, flexibility 
+flexibility
+flexible
 flight
 flow
 focus 
 folk
 forest
-formal, formally
-formal, formally, formality
+formal
+formal
+formality
+formally
+formally
 format
 former
-formulate, formula
+formula
+formulate
 forum
 fraction
 frame
 framework
-France, French
-free, freedom
-frequent, frequently, frequency
+France
+free
+freedom
+French
+frequency
+frequent
+frequently
 fuel
 fully
-function , functional
+function 
+functional
 fund
-fundamental, fundamentally
+fundamental
+fundamentally
 further
 furthermore
 gain
@@ -435,12 +614,17 @@ generate
 generation
 gentle
 gentleman
-geography, geographic
-German, Germany
-global, globally, globalization
+geographic
+geography
+German
+Germany
+global
+globalization
+globally
 goal
 god
-gold, golden
+gold
+golden
 goods
 govern
 grant
@@ -451,7 +635,9 @@ growth
 guard
 guess
 guest
-guide (n & v), guidance, guidelines
+guidance
+guide
+guidelines
 gun
 hand
 handle
@@ -461,110 +647,158 @@ hearing
 heaven
 hell
 hence
-hero, heroine
+hero
+heroine
 hierarchy
 highlight
 highly 
 hill
 hire
-historical, historically
+historical
+historically
 hole
 homemaker
-hopeful, hopefully
+hopeful
+hopefully
 horizontal
 horse
 host
+human
 human being
-human, humanity (= mankind)
 humanities
+humanity
 hypothesis
 i.e. 
 ice
-ideal, ideally, idealism, idealist
+ideal
+idealism
+idealist
+ideally
 identical
 identification
-ignore, ignorant, ignorance
+ignorance
+ignorant
+ignore
 illegal
 illness
-illustrate, illustration
-image, imagery
+illustrate
+illustration
+image
+imagery
 imagination
 immediate
-immigrate, immigrant, immigration
+immigrant
+immigrate
+immigration
 immoral
 impact
-implementation, implement
-implication, imply
+implement
+implementation
+implication
 implicit
+imply
 import
 importance
 impose
-impress, impressive, impression
+impress
+impression
+impressive
 improvement
+inaccurate
+inactive
+inadequate
+inagreement
 incentive
-incident, incidentally
+incident
+incidentally
 including
 income
 increasingly
 independence
 index
-India, Indian
-indicate, indication, indicator
+India
+Indian
+indicate
+indication
+indicator
 indirect
 individually
-industry, industrial
-inevitable, inevitably
+industrial
+industry
+inevitable
+inevitably
 inferior
 influence
 inform
 informal
 infrastructure
-inherent, inherently
-initial, initially
+inherent
+inherently
+initial
+initially
 initiative
-injury, injured
+injured
+injury
 innovation
 input
-inquire, inquiry (enquire, enquiry)
+inquire
+inquiry
 insight
 insist
-instant, instantly
-institute, institution
+instant
+instantly
+institute
+institution
 instruction
 instrument
-insurance, insure 
-integrate, integration
+insurance
+insure
+integrate
+integration
 integrity
 intellectual
-intelligence (millitary)
-intend, intention
-intense, intensive
-interact, interaction, interactive
+intelligence
+intend
+intense
+intensive
+intention
+interact
+interaction
+interactive
 interest
 internal
-interpret, interpretation
+interpret
+interpretation
 intervention
-introduce, introduction
+introduce
+introduction
 invention
-invest, investment
-investigate, investigation
+invest
+investigate
+investigation
+investment
 invisible
 involvement
 iron 
 irresponsible
 Islam
-Japan, Japanese
+Japan
+Japanese
 joint
 journal
-journalist, journalism
+journalism
+journalist
 Judaism
-judgment, judge
+judge
+judgment
 jump
-just,justice
+just
+justice
 justify
-key (adj)
+key
 kill
-king, kingdom
+king
+kingdom
 kit
 kitchen
 knee 
@@ -580,12 +814,14 @@ last
 late
 latter
 laughter
-law, lawyer, 
+law
+lawyer
 leadership
 leaf
 lean
 leg
-legal, legally
+legal
+legally
 length
 level
 lift
@@ -593,74 +829,105 @@ lift
 light
 lips
 list
-literature, literary
+literary
+literature
 local
-locate, location
-logic, logical
+locate
+location
+logic
+logical
 long-term
-look(s)
+look
+looks
 loss
 lovely
 lower
 luckily
 madam
-maintain, maintenance
-major, majority
-male, masculine
-manage ,manager, management, 
+maintain
+maintenance
+major
+majority
+male
+manage 
+management
+manager
+mankind
 manner
 manners
 manufacture
-market, marketing
-marriage, married
-mass, massive
+market
+marketing
+marriage
+married
+masculine
+mass
+massive
 master
 mean
-measure, measurement
+measure
+measurement
 mechanism
 media
-medical, medicine
+medical
+medicine
 membership
-mental, mentally
-merely, mere
+mental
+mentally
+mere
+merely
 metal
 method
 mile
 military
-minimal, minimize
-minister, ministry
-minority, minor
+minimal
+minimize
+minister
+ministry
+minor
+minority
 mirror
 miss
 mission
 mobile
 mode
 model 
-modify, modification
+modification
+modify
 monitor
-moral, morality
+moral
+morality
 moreover
 mostly
-motive, motivate, motivation
+motivate
+motivation
+motive
 motor
 movement
-multiple, multiply
-municipal, municipality
+multiple
+multiply
+municipal
+municipality
 murder
-mutual, mutually
+mutual
+mutually
 myth
 name
-natural, naturally
+natural
+naturally
 nearly
-necessarily, necessity
+necessarily
+necessity
 neck
 need
 negative
-negotiate, negotiation
+negotiate
+negotiation
 net
 network
 neutral
-nevertheless, nonetheless
+nevertheless
+nonetheless
 norm
 normally
 northern
@@ -670,61 +937,91 @@ novel
 nuclear
 numerous
 nurse
-object, objection
+object
+objection
 objective 
 objective 
-oblige, obligation
-observe, observation 
+obligation
+oblige
+observation
+observe
 obtain
-obvious, obviously
+obvious
+obviously
 occasion
 occasionally
-occupy, occupation
+occupation
+occupy
 occur
 ocean
-offend, offence, offender
+offence
+offend
+offender
 offense
-officer, official, officially
+officer
+official
+officially
 ongoing
 opening
-oppose, opposition
-option, optional, optionally
+oppose
+opposition
+option
+optional
+optionally
 organization 
-origin, original, originally
+origin
+original
+originally
 otherwise
 outcome
 outline
 output
 overall
-own, owner
+own
+owner
 p.m.
 package
-pain, painful
-paint, painting, painter
+pain
+painful
+paint
+painter
+painting
 parliament
-part, partial
-participate, participation
+part
+partial
+participate
+participation
 particularly
 partly
 passage
 passive
 pattern
-pay, payment
-peace, peaceful, peacefully
+pay
+payment
+peace
+peaceful
+peacefully
 pepper
 per
-perceive, perception
-percent, percentage
-perform, performance
+perceive
+percent
+percentage
+perception
+perform
+performance
 period
-permanent, permenantly
-permit, permission
-personal, personally 
+permanent
+permenantly
+permission
+permit
+personal
 personality
+personally
 perspective
 persuade
 phase
-phenomenon, phenomena
+phenomena
+phenomenon
 physical
 physics
 pilot 
@@ -733,80 +1030,111 @@ planet
 planning
 plant
 plastic
-play, player
+play
+player
 pleasure 
 pocket
 point
 point
 policy
-politics, politician, political
+political
+politician
+politics
 pool
 population
-positive, positively
-possess, possession, possessive
-possibly, possibility
+positive
+positively
+possess
+possession
+possessive
+possibility
+possibly
 post 
 potential 
 pour
 poverty
 practical
 practically
-precise, precisely
-predict, prediction 
-prepare, preparation
-present, presence
+precise
+precisely
+predict
+prediction
+preparation
+prepare
+presence
+present
 presentation
 president
+press
 press 
-press, pressure
+pressure
 pretty
 pretty
-prevent, prevention
-previous, previously
+prevent
+prevention
+previous
+previously
 pride
 primary
 principal
 principle
-prior, priority
-prison, prisoner
-probable, probability
+prior
+priority
+prison
+prisoner
+probability
+probable
 problematic
-proceed, procedure
+procedure
+proceed
 process
-produce, product, production
-profession, professional
+produce
+product
+production
+profession
+professional
 profile
-profit, profitable
-progress, progressive
+profit
+profitable
+progress
+progressive
 project
 project
 promise
-promote, promotion
+promote
+promotion
 properly
 property
 proportion
-propose, proposal 
+proposal
+propose
 prospect
 protection
 protest
 provision
-psychology, psychological
-publish, publication
+psychological
+psychology
+publication
+publish
 pull
 pursue
 quality
 quantity
-race, racial, racism
+race
+racial
+racism
 radical
 random
 range
-rapid, rapidly
+rapid
+rapidly
 rate
 rating
 ratio
 rational
 rationale
-react, reaction
+react
+reaction
 readily
 reality
 reasonable
@@ -814,44 +1142,69 @@ recall
 receipt
 reception
 recognition
-recommend, recommendation
-recover, recovery
-recruit, recruitment
-reduce, reduction
-refer, reference
-reflect, reflection
+recommend
+recommendation
+recover
+recovery
+recruit
+recruitment
+reduce
+reduction
+refer
+reference
+reflect
+reflection
 reform
 refugee
-refuse, refusal
+refusal
+refuse
 regard
 regarding
 regime
-region, regional
+region
+regional
 regulation
 reinforce
-reject, rejection
+reject
+rejection
 relationship
-relative, relatively
+relative
+relatively
 release
-relevant, relevance
-relief, relieved
-rely,reliable
-represent, representative, representation
-require,required, requirement
+relevance
+relevant
+reliable
+relief
+relieved
+rely
+represent
+representation
+representative
+require
+required
+requirement
 research
-resident, reside, residential
-resist, resistance
-resolve,resolution
+reside
+resident
+residential
+resist
+resistance
+resolution
+resolve
 resource
 respectively
-respond, response
+respond
+response
 restaurant
-restrict, restriction
+restrict
+restriction
 retain
 reveal
 review
-revise, revision
-revolution, revolutionary
+revise
+revision
+revolution
+revolutionary
 ring
 ritual
 rock
@@ -862,36 +1215,46 @@ route
 row
 rural
 rush
-Russia, Russian
+Russia
+Russian
 safety
 salary
 sample
 sanctions
-satisfy, satisfaction
+satisfaction
+satisfy
 scale
 scenario
 scene
 scenery
 scheme
-science, scientific, scientist
+science
+scientific
+scientist
 score
 screen
 secondly
 section
 sector
-secure, security
+secure
+security
 seek
-select, selection
+select
+selection
 senior
-sensitive, sensitivity
-separate, separation
+sensitive
+sensitivity
+separate
+separation
 sequence
 series
 seriously
 servant
 setting
-settle, settlement
-severe, severely
+settle
+settlement
+severe
+severely
 shadow
 shake
 share
@@ -901,15 +1264,20 @@ shot
 shoulder
 sight
 signal
-significant, significantly, significance
+significance
+significant
+significantly
 sir
-skill, skilled
-slight, slightly
+skill
+skilled
+slight
+slightly
 slip
 snow
 software
 soldier
-sole,solely
+sole
+solely
 solution
 somehow
 somewhat
@@ -919,9 +1287,11 @@ source
 southern
 spatial
 specialize
-specify, specific specifically
+specificspecifically
+specify
 speech
-spirit, spiritual
+spirit
+spiritual
 spot
 spread
 stable
@@ -937,33 +1307,45 @@ stimulate
 stock
 stone
 storm
-strategy, strategic
-strength, strengthen
-stress, stressful
+strategic
+strategy
+strength
+strengthen
+stress
+stressful
 stretch
 strongly
 structure
 struggle
 studio
 subjective
-subsequent, subsequently
+subsequent
+subsequently
 substance
 substantial
-success, successful, successfully
-suffer, suffering
-sufficient, sufficiently
+success
+successful
+successfully
+suffer
+suffering
+sufficient
+sufficiently
 sugar
 suit
-suit, suitable
+suit
+suitable
 sum
-summarize, summary
+summarize
+summary
 supply
 surely
 surface
 surgery
-surround, surroundings
+surround
+surroundings
 survey
-survive, survival
+survival
+survive
 suspect
 sustain
 symbol
@@ -973,14 +1355,17 @@ talk
 target
 task
 taste
-teaching(s)
+teaching
+teachings
 tear
 tear
 technical
 technique
-technology, technological 
+technological
+technology
 temperature
-temporary, temporarily
+temporarily
+temporary
 tendency
 term
 terms
@@ -989,7 +1374,8 @@ theater
 theme
 theory
 thereby
-threat, threaten
+threat
+threaten
 thus
 tie
 tiny
@@ -1001,11 +1387,14 @@ totally
 touch
 tough
 track
-tradition, traditional, traditionally
+tradition
+traditional
+traditionally
 transfer
 transform
 transmit
-transport, transportation
+transport
+transportation
 travel
 trek
 trend
@@ -1015,23 +1404,32 @@ truly
 trust
 truth
 twice
-typical,typically
+typical
+typically
 unable
-unemployed, unemployment, 
+unemployed
+unemployment
 unfortunately
 union
 unique
-unite, united
-universe,universal
+unite
+united
+universal
+universe
 university
 unlikely
 upper
 urban
-use,user
+use
+user
 valid
-value, valuable 
-variety, variation
-vary, various, varied
+valuable
+value
+variation
+varied
+variety
+various
+vary
 vehicle
 version
 vertical
@@ -1039,8 +1437,10 @@ via
 victim
 victory
 video
-violent, violence
-virtual, virtually
+violence
+violent
+virtual
+virtually
 virtue
 visible
 vision
@@ -1049,10 +1449,12 @@ vital
 volume
 voluntary
 volunteer
-vote, voter
+vote
+voter
 wave
 way
-weak, weakness
+weak
+weakness
 weapon
 weekend
 welfare
@@ -1075,78 +1477,115 @@ writer
 yard
 youth
 zone
-a.m
+a.m.
 Absence
 Absolute
 Abstract
 Abuse
-Acceptable, acceptance
+Acceptable
+Acceptance
 Access
 Accompany
-Accordingly
 According to
-Accurate, inaccurate, accuracy, accurately
-Achieve, achievement
-Acknowledge,acknowledgment,acknowledged
-Acquire,acquisition
-Act,inactive,actor
+Accordingly
+Accuracy
+Accurate
+Accurately
+Achieve
+Achievement
+Acknowledge
+Acknowledged
+Acknowledgment
+Acquire
+Acquisition
+Act
+Actor
 Actual
-Adapt,adapted,adaptation
-Additional,additionally
+Adapt
+Adaptation
+Adapted
+Additional
+Additionally
 Address 
-Adequate,adequately,inadequate
+Adequate
+Adequately
+Adjustment
 Administration
-Adopt,adoption
-Adust, adjustment
-Advance, advanced
+Adopt
+Adoption
+Adust
+Advance
+Advanced
 Advocate
 Affair
 Affect
-Afford, affordable
+Afford
+Affordable
 Afterwards
-Agent, agency
-Aggression, aggressive behavior
-Agreement, in agreement
-Agriculture, agricultural
+Agency
+Agent
+Aggression
+Aggressivebehavior
+Agreement
+Agricultural
+Agriculture
 Aid
 Airport
 Allow
-Alter, alteration
+Alter
+Alteration
 Amongst
 Analogy
-Analyze, analysis
+Analysis
+Analyze
 Ancient
-Announce, announcement
+Announce
+Announcement
 Annual
-Anxious, anxiety
+Anxiety
+Anxious
 Anybody
 Anymore
 Anyway
-Apparent,apparently
+Apparent
+Apparently
 Application
-Appreciate, appreciation
+Appreciate
+Appreciation
 Approach
 Appropriate
-Approve, approval
+Approval
+Approve
 Approximately
+As
 Asian
 Aspect
-Aspire,aspiration
+Aspiration
+Aspire
 Assignment
-Assist, assistance
-Associate,association
-Assume,assumption
-Attachment,attach
+Assist
+Assistance
+Associate
+Association
+Assume
+Assumption
+Attach
+Attachment
 Attack
 Attempt
-Attend, attendance
+Attend
+Attendance
 Attitude
-Attract, attraction, attractive
+Attract
+Attraction
+Attractive
 Audience
 Authentic
 Author
 Authority
-Autonomy,autonomous 
+Autonomous
+Autonomy
+Autumn
 Average
 Avoid
 Award 
@@ -1169,12 +1608,14 @@ Beauty
 Beginning
 Belief
 Beneath
-Benefit,beneficial
+Beneficial
+Benefit
 Bias
 Bill
 Billion
 Bind
-Biology, biological
+Biological
+Biology
 Bird
 Block
 Bold
@@ -1182,18 +1623,22 @@ Bond
 Bone
 Boundary
 Break
-Breath, breathe
-Brief, briefly
+Breath
+Breathe
+Brief
+Briefly
 British
 Budget
 Building
 Burn
 Cabinet
-Calculate, calculation
+Calculate
+Calculation
 Campaign
 Cancer
 Candidate
-Capable, capability
+Capability
+Capable
 Capacity
 Capture
 Career
@@ -1203,96 +1648,136 @@ Catholic
 Cell
 Cellphone
 Census
-Central,centrally
+Central
+Centrally
 Certainly
 Chain
-Chair (man, woman, person)
+Chair
+Chairman
+Chairwoman
 Challenge
-Change (n)
+Change 
 Channel
 Characteristic
-Charge (v)
+Charge 
 Checklist
-Chemistry, chemical
+Chemical
+Chemistry
 Chicken 
 Chief 
 Chief of staff
 Chinese
 Christmas
 Church
-Circumstance(s)
+Circumstance
+Circumstances
 Cite
-Citizen, citizenship
-Civil, civilian
-Civilized, civilization
+Citizen
+Citizenship
+Civil
+Civilian
+Civilization
+Civilized
 Claim
-Clarify, clarification
+Clarification
+Clarify
 Classify
 Clearly
 Client
 Colleague
 Collection
 College
-Combine, combination
+Combination
+Combine
 Commander
 Comment
-Commerce, commercial
-Commit, commitment
+Commerce
+Commercial
+Commit
+Commitment
 Committee
 Community
-Comparison, comparative
-Compete, competition,competitive
+Comparative
+Comparison
+Compete
+Competition
+Competitive
 Completely
 Complex
 Component
-Compose,composition
-Comprehend, comprehension
+Compose
+Composition
+Comprehend
+Comprehension
 Comprehensive
-Comprise, comprised of
-Concentrate, concentration
+Comprise
+Comprisedof
+Concentrate
+Concentration
 Concept
-Concern, concerned
-Conclusion, conclude
+Concern
+Concerned
+Conclude
+Conclusion
 Conduct 
 Conference
-Confident, confidence
-Confirm, confirmation
+Confidence
+Confident
+Confirm
+Confirmation
 Conflict
 Consensus
-Consequence, consequently
-Considerable, considerably
+Consequence
+Consequently
+Considerable
+Considerably
 Consideration
-Considered (as)
+Considered 
 Consist
-Consistent, consistently
-Constant, constantly
+Consistent
+Consistently
+Constant
+Constantly
 Constitution
-Construct,  construction
-Consume, consumer
-Contain, container
+Construct
+Construction
+Consume
+Consumer
+Contain
+Container
 Contemporary
 Context
-Continuous, continuously
+Continuous
+Continuously
 Contradict
 Contrast
-Contribute, contribution
-Convention, conventional
+Contribute
+Contribution
+Convention
+Conventional
 Convert
 Convey
-Cooperate, cooperation
-Coordinate,coordination
+Cooperate
+Cooperation
+Coordinate
+Coordination
 Core 
 Correspond
 Council
 Count
 Cover
-Creative, creation
+Creation
+Creative
 Criminal
 Crisis
-Criterion (pl: criteria)
-Criticize, criticism, critical
+Criteria
+Criterion
+Critical
+Criticism
+Criticize
 Crucial
-Current,currently
+Current
+Currently
 Curriculum
 Customer
 Cut
@@ -1300,66 +1785,94 @@ Cycle
 Daily
 Damage 
 Data 
+Death
 Debate
 Debt
 Decade
 Decision
-Declare, declaration
+Declaration
+Declare
 Decline
 Decline 
 Decrease 
-Defend, defense 
+Defend
+Defense
 Define 
 Degree 
 Delegation
 Demand
-Democracy, democratic
-Demonstrate, demonstration
-Deny, denial
-Depart, departure
+Democracy
+Democratic
+Demonstrate
+Demonstration
+Denial
+Deny
+Depart
 Department
-Depress, depressed, depression, depressing
+Departure
+Depress
+Depressed
+Depressing
+Depression
 Derive
 Desert
 Design
 Desire
 Despite
-Destroy, destruction
-Detail, detailed
-Detect, detective, detection
-Determine, determination
-Develop, development
+Destroy
+Destruction
+Detail
+Detailed
+Detect
+Detection
+Detective
+Determination
+Determine
+Develop
+Development
 Device
 Devise
 Diagram
 Dialogue
-Die, death
+Die
 Difference
-Differentiate, differentiation
+Differentiate
+Differentiation
 Difficulty
 Dilemma
 Dimension
 Diminish
-Direct,  directly
+Direct
+Directly
 Discipline 
 Discovery
-Discriminate, discrimination
+Discriminate
+Discrimination
 Disease
-Dish(es)
+Dish
+Dishes
 Display
-Dispose, disposal
+Disposal
+Dispose
 Dissatisfied
-Distance, distant
-Distinction, distinguish
-Distribute,distribution
+Distance
+Distant
+Distinction
+Distinguish
+Distribute
+Distribution
 District
-Disturb, disturbance
-Diverse,diversity
+Disturb
+Disturbance
+Diverse
+Diversity
 Division
 Document
 Domain
 Domestic
-Dominant, dominate, domination
+Dominant
+Dominate
+Domination
 Double
 Dozen
 Draft
@@ -1368,89 +1881,138 @@ Driver
 Drug
 Dual
 Duty
-Dynamic(s)
+Dynamic
+Dynamics
 E.g
 Earn
 Easily
 Easter
 Eastern
-Economic,economically, economics,economy
+Economic
+Economically
+Economics
+Economy
 Edge
-Edit, editor
-Educate, educational
+Edit
+Editor
+Educate
+Educational
 Effective
-Efficient,efficiently, efficiency
+Efficiency
+Efficient
+Efficiently
 Egg
-Elect, election 
+Elect
+Election
 Electronic
 Element
 Elementary
-Eliminate, elimination
+Eliminate
+Elimination
 Elsewhere
-Emerge, emergence, emerging
+Emerge
+Emergence
 Emergency
-Emotion, emotional
-Emphasize, emphasis
-Employ, employee, employer, employment
+Emerging
+Emotion
+Emotional
+Emphasis
+Emphasize
+Employ
+Employee
+Employer
+Employment
 Enable
 Encounter
 End
 End
 Enemy
-Engage, engagement
-Engineer, engineering
+Engage
+Engagement
+Engineer
+Engineering
 Enhance
+Enquire
+Enquiry
 Ensure
 Enterprise
-Entire, entirely
+Entire
+Entirely
 Entitled
 Entrance
 Entry
 Environmental
-Equally, equality
-Equip, equipment
+Equality
+Equally
+Equip
+Equipment
 Equivalent
 Era
 Error
 Escape
-Essential, essentially
-Establish, established, establishment
-Estimate, estimation
+Essential
+Essentially
+Establish
+Established
+Establishment
+Estimate
+Estimation
 Etc. 
 Ethical
 Ethnic
 European
-Evaluate, evaluation
+Evaluate
+Evaluation
 Even
 Event
 Eventually
 Everywhere
 Evidence
-Evident, evidently
-Evolve, evolution 
-Exceed, excessive
+Evident
+Evidently
+Evolution
+Evolve
+Exceed
 Except 
+Excessive
 Exchange
-Exclude, exclusion
-Exclusive, exclusively
+Exclude
+Exclusion
+Exclusive
+Exclusively
 Executive
 Exercise
-Exhibit, exhibition
-Exist, existing, existence
+Exhibit
+Exhibition
+Exist
+Existence
+Existing
 Exit
-Expand, expansion
-Expectation(s)
-Expense(s), expensive
+Expand
+Expansion
+Expectation
+Expectations
+Expense
+Expenses
+Expensive
 Experience
 Experiment 
-Expert, expertise
-Explicit, explicitly
-Exploit, exploitation
-Explore, exploration
+Expert
+Expertise
+Explicit
+Explicitly
+Exploit
+Exploitation
+Exploration
+Explore
 Export
-Expose, exposed
+Expose
+Exposed
 Expression
-Extend, extended, extension, extent
+Extend
+Extended
+Extension
+Extent
 External
 Face 
 Facilitate
@@ -1460,48 +2022,67 @@ Factor
 Factory
 Failure
 Fairly
-Faith, faithful, faithfully
-Fall (= autumn)
+Faith
+Faithful
+Faithfully
+Fall
 Familiar
 Fan
-Farm, farmer
-Fashion, fashionable
-Favor, favorable
+Farm
+Farmer
+Fashion
+Fashionable
+Favor
+Favorable
 Feature
 Fee
-Feel, feeling
-Female, feminine
+Feel
+Feeling
+Female
+Feminine
 Figure
 File
-Financial, finance
+Finance
+Financial
 Findings
 Fire
 Firm 
 Firm 
 Fit 
-Flexible, flexibility 
+Flexibility
+Flexible
 Flight
 Flow
 Focus 
 Folk
 Forest
-Formal, formally
-Formal, formally, formality
+Formal
+Formal
+Formality
+Formally
+Formally
 Format
 Former
-Formulate, formula
+Formula
+Formulate
 Forum
 Fraction
 Frame
 Framework
-France, french
-Free, freedom
-Frequent, frequently, frequency
+France
+Free
+Freedom
+French
+Frequency
+Frequent
+Frequently
 Fuel
 Fully
-Function , functional
+Function 
+Functional
 Fund
-Fundamental, fundamentally
+Fundamental
+Fundamentally
 Further
 Furthermore
 Gain
@@ -1512,12 +2093,17 @@ Generate
 Generation
 Gentle
 Gentleman
-Geography, geographic
-German, germany
-Global, globally, globalization
+Geographic
+Geography
+German
+Germany
+Global
+Globalization
+Globally
 Goal
 God
-Gold, golden
+Gold
+Golden
 Goods
 Govern
 Grant
@@ -1528,7 +2114,9 @@ Growth
 Guard
 Guess
 Guest
-Guide (n & v), guidance, guidelines
+Guidance
+Guide
+Guidelines
 Gun
 Hand
 Handle
@@ -1538,110 +2126,158 @@ Hearing
 Heaven
 Hell
 Hence
-Hero, heroine
+Hero
+Heroine
 Hierarchy
 Highlight
 Highly 
 Hill
 Hire
-Historical, historically
+Historical
+Historically
 Hole
 Homemaker
-Hopeful, hopefully
+Hopeful
+Hopefully
 Horizontal
 Horse
 Host
+Human
 Human being
-Human, humanity (= mankind)
 Humanities
+Humanity
 Hypothesis
 I.e. 
 Ice
-Ideal, ideally, idealism, idealist
+Ideal
+Idealism
+Idealist
+Ideally
 Identical
 Identification
-Ignore, ignorant, ignorance
+Ignorance
+Ignorant
+Ignore
 Illegal
 Illness
-Illustrate, illustration
-Image, imagery
+Illustrate
+Illustration
+Image
+Imagery
 Imagination
 Immediate
-Immigrate, immigrant, immigration
+Immigrant
+Immigrate
+Immigration
 Immoral
 Impact
-Implementation, implement
-Implication, imply
+Implement
+Implementation
+Implication
 Implicit
+Imply
 Import
 Importance
 Impose
-Impress, impressive, impression
+Impress
+Impression
+Impressive
 Improvement
+Inaccurate
+Inactive
+Inadequate
+Inagreement
 Incentive
-Incident, incidentally
+Incident
+Incidentally
 Including
 Income
 Increasingly
 Independence
 Index
-India, indian
-Indicate, indication, indicator
+India
+Indian
+Indicate
+Indication
+Indicator
 Indirect
 Individually
-Industry, industrial
-Inevitable, inevitably
+Industrial
+Industry
+Inevitable
+Inevitably
 Inferior
 Influence
 Inform
 Informal
 Infrastructure
-Inherent, inherently
-Initial, initially
+Inherent
+Inherently
+Initial
+Initially
 Initiative
-Injury, injured
+Injured
+Injury
 Innovation
 Input
-Inquire, inquiry (enquire, enquiry)
+Inquire
+Inquiry
 Insight
 Insist
-Instant, instantly
-Institute, institution
+Instant
+Instantly
+Institute
+Institution
 Instruction
 Instrument
-Insurance, insure 
-Integrate, integration
+Insurance
+Insure
+Integrate
+Integration
 Integrity
 Intellectual
-Intelligence (millitary)
-Intend, intention
-Intense, intensive
-Interact, interaction, interactive
+Intelligence
+Intend
+Intense
+Intensive
+Intention
+Interact
+Interaction
+Interactive
 Interest
 Internal
-Interpret, interpretation
+Interpret
+Interpretation
 Intervention
-Introduce, introduction
+Introduce
+Introduction
 Invention
-Invest, investment
-Investigate, investigation
+Invest
+Investigate
+Investigation
+Investment
 Invisible
 Involvement
 Iron 
 Irresponsible
 Islam
-Japan, japanese
+Japan
+Japanese
 Joint
 Journal
-Journalist, journalism
+Journalism
+Journalist
 Judaism
-Judgment, judge
+Judge
+Judgment
 Jump
-Just,justice
+Just
+Justice
 Justify
-Key (adj)
+Key
 Kill
-King, kingdom
+King
+Kingdom
 Kit
 Kitchen
 Knee 
@@ -1657,12 +2293,14 @@ Last
 Late
 Latter
 Laughter
-Law, lawyer, 
+Law
+Lawyer
 Leadership
 Leaf
 Lean
 Leg
-Legal, legally
+Legal
+Legally
 Length
 Level
 Lift
@@ -1670,74 +2308,105 @@ Lift
 Light
 Lips
 List
-Literature, literary
+Literary
+Literature
 Local
-Locate, location
-Logic, logical
+Locate
+Location
+Logic
+Logical
 Long-term
-Look(s)
+Look
+Looks
 Loss
 Lovely
 Lower
 Luckily
 Madam
-Maintain, maintenance
-Major, majority
-Male, masculine
-Manage ,manager, management, 
+Maintain
+Maintenance
+Major
+Majority
+Male
+Manage 
+Management
+Manager
+Mankind
 Manner
 Manners
 Manufacture
-Market, marketing
-Marriage, married
-Mass, massive
+Market
+Marketing
+Marriage
+Married
+Masculine
+Mass
+Massive
 Master
 Mean
-Measure, measurement
+Measure
+Measurement
 Mechanism
 Media
-Medical, medicine
+Medical
+Medicine
 Membership
-Mental, mentally
-Merely, mere
+Mental
+Mentally
+Mere
+Merely
 Metal
 Method
 Mile
 Military
-Minimal, minimize
-Minister, ministry
-Minority, minor
+Minimal
+Minimize
+Minister
+Ministry
+Minor
+Minority
 Mirror
 Miss
 Mission
 Mobile
 Mode
 Model 
-Modify, modification
+Modification
+Modify
 Monitor
-Moral, morality
+Moral
+Morality
 Moreover
 Mostly
-Motive, motivate, motivation
+Motivate
+Motivation
+Motive
 Motor
 Movement
-Multiple, multiply
-Municipal, municipality
+Multiple
+Multiply
+Municipal
+Municipality
 Murder
-Mutual, mutually
+Mutual
+Mutually
 Myth
 Name
-Natural, naturally
+Natural
+Naturally
 Nearly
-Necessarily, necessity
+Necessarily
+Necessity
 Neck
 Need
 Negative
-Negotiate, negotiation
+Negotiate
+Negotiation
 Net
 Network
 Neutral
-Nevertheless, nonetheless
+Nevertheless
+Nonetheless
 Norm
 Normally
 Northern
@@ -1747,61 +2416,91 @@ Novel
 Nuclear
 Numerous
 Nurse
-Object, objection
+Object
+Objection
 Objective 
 Objective 
-Oblige, obligation
-Observe, observation 
+Obligation
+Oblige
+Observation
+Observe
 Obtain
-Obvious, obviously
+Obvious
+Obviously
 Occasion
 Occasionally
-Occupy, occupation
+Occupation
+Occupy
 Occur
 Ocean
-Offend, offence, offender
+Offence
+Offend
+Offender
 Offense
-Officer, official, officially
+Officer
+Official
+Officially
 Ongoing
 Opening
-Oppose, opposition
-Option, optional, optionally
+Oppose
+Opposition
+Option
+Optional
+Optionally
 Organization 
-Origin, original, originally
+Origin
+Original
+Originally
 Otherwise
 Outcome
 Outline
 Output
 Overall
-Own, owner
+Own
+Owner
 P.m.
 Package
-Pain, painful
-Paint, painting, painter
+Pain
+Painful
+Paint
+Painter
+Painting
 Parliament
-Part, partial
-Participate, participation
+Part
+Partial
+Participate
+Participation
 Particularly
 Partly
 Passage
 Passive
 Pattern
-Pay, payment
-Peace, peaceful, peacefully
+Pay
+Payment
+Peace
+Peaceful
+Peacefully
 Pepper
 Per
-Perceive, perception
-Percent, percentage
-Perform, performance
+Perceive
+Percent
+Percentage
+Perception
+Perform
+Performance
 Period
-Permanent, permenantly
-Permit, permission
-Personal, personally 
+Permanent
+Permenantly
+Permission
+Permit
+Personal
 Personality
+Personally
 Perspective
 Persuade
 Phase
-Phenomenon, phenomena
+Phenomena
+Phenomenon
 Physical
 Physics
 Pilot 
@@ -1810,80 +2509,111 @@ Planet
 Planning
 Plant
 Plastic
-Play, player
+Play
+Player
 Pleasure 
 Pocket
 Point
 Point
 Policy
-Politics, politician, political
+Political
+Politician
+Politics
 Pool
 Population
-Positive, positively
-Possess, possession, possessive
-Possibly, possibility
+Positive
+Positively
+Possess
+Possession
+Possessive
+Possibility
+Possibly
 Post 
 Potential 
 Pour
 Poverty
 Practical
 Practically
-Precise, precisely
-Predict, prediction 
-Prepare, preparation
-Present, presence
+Precise
+Precisely
+Predict
+Prediction
+Preparation
+Prepare
+Presence
+Present
 Presentation
 President
+Press
 Press 
-Press, pressure
+Pressure
 Pretty
 Pretty
-Prevent, prevention
-Previous, previously
+Prevent
+Prevention
+Previous
+Previously
 Pride
 Primary
 Principal
 Principle
-Prior, priority
-Prison, prisoner
-Probable, probability
+Prior
+Priority
+Prison
+Prisoner
+Probability
+Probable
 Problematic
-Proceed, procedure
+Procedure
+Proceed
 Process
-Produce, product, production
-Profession, professional
+Produce
+Product
+Production
+Profession
+Professional
 Profile
-Profit, profitable
-Progress, progressive
+Profit
+Profitable
+Progress
+Progressive
 Project
 Project
 Promise
-Promote, promotion
+Promote
+Promotion
 Properly
 Property
 Proportion
-Propose, proposal 
+Proposal
+Propose
 Prospect
 Protection
 Protest
 Provision
-Psychology, psychological
-Publish, publication
+Psychological
+Psychology
+Publication
+Publish
 Pull
 Pursue
 Quality
 Quantity
-Race, racial, racism
+Race
+Racial
+Racism
 Radical
 Random
 Range
-Rapid, rapidly
+Rapid
+Rapidly
 Rate
 Rating
 Ratio
 Rational
 Rationale
-React, reaction
+React
+Reaction
 Readily
 Reality
 Reasonable
@@ -1891,44 +2621,69 @@ Recall
 Receipt
 Reception
 Recognition
-Recommend, recommendation
-Recover, recovery
-Recruit, recruitment
-Reduce, reduction
-Refer, reference
-Reflect, reflection
+Recommend
+Recommendation
+Recover
+Recovery
+Recruit
+Recruitment
+Reduce
+Reduction
+Refer
+Reference
+Reflect
+Reflection
 Reform
 Refugee
-Refuse, refusal
+Refusal
+Refuse
 Regard
 Regarding
 Regime
-Region, regional
+Region
+Regional
 Regulation
 Reinforce
-Reject, rejection
+Reject
+Rejection
 Relationship
-Relative, relatively
+Relative
+Relatively
 Release
-Relevant, relevance
-Relief, relieved
-Rely,reliable
-Represent, representative, representation
-Require,required, requirement
+Relevance
+Relevant
+Reliable
+Relief
+Relieved
+Rely
+Represent
+Representation
+Representative
+Require
+Required
+Requirement
 Research
-Resident, reside, residential
-Resist, resistance
-Resolve,resolution
+Reside
+Resident
+Residential
+Resist
+Resistance
+Resolution
+Resolve
 Resource
 Respectively
-Respond, response
+Respond
+Response
 Restaurant
-Restrict, restriction
+Restrict
+Restriction
 Retain
 Reveal
 Review
-Revise, revision
-Revolution, revolutionary
+Revise
+Revision
+Revolution
+Revolutionary
 Ring
 Ritual
 Rock
@@ -1939,36 +2694,46 @@ Route
 Row
 Rural
 Rush
-Russia, russian
+Russia
+Russian
 Safety
 Salary
 Sample
 Sanctions
-Satisfy, satisfaction
+Satisfaction
+Satisfy
 Scale
 Scenario
 Scene
 Scenery
 Scheme
-Science, scientific, scientist
+Science
+Scientific
+Scientist
 Score
 Screen
 Secondly
 Section
 Sector
-Secure, security
+Secure
+Security
 Seek
-Select, selection
+Select
+Selection
 Senior
-Sensitive, sensitivity
-Separate, separation
+Sensitive
+Sensitivity
+Separate
+Separation
 Sequence
 Series
 Seriously
 Servant
 Setting
-Settle, settlement
-Severe, severely
+Settle
+Settlement
+Severe
+Severely
 Shadow
 Shake
 Share
@@ -1978,15 +2743,20 @@ Shot
 Shoulder
 Sight
 Signal
-Significant, significantly, significance
+Significance
+Significant
+Significantly
 Sir
-Skill, skilled
-Slight, slightly
+Skill
+Skilled
+Slight
+Slightly
 Slip
 Snow
 Software
 Soldier
-Sole,solely
+Sole
+Solely
 Solution
 Somehow
 Somewhat
@@ -1996,9 +2766,11 @@ Source
 Southern
 Spatial
 Specialize
-Specify, specific specifically
+Specificspecifically
+Specify
 Speech
-Spirit, spiritual
+Spirit
+Spiritual
 Spot
 Spread
 Stable
@@ -2014,33 +2786,45 @@ Stimulate
 Stock
 Stone
 Storm
-Strategy, strategic
-Strength, strengthen
-Stress, stressful
+Strategic
+Strategy
+Strength
+Strengthen
+Stress
+Stressful
 Stretch
 Strongly
 Structure
 Struggle
 Studio
 Subjective
-Subsequent, subsequently
+Subsequent
+Subsequently
 Substance
 Substantial
-Success, successful, successfully
-Suffer, suffering
-Sufficient, sufficiently
+Success
+Successful
+Successfully
+Suffer
+Suffering
+Sufficient
+Sufficiently
 Sugar
 Suit
-Suit, suitable
+Suit
+Suitable
 Sum
-Summarize, summary
+Summarize
+Summary
 Supply
 Surely
 Surface
 Surgery
-Surround, surroundings
+Surround
+Surroundings
 Survey
-Survive, survival
+Survival
+Survive
 Suspect
 Sustain
 Symbol
@@ -2050,14 +2834,17 @@ Talk
 Target
 Task
 Taste
-Teaching(s)
+Teaching
+Teachings
 Tear
 Tear
 Technical
 Technique
-Technology, technological 
+Technological
+Technology
 Temperature
-Temporary, temporarily
+Temporarily
+Temporary
 Tendency
 Term
 Terms
@@ -2066,7 +2853,8 @@ Theater
 Theme
 Theory
 Thereby
-Threat, threaten
+Threat
+Threaten
 Thus
 Tie
 Tiny
@@ -2078,11 +2866,14 @@ Totally
 Touch
 Tough
 Track
-Tradition, traditional, traditionally
+Tradition
+Traditional
+Traditionally
 Transfer
 Transform
 Transmit
-Transport, transportation
+Transport
+Transportation
 Travel
 Trek
 Trend
@@ -2092,23 +2883,32 @@ Truly
 Trust
 Truth
 Twice
-Typical,typically
+Typical
+Typically
 Unable
-Unemployed, unemployment, 
+Unemployed
+Unemployment
 Unfortunately
 Union
 Unique
-Unite, united
-Universe,universal
+Unite
+United
+Universal
+Universe
 University
 Unlikely
 Upper
 Urban
-Use,user
+Use
+User
 Valid
-Value, valuable 
-Variety, variation
-Vary, various, varied
+Valuable
+Value
+Variation
+Varied
+Variety
+Various
+Vary
 Vehicle
 Version
 Vertical
@@ -2116,8 +2916,10 @@ Via
 Victim
 Victory
 Video
-Violent, violence
-Virtual, virtually
+Violence
+Violent
+Virtual
+Virtually
 Virtue
 Visible
 Vision
@@ -2126,10 +2928,12 @@ Vital
 Volume
 Voluntary
 Volunteer
-Vote, voter
+Vote
+Voter
 Wave
 Way
-Weak, weakness
+Weak
+Weakness
 Weapon
 Weekend
 Welfare
