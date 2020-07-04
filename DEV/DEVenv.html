@@ -4,7 +4,7 @@
 <head>
 <!-- prepare for PDF-->
 <!-- jQuery library  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <!-- jsPDF library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
@@ -13,15 +13,6 @@
     <script type="text/javascript">
 
 function createPDF(){
-
-    var doc = new jsPDF();
-    doc.page=1; // use this as a counter.
-    function footer(){
-        doc.setFontSize(12);
-        doc.setTextColor(192, 192, 192);
-        doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
-    doc.page ++;
-};
 
     var text = document.getElementById('divetext').innerText;
     var orginalWordList = document.getElementById('divwl').value;
@@ -35,9 +26,20 @@ function createPDF(){
             }
 
             if (foundWords == "") {
-                alert('Words found in text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
+                alert('Words Found in Text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
                 return false;
             }
+
+  
+         var doc = new jsPDF();
+         doc.page=1; // use this as a counter.
+         function footer(){
+             doc.setFontSize(12);
+             doc.setTextColor(192, 192, 192);
+             doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
+             doc.page ++;
+        };
+  
 
 /*var img = new Image();
 img.crossOrigin = "Anonymous";
@@ -45,7 +47,7 @@ img.src="owlCircle.png";
 doc.addImage(img, 'png', 200, 1);
 */
     //set the title
-    var orgText = 'Original text';
+   var orgText = 'Original text';
     doc.setFontSize(22);
     doc.setTextColor(70, 0, 0);
     doc.setFontType("bold");
@@ -61,7 +63,9 @@ doc.addImage(img, 'png', 200, 1);
 
     //Add new page for found words
     doc.addPage();
-    var wordsFoundInText = 'Words found in the text';
+    var count = (foundWords.match(/[a-zA-Z]\n/g)).length;
+    var wordsFoundInText = count + ' Words Found in the Text';
+
     doc.setFontSize(22);
     doc.setTextColor(70, 0, 0);
     doc.setFontType("bold");
@@ -105,7 +109,7 @@ doc.addImage(img, 'png', 200, 1);
                 document.getElementById(id).value = "";
             } else if (id === 'divsl') {
                 document.getElementById(id).innerHTML = "";
-                document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words found in text</span>';
+                document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words Found in Text</span>';
                 document.getElementById("divurl").innerHTML = "";
 
             } else {
@@ -196,16 +200,18 @@ doc.addImage(img, 'png', 200, 1);
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
 
+            var wordCounter = 1;
+
             for (var b = 0; b < arrwl.length; b++) {
 
                 if (strippedText.indexOf(arrwl[b]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[b] + '<br>';
-                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>'//; + '<br>';
+                    document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
-
+            
             var wordsFound = document.getElementById("divsl").innerText;
             
             if (wordsFound == '') {
@@ -219,8 +225,7 @@ doc.addImage(img, 'png', 200, 1);
                 else
                     document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
-            
-            
+
             var arrtext = [];
             strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
@@ -330,7 +335,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divca {
-            height: 450px;
+            height: 450px !important;
             width: 95%;
             background-color: #D1F1F8;
             color: black;
@@ -504,7 +509,7 @@ doc.addImage(img, 'png', 200, 1);
 
             <td style="width: 50%;">
                 
-                <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
+                <label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>

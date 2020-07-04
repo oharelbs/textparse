@@ -35,7 +35,7 @@ function createPDF(){
             }
 
             if (foundWords == "") {
-                alert('Words found in text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
+                alert('Words Found in Text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
                 return false;
             }
 
@@ -61,7 +61,8 @@ doc.addImage(img, 'png', 200, 1);
 
     //Add new page for found words
     doc.addPage();
-    var wordsFoundInText = 'Words found in the text';
+    var count = (foundWords.match(/[a-zA-Z]\n/g)).length;
+    var wordsFoundInText = count + ' Words Found in the Text';
     doc.setFontSize(22);
     doc.setTextColor(70, 0, 0);
     doc.setFontType("bold");
@@ -504,7 +505,7 @@ doc.addImage(img, 'png', 200, 1);
 
             <td style="width: 50%;">
                 
-                <label id="wordsInText" for="simlist"><font class="headlines">Words found in text</font></label>
+                <label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
