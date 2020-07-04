@@ -190,9 +190,9 @@ doc.addImage(img, 'png', 200, 1);
                  nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
                      
                 }
-                document.getElementById("divwl").value += nt;   
+                document.getElementById("divwl").value += nt;
             }
- 
+
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
 
@@ -206,18 +206,20 @@ doc.addImage(img, 'png', 200, 1);
                 }
             }
 
-            var wordsFound = document.getElementById("divsl").innerHTML;
+            var wordsFound = document.getElementById("divsl").innerText;
+            
             if (wordsFound == '') {
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
                 return;
             } else if (wordsFound != '') {
                 //check if one word
-                var count = (wordsFound.match(/<br>*/g)).length;
+                var count = (wordsFound.match(/[a-zA-Z]\n/g)).length;
                 if(count == 1)
                     document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + '1/ ' + arrwl.length + ' word found</span>';
                 else
                     document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
-                }
+            }
+            
             
             var arrtext = [];
             strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
