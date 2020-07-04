@@ -2,9 +2,10 @@
 <html>
 <!--  https://oharelbs.github.io/textparse/ -->
 <head>
+    <h3 style="text-align: center">Find Words in Text</h3>
 <!-- prepare for PDF-->
 <!-- jQuery library  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <!-- jsPDF library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
@@ -13,15 +14,6 @@
     <script type="text/javascript">
 
 function createPDF(){
-
-    var doc = new jsPDF();
-    doc.page=1; // use this as a counter.
-    function footer(){
-        doc.setFontSize(12);
-        doc.setTextColor(192, 192, 192);
-        doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
-    doc.page ++;
-};
 
     var text = document.getElementById('divetext').innerText;
     var orginalWordList = document.getElementById('divwl').value;
@@ -39,13 +31,24 @@ function createPDF(){
                 return false;
             }
 
-var img = new Image();
+  
+         var doc = new jsPDF();
+         doc.page=1; // use this as a counter.
+         function footer(){
+             doc.setFontSize(12);
+             doc.setTextColor(192, 192, 192);
+             doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
+             doc.page ++;
+        };
+  
+
+/*var img = new Image();
 img.crossOrigin = "Anonymous";
 img.src="owlCircle.png";
 doc.addImage(img, 'png', 200, 1);
-
+*/
     //set the title
-    var orgText = 'Original text';
+   var orgText = 'Original text';
     doc.setFontSize(22);
     doc.setTextColor(70, 0, 0);
     doc.setFontType("bold");
@@ -63,6 +66,7 @@ doc.addImage(img, 'png', 200, 1);
     doc.addPage();
     var count = (foundWords.match(/[a-zA-Z]\n/g)).length;
     var wordsFoundInText = count + ' Words Found in the Text';
+
     doc.setFontSize(22);
     doc.setTextColor(70, 0, 0);
     doc.setFontType("bold");
@@ -106,7 +110,7 @@ doc.addImage(img, 'png', 200, 1);
                 document.getElementById(id).value = "";
             } else if (id === 'divsl') {
                 document.getElementById(id).innerHTML = "";
-                document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words found in text</span>';
+                document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words Found in Text</span>';
                 document.getElementById("divurl").innerHTML = "";
 
             } else {
@@ -197,16 +201,19 @@ doc.addImage(img, 'png', 200, 1);
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').split('XXX'); //array after split
 
+ //           var wordCounter = 1; //use this if you want to add numbers to the words
+
             for (var b = 0; b < arrwl.length; b++) {
 
                 if (strippedText.indexOf(arrwl[b]) > -1) {
 
-                    document.getElementById("divsl").innerHTML += arrwl[b] + '<br>';
-                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>'//; + '<br>';
+ //                   document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>'; //uncomment this if you eant to add numbers to the words
+                     document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
                     document.getElementById("divsl").style.color = 'red';
                 }
             }
-
+            
             var wordsFound = document.getElementById("divsl").innerText;
             
             if (wordsFound == '') {
@@ -220,8 +227,7 @@ doc.addImage(img, 'png', 200, 1);
                 else
                     document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
-            
-            
+
             var arrtext = [];
             strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
@@ -322,7 +328,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divetext {
-            height: 450px;
+            height: 420px;
             width: 95%;
             background-color: white;
             color: black;
@@ -331,7 +337,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divca {
-            height: 450px;
+            height: 420px !important;
             width: 95%;
             background-color: white;
             color: black;
@@ -340,7 +346,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .wrdlstText {
-            height: 300px;
+            height: 280px;
             width: 20%;
             color: black;
             border: 1px solid;
@@ -465,7 +471,7 @@ doc.addImage(img, 'png', 200, 1);
     }
     </style>
 
-    <body style="background-color:rgb(235, 238, 223);"></style>
+    <body  style="background-color:rgb(235, 238, 223);"></style>
 
         <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
             <tbody>
@@ -477,11 +483,10 @@ doc.addImage(img, 'png', 200, 1);
                     </td>
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
-                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button><br>
+                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
                     </td>
                 </tr>
-            <td style="width: 50%;">
-                
+            <td id="489" style="width: 50%;">
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only.</font></div>
@@ -495,31 +500,29 @@ doc.addImage(img, 'png', 200, 1);
                         <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                         <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
                         <div id="divpdf" style="float: right" button class="pdfButton" onclick="createPDF()">PDF</button>
-                        </div>>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
                 <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
             </td>
-
-            <td style="width: 50%;">
-                
+            <td id="510" style="width: 50%;">
+<!--                <br><br> -->
                 <label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
-                
-                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+<!--                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
                 <div class="mail-image"><input type="image" onclick="window.location.href='mailto:oharel@gmail.com?subject=Comments and suggestions';"  src="emailOwl.png"  alt="email me"></input>
-                    <span class="imagetooltiptext">email me</span>
-                </div>
+                    <span class="imagetooltiptext">email me</span></div> -->
+                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <div class="mail-image"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions">Click here to email me</a>
+<!--                    <span class="imagetooltiptext">email me</span></div> -->
             </td>
-            <tr>
+            <tr id="521">
             </tr>
         </table>
     </body>
-
-
 </head>
 </html>

@@ -2,6 +2,7 @@
 <html>
 <!--  https://oharelbs.github.io/textparse/ -->
 <head>
+    <h3 style="text-align: center">Find Words in Text</h3>
 <!-- prepare for PDF-->
 <!-- jQuery library  -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -326,7 +327,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divetext {
-            height: 450px;
+            height: 420px;
             width: 95%;
             background-color: white;
             color: black;
@@ -335,7 +336,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divca {
-            height: 450px !important;
+            height: 420px !important;
             width: 95%;
             background-color: white;
             color: black;
@@ -344,7 +345,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .wrdlstText {
-            height: 300px;
+            height: 280px;
             width: 20%;
             color: black;
             border: 1px solid;
@@ -481,11 +482,10 @@ doc.addImage(img, 'png', 200, 1);
                     </td>
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
-                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button><br>
+                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
                     </td>
                 </tr>
-            <td style="width: 50%;">
-                
+            <td id="489" style="width: 50%;">
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only.</font></div>
@@ -499,31 +499,29 @@ doc.addImage(img, 'png', 200, 1);
                         <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                         <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
                         <div id="divpdf" style="float: right" button class="pdfButton" onclick="createPDF()">PDF</button>
-                        </div>>
+                        </div>
                     </div>
                 </div>
                 <br>
                 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
                 <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
             </td>
-
-            <td style="width: 50%;">
-                
+            <td id="510" style="width: 50%;">
+<!--                <br><br> -->
                 <label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label>
                 <!-- this is the URL side -->
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
-                
-                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+<!--                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
                 <div class="mail-image"><input type="image" onclick="window.location.href='mailto:oharel@gmail.com?subject=Comments and suggestions';"  src="emailOwl.png"  alt="email me"></input>
-                    <span class="imagetooltiptext">email me</span>
-                </div>
+                    <span class="imagetooltiptext">email me</span></div> -->
+                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <div class="mail-image"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions">Click here to email me</a>
+<!--                    <span class="imagetooltiptext">email me</span></div> -->
             </td>
-            <tr>
+            <tr id="521">
             </tr>
         </table>
     </body>
-
-
 </head>
 </html>
