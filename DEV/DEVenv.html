@@ -16,8 +16,12 @@
 <script type="text/javascript">
 
 function getBandThreeWords() {
-    var mytext = $( "#divwl" ).load( "band3.html div#BList3");
- 
+  //  var mytext = $( "#divwl" ).load( "https://raw.githubusercontent.com/oharelbs/textparse/master/DEV/band3.html div#BList3");
+ //alert()
+
+ jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
+    document.getElementById('divwl').value = data;
+});
 }
 
 
