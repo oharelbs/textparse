@@ -17,13 +17,13 @@
 
 function getBandThreeWords(element) {
     var boxchecked = element.checked;
-    if(boxchecked == false) {
-        document.getElementById('divwl').value = "";  
-    } else {
- jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
-    document.getElementById('divwl').value = data;
-});
-}
+        if(boxchecked == false) {
+            document.getElementById('divwl').value = "";  
+        } else {
+            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
+            document.getElementById('divwl').value = data;
+        });
+    }
 }
 
 
