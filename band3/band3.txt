@@ -798,7 +798,6 @@ key
 kill
 king
 kingdom
-kit
 kitchen
 knee 
 knowledge
@@ -2276,7 +2275,6 @@ Key
 Kill
 King
 Kingdom
-Kit
 Kitchen
 Knee 
 Knowledge
