@@ -211,10 +211,14 @@ doc.addImage(img, 'png', 200, 1);
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
                 return;
             } else if (wordsFound != '') {
-                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length + 1;
-                document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+                //check if one word
+                var count = (wordsFound.match(/<br>*/g)).length;
+                if(count == 1)
+                    document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + '1/ ' + arrwl.length + ' word found</span>';
+                else
+                    document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
                 }
-
+            
             var arrtext = [];
             strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(',');//remove new lines and anything with a space
             arrtext = strippedText.toString().split(',');
@@ -315,7 +319,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divetext {
-            height: 500px;
+            height: 450px;
             width: 95%;
             background-color: #F9DEDD;
             color: black;
@@ -324,7 +328,7 @@ doc.addImage(img, 'png', 200, 1);
         }
 
         .divca {
-            height: 500px;
+            height: 450px;
             width: 95%;
             background-color: #D1F1F8;
             color: black;
@@ -451,9 +455,9 @@ doc.addImage(img, 'png', 200, 1);
             background-color: black;
             color: #fff;
             text-align: center;
-            font-size: 20px;
+            font-size: 15px;
             border-radius: 3px;
-            width: 250px;
+            width: 200px;
             
     }
     </style>
