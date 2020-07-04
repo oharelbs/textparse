@@ -136,6 +136,8 @@ doc.addImage(img, 'png', 200, 1);
         function clearText(id, labelId) {
             if (id === 'divwl') {
                 document.getElementById(id).value = "";
+                document.getElementById("band2").checked = false;
+                document.getElementById("band3").checked = false;
             } else if (id === 'divsl') {
                 document.getElementById(id).innerHTML = "";
                 document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words Found in Text</span>';
@@ -264,15 +266,13 @@ doc.addImage(img, 'png', 200, 1);
             temporalDivElement.innerHTML = orgtextf;
             var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
-
-
             for (var q = 0; q < arrtext.length; q++) {
 
-                // we want to know if arrtext[b] is found in arrwl
+                // we want to know if arrtext[q] is found in arrwl
                 for (var s = 0; s < arrwl.length; s++) {
 
-                if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
-                        
+                //if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+                    if (arrtext[q] == arrwl[s]) { //this will find  the word      
                         // we have found arrwl[s] in arrtext[q]
                         var words = arrwl.toString().split(',');
 
@@ -517,7 +517,7 @@ doc.addImage(img, 'png', 200, 1);
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only.</font></div>
-                    <input type="checkbox" id="band2" name="band2" onClick="getBandTwoWords(this)" /><label>Band II Words</label><br>
+                    <input type="checkbox" style="opacity:0;" id="band2" name="band2" onClick="getBandTwoWords(this)" /><label></label><br><!--remove label: Band II Words-->
                     <input type="checkbox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label>Band III Words</label>
                     <br><br>
                     <div>
