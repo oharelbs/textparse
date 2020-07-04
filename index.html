@@ -324,7 +324,7 @@ doc.addImage(img, 'png', 200, 1);
         .divetext {
             height: 450px;
             width: 95%;
-            background-color: #F9DEDD;
+            background-color: white;
             color: black;
             border: 1px solid;
             overflow: scroll;
@@ -333,7 +333,7 @@ doc.addImage(img, 'png', 200, 1);
         .divca {
             height: 450px;
             width: 95%;
-            background-color: #D1F1F8;
+            background-color: white;
             color: black;
             border: 1px solid;
             overflow: scroll;
@@ -465,7 +465,7 @@ doc.addImage(img, 'png', 200, 1);
     }
     </style>
 
-    <body>
+    <body style="background-color:rgb(235, 238, 223);"></style>
 
         <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
             <tbody>
@@ -473,11 +473,11 @@ doc.addImage(img, 'png', 200, 1);
                     <td style="width: 50%;">
                         <label for="emtext"><font class="headlines">Text (paste it below)</font></label><br>
                         <div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
-                        <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Field</button>
+                        <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Text</button>
                     </td>
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
-                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Field</button><br>
+                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button><br>
                     </td>
                 </tr>
             <td style="width: 50%;">
@@ -500,7 +500,7 @@ doc.addImage(img, 'png', 200, 1);
                 </div>
                 <br>
                 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
-                <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
+                <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
             </td>
 
             <td style="width: 50%;">
@@ -510,7 +510,7 @@ doc.addImage(img, 'png', 200, 1);
                 <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
                 <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
                 
-                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Field</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
                 <div class="mail-image"><input type="image" onclick="window.location.href='mailto:oharel@gmail.com?subject=Comments and suggestions';"  src="emailOwl.png"  alt="email me"></input>
                     <span class="imagetooltiptext">email me</span>
                 </div>
