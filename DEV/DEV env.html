@@ -8,7 +8,7 @@
 
 <!-- jsPDF library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
-<script src="https://unpkg.com/html2canvas@1.0.0-rc.5/dist/html2canvas.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
     <script type="text/javascript">
 
@@ -38,8 +38,6 @@ function createPDF(){
                 alert('Words found in text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
                 return false;
             }
-
-
 
 /*var img = new Image();
 img.crossOrigin = "Anonymous";
@@ -78,7 +76,6 @@ doc.addImage(img, 'png', 1, 2); */
     doc.save('document.pdf');
 
 }
-
 
         function copyFunction(id) {
             //this copies a regular textarea field
@@ -220,7 +217,7 @@ doc.addImage(img, 'png', 1, 2); */
 
             } else if (wordsFound != '') {
 
-                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length+1;
+                var count = (wordsFound.match(/<br>[a-zA-z]/g)).length + 1;
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
             var arrtext = [];
