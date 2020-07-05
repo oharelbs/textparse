@@ -33,7 +33,6 @@ although
 altogether
 among
 amount
-and
 announcement
 another
 any
@@ -709,7 +708,6 @@ Although
 Altogether
 Among
 Amount
-And
 Announcement
 Another
 Any
