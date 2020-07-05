@@ -266,15 +266,13 @@ doc.addImage(img, 'png', 200, 1);
             temporalDivElement.innerHTML = orgtextf;
             var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
-
-
             for (var q = 0; q < arrtext.length; q++) {
 
-                // we want to know if arrtext[b] is found in arrwl
+                // we want to know if arrtext[q] is found in arrwl
                 for (var s = 0; s < arrwl.length; s++) {
 
-                if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
-                        
+                //if (arrtext[q].indexOf(arrwl[s]) > -1) { //this will find a part of the word
+                    if (arrtext[q] == arrwl[s]) { //this will find  the word      
                         // we have found arrwl[s] in arrtext[q]
                         var words = arrwl.toString().split(',');
 
@@ -316,7 +314,6 @@ doc.addImage(img, 'png', 200, 1);
 
             return answer + answer1 + answer2 + answer3 + answer4;
         }
-
     </script>
 
     <style>
@@ -496,8 +493,24 @@ doc.addImage(img, 'png', 200, 1);
             font-size: 15px;
             border-radius: 3px;
             width: 200px;
-            
-    }
+        }   
+
+        .limitations {
+            color: red;
+        }
+        .limitations:hover:after {
+            display: inline-block;
+            content: attr(data-tooltip);
+            white-space: pre-wrap;
+            position: absolute;
+            background-color: black;
+            color: #fff;
+            text-align: left;
+            font-size: 20px;
+            border-radius: 3px;
+            width: 400px;
+        }
+
     </style>
 
     <body  style="background-color:rgb(235, 238, 223);"></style>
@@ -518,7 +531,8 @@ doc.addImage(img, 'png', 200, 1);
             <td id="489" style="width: 50%;">
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
-                    <div><font style="font-weight: bold">Use lower case only.</font></div>
+                    <div><font style="font-weight: bold">Use lower case only and other </font><font style="text-decoration: underline;" class="limitations" 
+                        data-tooltip="1. If something goes wrong, refresh the page(F5).&#xa;2. We're currently finding parts of words as well.&#xa;3. Use at your own discretion.">limitations</font></div>
                     <input type="checkbox" style="opacity:0;" id="band2" name="band2" onClick="getBandTwoWords(this)" /><label></label><br><!--remove label: Band II Words-->
                     <input type="checkbox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label>Band III Words</label>
                     <br><br>
