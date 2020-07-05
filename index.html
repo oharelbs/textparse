@@ -41,7 +41,7 @@ function getBandTwoWords(element) {
     }
 }
 
-function createPDF(){
+/*function createPDF(){
 
     var text = document.getElementById('divetext').innerText;
     var orginalWordList = document.getElementById('divwl').value;
@@ -109,6 +109,7 @@ doc.addImage(img, 'png', 200, 1);
     doc.save('document.pdf');
 
 }
+*/
 
         function copyFunction(id) {
             //this copies a regular textarea field
@@ -468,7 +469,7 @@ doc.addImage(img, 'png', 200, 1);
         .mail-image:hover .imagetooltiptext {
             visibility: visible;
         }
-        .pdfButton {
+        /*.pdfButton {
             background-color: #1c87c9;
             border: none;
             border-radius: 8px;
@@ -482,7 +483,6 @@ doc.addImage(img, 'png', 200, 1);
             margin: 2px 2px;
             cursor: pointer;
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-            
         }
         .pdfButton:hover:after { 
             content: "Export text and found words"; 
@@ -493,7 +493,8 @@ doc.addImage(img, 'png', 200, 1);
             font-size: 15px;
             border-radius: 3px;
             width: 200px;
-        }   
+        }
+        */
 
         .limitations {
             color: red;
@@ -544,7 +545,7 @@ doc.addImage(img, 'png', 200, 1);
                         <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
                         <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                         <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
-                        <div id="divpdf" style="float: right" button class="pdfButton" onclick="createPDF()">PDF</button>
+                        <!--<div id="divpdf" style="float: right" button class="pdfButton" onclick="createPDF()">PDF</button> -->
                         </div>
                     </div>
                 </div>
