@@ -54,7 +54,6 @@ arrangement
 arrive
 art
 article
-as
 asleep
 assessment
 available
@@ -200,7 +199,7 @@ east
 education
 effect
 effort
-either...or
+either
 electric
 else
 embarrassed
@@ -599,7 +598,6 @@ tend
 term
 terrible
 text
-the
 theirs
 therefore
 thick
@@ -732,7 +730,6 @@ Arrangement
 Arrive
 Art
 Article
-As
 Asleep
 Assessment
 Available
@@ -878,7 +875,7 @@ East
 Education
 Effect
 Effort
-Either...or
+Either
 Electric
 Else
 Embarrassed
@@ -1276,7 +1273,6 @@ Tend
 Term
 Terrible
 Text
-The
 Theirs
 Therefore
 Thick
