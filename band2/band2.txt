@@ -635,7 +635,6 @@ ugly
 under
 unit
 unless
-up
 used
 useful
 usual
@@ -648,14 +647,12 @@ voice
 wake
 warm
 warn
-was
 waste
 wave
-We
 weather
 weight
 west
-What
+what
 whatever
 which
 whose
@@ -1309,7 +1306,6 @@ Ugly
 Under
 Unit
 Unless
-Up
 Used
 Useful
 Usual
@@ -1322,10 +1318,8 @@ Voice
 Wake
 Warm
 Warn
-Was
 Waste
 Wave
-We
 Weather
 Weight
 West
