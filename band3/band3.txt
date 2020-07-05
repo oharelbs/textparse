@@ -7,7 +7,7 @@ acceptable
 acceptance
 access
 accompany
-according to
+according
 accordingly
 accuracy
 accurate
@@ -46,7 +46,7 @@ afterwards
 agency
 agent
 aggression
-aggressivebehavior
+aggressive
 agreement
 agricultural
 agriculture
@@ -110,7 +110,7 @@ average
 avoid
 award 
 back
-back up
+up
 background
 balance
 ball
@@ -126,6 +126,7 @@ beach
 bear
 beauty
 beginning
+behavior
 belief
 beneath
 beneficial
@@ -1523,7 +1524,8 @@ Afterwards
 Agency
 Agent
 Aggression
-Aggressivebehavior
+Aggressive
+Behavior
 Agreement
 Agricultural
 Agriculture
@@ -1587,7 +1589,8 @@ Average
 Avoid
 Award 
 Back
-Back up
+Back
+Up
 Background
 Balance
 Ball

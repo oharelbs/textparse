@@ -261,30 +261,29 @@ doc.addImage(img, 'png', 200, 1);
             var wordCounter = 1;
 
             var temporalDivSLElement = document.createElement("divSLtemp");
-
+            
             for(var z = 0; z < arrtext.length; z++) {
                 for (var b = 0; b < arrwl.length; b++) {
                     
-                    if (arrtext[z] == arrwl[b]) { //words must be the same
+                    if (arrtext[z] == arrwl[b] && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
                         temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                        
-                    document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                    document.getElementById("divsl").style.color = 'red';
+
+                        document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+                        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
+                    }
                 }
             }
- 
-            }
-            var tempsldiv = temporalDivSLElement.innerHTML.split(',');
-            tempsldiv = new Array(tempsldiv);
+   
+            var tempsldivset = temporalDivSLElement.innerHTML.split(',');
+            tempsldivset = new Set(tempsldivset); //Set is an array that can only get unique values
+            var tempsldiv = [...tempsldivset]; //the ... is what takes it back into an array
 
             var words = tempsldiv.toString().split(',');
-            var newHTML1 = document.getElementById('divetext').innerHTML;
-            newHTML = newHTML1;
+            var newHTML = document.getElementById('divetext').innerHTML;
             words.forEach(word =>
                     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
-            document.getElementById("divca").innerHTML = newHTML;
+            document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
 
             var wordsFound = document.getElementById("divsl").innerText;
