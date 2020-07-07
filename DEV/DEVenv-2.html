@@ -278,22 +278,25 @@ doc.addImage(img, 'png', 200, 1);
                             temporalDivSLElement.innerHTML +=arrwl[b]+',';
                             document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
                             document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                            }
+                          }
                         }
                     }
                 }
                 
-             var words = temporalDivSLElement.innerHTML.split(',');
+            var words = temporalDivSLElement.innerHTML.split(',');
             var newHTML = document.getElementById('divetext').innerHTML;
 
-            words.forEach(word =>
-                     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+            words.forEach(word => {
+            var numberOfOccurrences = newHTML.match(new RegExp(word, "g")).length
+              console.log('${word} - ${numberOfOccurrences}')
+            })
+            // words.forEach(word =>
+            //          newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+
             document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
+
             var wordsFound = document.getElementById("divsl").innerText;
-
-
-
-            if (wordsFound == '') {
+           if (wordsFound == '') {
                 document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
                 return;
             } else if (wordsFound != '') {
