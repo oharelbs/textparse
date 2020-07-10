@@ -274,7 +274,7 @@ doc.addImage(img, 'png', 200, 1);
                 } else {
                     for(var z = 0; z < arrtext.length; z++) {
                         for (var b = 0; b < arrwl.length; b++) { //words are the same
-                            if (arrtext[z] === arrwl[b] && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
+                            if (arrtext[z] === arrwl[b] && arrtext[z].length != 0 && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
                             temporalDivSLElement.innerHTML +=arrwl[b]+',';
                             document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
                             document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
