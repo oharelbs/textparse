@@ -261,39 +261,93 @@ doc.addImage(img, 'png', 200, 1);
 
             var temporalDivSLElement = document.createElement("divSLtemp");
 
-            if(document.getElementById("wholeWord").checked == false) { 
+            //if(document.getElementById("wholeWord").checked == false) { 
+                var listOfFoundWords = '';
                  for (var b = 0; b < arrwl.length; b++) {
-                    
-                    if (strippedText.indexOf(arrwl[b]) > -1){//words containing other words
-                        temporalDivSLElement.innerHTML +=arrwl[b]+',';
 
-                        document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                    }
-                }
-                } else {
                     for(var z = 0; z < arrtext.length; z++) {
-                        for (var b = 0; b < arrwl.length; b++) { //words are the same
-                            if (arrtext[z] === arrwl[b] && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
+
+                        if(arrwl[b] == arrtext[z]) {
                             temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                            document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                            document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                            }
+       //                 document.getElementById("divsl").innerHTML += arrwl[b] + '<br>';
+                                if(listOfFoundWords.indexOf(arrwl[b]) == -1) {
+                                    listOfFoundWords += arrwl[b] + '<br>';
+                                }
+                                if(arrwl[b] == 'winner') {
+//                                    console.log(getSubString(arrwl[b]) + ' ' + arrwl[b] + '  ' + arrtext[z] );
+                                }
+
                         }
+//                            arrtext[z] = '<span class="' + myCSSclass() + '">' + arrtext[z] + '</span>';
+                            
                     }
-                }
+
+                   }
+                    
+   
+                document.getElementById("divsl").innerHTML = listOfFoundWords;
+//                document.getElementById("divca").innerHTML = arrtext.toString(); //put it all in the Highlighted text field
+                // } else {
+                //     for(var z = 0; z < arrtext.length; z++) {
+                //         for (var b = 0; b < arrwl.length; b++) { //words are the same
+                //             if (arrtext[z] === arrwl[b] && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
+                //             temporalDivSLElement.innerHTML +=arrwl[b]+',';
+                //             document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+                //             document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
+                //             }
+                //         }
+                //     }
+                // }
                 
     
-            var tempsldivset = temporalDivSLElement.innerHTML.split(',');
-            tempsldivset = new Set(tempsldivset); //Set is an array that can only get unique values
-            var tempsldiv = [...tempsldivset]; //the ... is what takes it back into an array
+function getSubString(word) {
+var positionOfWord = [];
+var textd = document.getElementById("divetext").innerHTML;
+var count = textd.split(word).length-1;
+var text = document.getElementById("divetext").innerHTML;
 
-            var words = tempsldiv.toString().split(',');
-            var newHTML = document.getElementById('divetext').innerHTML;
-            words.forEach(word =>
-                    newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+for (var j=0; j < count; j++) {
+    
+    var b = 0;
+    var e = 0;
+     
+    b = text.indexOf(word);
+    
+    if(b>0) {
+        if(text.substring(b-1, b) != ' ') {
+            b=0;
+        }
+     }
+     e=b+word.length;
+     if(e < text.length){
+         if(text.substring(e, e+1) != ' ' && text.substring(e, e+1) != ',')
+//         console.log('hbs --> ' + text.substring(e, e+1) + ' ' + word)
+         e=b;
+     }
+     text.substring(b, b+ word.length) = dummyString(word);
+console.log('hbs --> text ' + text);
+}
+function dummyString(word) {
+    var answer;
+    for(i=0; i< word.length; i++) {
+        answer =+ 'X';
+    }
+    return answer;
 
-            document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
+}
+}
+
+
+            // var tempsldivset = temporalDivSLElement.innerHTML.split(',');
+            // tempsldivset = new Set(tempsldivset); //Set is an array that can only get unique values
+            // var tempsldiv = [...tempsldivset]; //the ... is what takes it back into an array
+
+            // var words = tempsldivset.toString().split(',');
+            // var newHTML = document.getElementById('divetext').innerHTML;
+            // words.forEach(word =>
+            //         newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+
+            // document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
 
             var wordsFound = document.getElementById("divsl").innerText;
