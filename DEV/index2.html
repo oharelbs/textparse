@@ -200,8 +200,8 @@ function popMeUp() {
             var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
             var wordCounter = 1;
-            var array3 = [];
-
+            var array3 = []; //test
+            var arrSText = []; //test
             var temporalDivSLElement = document.createElement("divSLtemp");
 
             if(document.getElementById("wholeWord").checked == false) { 
@@ -210,26 +210,25 @@ function popMeUp() {
                     
                     if (strippedText.indexOf(arrwl[b]) > -1 && arrwl[b].length !=0){//words containing other words   
 
-                        if(arrwl[b].length !=0) {
                             temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                            console.log(temporalDivSLElement.innerHTML)
-                        }
+                            arrSText  +=arrwl[b]+',';
 
                         document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
                         document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
                     }
                 }
+            }
             
-                } else {
+                else {
                    for(var z = 0; z < arrtext.length; z++) {
 
                         for (var b = 0; b < arrwl.length; b++) { //words are the same
                             if (arrtext[z] === arrwl[b] && arrtext[z].length != 0){//words containing other words
                                 
-//                                if(arrtext[z].length == arrwl[b].length){
-//                                array3.push(arrwl[b] + ' length --> ' + arrwl[b].length + '  arrtext ' + arrtext[z] + '  length: '+arrtext[z].length);
-//                                }
-                                
+                                // if(arrtext[z].length == arrwl[b].length){
+                                //     array3.push(arrwl[b] + ' length --> ' + arrwl[b].length + '  arrtext ' + arrtext[z] + '  length: '+arrtext[z].length);
+                                // }
+
                                 temporalDivSLElement.innerHTML +=arrwl[b]+',';
                                 document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
                                 document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
@@ -237,19 +236,17 @@ function popMeUp() {
                         }
                     } 
                }
-//               console.log('hbs --> ' + array3);
-                
-    
+            console.log('hbs --> ' + array3);
     
             var words = temporalDivSLElement.innerHTML.split(',');
             var newHTML = document.getElementById('divetext').innerHTML;
+  
             
-            words.forEach(word =>
-                    newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+
+             words.forEach(word =>
+                     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
                     document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
-
-            
 
             var wordsFound = document.getElementById("divsl").innerText;
 
