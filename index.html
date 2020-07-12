@@ -12,21 +12,22 @@
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 
 <a href="band3.html"></a>
+<script src="getBandThreeWords.js"></script>
 
 <script type="text/javascript">
 
-function getBandThreeWords(element) {
-    var boxchecked = element.checked;
-        if(boxchecked == false) {
-            document.getElementById('divwl').value = "";
-        } else {
-            document.getElementById('band2').checked = false;
-            document.getElementById('divwl').value = "";
-            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
-            document.getElementById('divwl').value = data;
-        });
-    }
-}
+// function getBandThreeWords(element) {
+//     var boxchecked = element.checked;
+//         if(boxchecked == false) {
+//             document.getElementById('divwl').value = "";
+//         } else {
+//             document.getElementById('band2').checked = false;
+//             document.getElementById('divwl').value = "";
+//             jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
+//             document.getElementById('divwl').value = data;
+//         });
+//     }
+// }
 function getSampleText(element) {
     var boxchecked = element.checked;
     if(boxchecked == false) {
