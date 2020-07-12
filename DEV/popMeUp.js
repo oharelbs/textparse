@@ -132,9 +132,9 @@ function popMeUp() {
         //check if one word
         var count = (wordsFound.match(/[a-zA-Z]\n/g)).length;
         if(count == 1)
-            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + '1/ ' + arrwl.length + ' word found</span>';
+            document.getElementById("wordsInText").innerHTML = '<span class="#headlines">' + '1/ ' + arrwl.length + ' word found</span>';
         else
-            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+            document.getElementById("wordsInText").innerHTML = '<span class="#headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
     }
 
 
