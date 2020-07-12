@@ -1,3 +1,3 @@
-alertme();
 function alertme(){
-alert('hi')}
+alert('hi')
+}
