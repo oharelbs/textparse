@@ -1,3 +1,7 @@
+import cgi, cgitb
+print("Content-Type: text/html \n\n")
+form = cgi.FieldStorage()
+count1=form.getvalue('divetxt')
 def search_for_words(sentence, words):
 
     words_in_sentence = sentence.split() # creates a list from the words in the sentence
@@ -30,6 +34,10 @@ def search_for_words(sentence, words):
        #     new_sentence += i
     print(new_sentence)
 
-sentence = document.getElementById('divetext').value #input("Enter your text: ")
-words = document.getElementById('divwl').value   # input("Enter the words you're searching for (use ',' between each word): ")
+sentence = input("Enter your text: ")
+words = input("Enter the words you're searching for (use ',' between each word): ")
 search_for_words(sentence, words)
+
+#send divetext to sentence and divwl to words
+#replace  X with <span>class
+#return results to html
