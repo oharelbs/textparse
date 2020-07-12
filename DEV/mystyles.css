@@ -1,4 +1,4 @@
-.button {
+button {
     background-color: #1c87c9;
     border: none;
     border-radius: 8px;
@@ -14,27 +14,27 @@
     position: absolute;
 }
 
-.myBlueText {
+myBlueText {
     background-color: yellow;
 }
 
-.colorText {
+colorText {
     color: red;
 }
 
-.myText {
+myText {
     font-weight: 700;
 }
 
-.ulText {
+ulText {
     text-decoration: underline;
 }
 
-.unFormattedText {
+unFormattedText {
     color: black;
 }
 
-.divetext {
+divetext {
     height: 420px;
     width: 95%;
     background-color: white;
@@ -43,7 +43,7 @@
     overflow: scroll;
 }
 
-.divca {
+divca {
     height: 420px !important;
     width: 95%;
     background-color: white;
@@ -52,7 +52,7 @@
     overflow: scroll;
 }
 
-.wrdlstText {
+wrdlstText {
     height: 280px;
     width: 20%;
     color: black;
@@ -60,7 +60,7 @@
     overflow: scroll;
 }
 
-.clearField {
+clearField {
     cursor: pointer;
     background-color: #FFCCBC;
     border: 1px;
@@ -76,7 +76,7 @@
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.copyText {
+copyText {
     cursor: pointer;
     background-color: #AED6F1;
     border: 1px;
@@ -92,7 +92,7 @@
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.divurl {
+divurl {
     position: absolute;
     right: 250px;
     height: 300px;
@@ -102,7 +102,7 @@
     overflow: scroll;
 }
 
-.wrdlst {
+wrdlst {
     position: relative;
     left: 1px;
     height: 300px;
@@ -112,33 +112,33 @@
     overflow: scroll;
 }
 
-.divURLheadlines {
+divURLheadlines {
     position: absolute;
     right: 320px;
     font: 20px Arial, sans-serif;
 }
 
-.headlines {
+headlines {
     font: 20px Arial, sans-serif;
 }
 
-.checkboxDIV {
+checkboxDIV {
     position: absolute;
     left: 320px;
 }
 
-.allAtt {
+allAtt {
     font-weight: bold;
 }
 
-.mail-image {
+mail-image {
     position: relative;
     right: 0;
     bottom: 0;
     float: right;
 }
 
-.mail-image .imagetooltiptext{
+mail-image .imagetooltiptext{
     visibility: hidden;
     width: 180px;
     background-color: black;
@@ -146,40 +146,14 @@
     text-align: center;
     border-radius: 3px;
 }
-.mail-image:hover .imagetooltiptext {
+mail-image:hover .imagetooltiptext {
     visibility: visible;
 }
-/*.pdfButton {
-    background-color: #1c87c9;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px 34px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 25px;
-    margin: 2px 2px;
-    cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.pdfButton:hover:after { 
-    content: "Export text and found words"; 
-    position: absolute;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    border-radius: 3px;
-    width: 200px;
-}
-*/
 
-.limitations {
+limitations {
     color: red;
 }
-.limitations:hover:after {
+limitations:hover:after {
     display: inline-block;
     content: attr(data-tooltip);
     white-space: pre-wrap;
