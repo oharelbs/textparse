@@ -3,128 +3,40 @@
 <!--  https://oharelbs.github.io/textparse/ -->
 <head>
     <h3 style="text-align: center">Find Words in Text</h3>
-<!-- prepare for PDF-->
+<!-- Load the stylesheet first thing-->
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+
 <!-- jQuery library  -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-<!-- jsPDF library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
-<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-
 <a href="band3.html"></a>
-<!--<script src="https://raw.githubusercontent.com/oharelbs/textparse/master/js/getBandThreeWords.js"></script> -->
+
 <script src="js/getBandThreeWords.js"></script>
+<script src="js/getBandThreeWords.js"></script>
+<script src="js/getSampleText.js"></script>
+<script src="js/popMeUp.js"></script>
+<script src="js/checkAllBoxes.js"></script>
+<script src="js/clearText.js"></script>
+<script src="js/copyFunction.js"></script>
+
 
 <script type="text/javascript">
 
-// function getBandThreeWords(element) {
+// function getBandTwoWords(element) {
+    
 //     var boxchecked = element.checked;
 //         if(boxchecked == false) {
-//             document.getElementById('divwl').value = "";
+//             document.getElementById('divwl').value = "";  
 //         } else {
-//             document.getElementById('band2').checked = false;
+//             document.getElementById('band3').checked = false;
 //             document.getElementById('divwl').value = "";
-//             jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band3/band3.txt', function(data) {
+//             jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band2/band2.txt', function(data) {
 //             document.getElementById('divwl').value = data;
 //         });
 //     }
 // }
-function getSampleText(element) {
-    var boxchecked = element.checked;
-    if(boxchecked == false) {
-            document.getElementById('divetext').innerHTML = "";
-        } else {
-            document.getElementById('divetext').innerHTML = "";
-            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/sampleText/sampleText.txt', function(data) {
-            document.getElementById('divetext').innerHTML = data;
-        });
-    }
-}
 
-function getBandTwoWords(element) {
-    
-    var boxchecked = element.checked;
-        if(boxchecked == false) {
-            document.getElementById('divwl').value = "";  
-        } else {
-            document.getElementById('band3').checked = false;
-            document.getElementById('divwl').value = "";
-            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/band2/band2.txt', function(data) {
-            document.getElementById('divwl').value = data;
-        });
-    }
-}
-
-/*function createPDF(){
-
-    var text = document.getElementById('divetext').innerText;
-    var orginalWordList = document.getElementById('divwl').value;
-    var highlightedText = document.getElementById('divca').innerText;
-    var foundWords = document.getElementById('divsl').innerText;
-    var foundURLs = document.getElementById('divurl').innerHTML;
-
-            if (text == "") {
-                alert('Let\'s add some text first in the Text field before clicking buttons...');
-                return false;
-            }
-
-            if (foundWords == "") {
-                alert('Words Found in Text is empty - nothing to export.\nPerhaps you forgot to Look\'em up?');
-                return false;
-            }
-
-  
-         var doc = new jsPDF();
-         doc.page=1; // use this as a counter.
-         function footer(){
-             doc.setFontSize(12);
-             doc.setTextColor(192, 192, 192);
-             doc.text(50,285, 'downloaded from https://oharelbs.github.io/textparse/                page ' + doc.page); //print number bottom right
-             doc.page ++;
-        };
-  
-
-var img = new Image();
-img.crossOrigin = "Anonymous";
-img.src="owlCircle.png";
-doc.addImage(img, 'png', 200, 1);
-
-    //set the title
-   var orgText = 'Original text';
-    doc.setFontSize(22);
-    doc.setTextColor(70, 0, 0);
-    doc.setFontType("bold");
-    doc.text(20, 20, orgText);
-    
-    doc.setFontSize(12);
-    doc.setFontType("normal");
-    doc.setTextColor(4, 0, 0);
-    doc.text(20, 30, text);
-    footer();
-    
-    // Add new page for highlighted text
-
-    //Add new page for found words
-    doc.addPage();
-    var count = (foundWords.match(/[a-zA-Z]\n/g)).length;
-    var wordsFoundInText = count + ' Words Found in the Text';
-
-    doc.setFontSize(22);
-    doc.setTextColor(70, 0, 0);
-    doc.setFontType("bold");
-    doc.text(20, 20, wordsFoundInText);
-    
-    doc.setFontSize(12);
-    doc.setTextColor(4, 0, 0);
-    doc.setFontType("normal");
-    doc.text(20, 40, foundWords);
-    footer();
-    // Save the PDF
-    doc.save('document.pdf');
-
-}
-*/
-
+/*
         function copyFunction(id) {
             //this copies a regular textarea field
             if (id == "divwl") {
@@ -182,7 +94,7 @@ doc.addImage(img, 'png', 200, 1);
                 }
             }
         }
-
+*/
         function popMeUp() {
 
             document.getElementById("divca").innerHTML = "";
