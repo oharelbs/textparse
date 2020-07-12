@@ -29,7 +29,7 @@ function popMeUp() {
     document.getElementById("divwl").value = wordlist;
 
     //get only the text from the text area
-    var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will nto be recognized
+    var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will not be recognized
     var temporalDivElement = document.createElement("div");
     temporalDivElement.innerHTML = orgtext;
     var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
