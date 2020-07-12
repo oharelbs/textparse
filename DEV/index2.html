@@ -107,7 +107,7 @@ function clearText(id, labelId) {
 
             var all = element.checked;
 
-            var checkboxes = ["yellowText", "colorText", "ulText"];
+            var checkboxes = ["myBlueText", "colorText", "ulText"];
             if (all == true) {
                 for (var h = 0; h < checkboxes.length; h++) {
 
@@ -267,7 +267,7 @@ function popMeUp() {
 
 
 function myCSSclass() {
-            var highlightText = document.getElementById("yellowText").checked;
+            var highlightText = document.getElementById("myBlueText").checked;
             var colorText = document.getElementById("colorText").checked;
             var ulText = document.getElementById("ulText").checked;
 
@@ -278,7 +278,7 @@ function myCSSclass() {
             var answer4 = ' myText'; //bold
 
             if (highlightText == true) {
-                answer = ' yellowText ';
+                answer = ' myBlueText ';
             }
             if (colorText == true) {
                 answer1 = ' colorText ';
@@ -311,7 +311,7 @@ function myCSSclass() {
             position: absolute;
         }
 
-        .yellowText {
+        .myBlueText {
             background-color: yellow;
         }
 
@@ -510,7 +510,7 @@ function myCSSclass() {
             <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
             <div style="width: 20%; float: right" class="checkboxDIV">
                 <div><font style="font-weight: bold">Use lower case only and other </font><a href="https://oharelbs.github.io/textparse/limitations.html" target="_blank">limitations</a></div>
-                <input type="checkbox" style="opacity: 0;"id="band2" name="band2" onClick="getBandTwoWords(this)" /><label</label><br><!--style="opacity:0;" remove label: Band II Words-->
+                <input type="checkbox" style="opacity: 100;"id="band2" name="band2" onClick="getBandTwoWords(this)" /><label>Band II Words</label><br><!--style="opacity:0;" remove label: Band II Words-->
                 <input type="checkbox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label>Band III Words</label><br>
                 <input type="checkbox" id="wholeWord" name="wholeWord" /><label>Find whole words</label><br>
                 <input type="checkbox" id="sampleText" name="sampleText" onClick="getSampleText(this)"/><label>sample text</label><br>
@@ -519,7 +519,7 @@ function myCSSclass() {
                     <font style="text-decoration: underline; font-weight: bold">Visibility</font><br><br>
 
                     <input type="checkbox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt">Check All</label><br><br>
-                    <input type="checkbox" id="yellowText" name="yellowText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
+                    <input type="checkbox" id="myBlueText" name="myBlueText" /><label style="background-color: yellow;">Highlight Text</label><br><br>
                     <input type="checkbox" id="colorText" name="colorText" /><label style="color: red;">Color Text</label><br><br>
                     <input type="checkbox" id="ulText" name="ulText" /><label style="text-decoration: underline;">Underline Text</label><br><br><br>
                     <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
