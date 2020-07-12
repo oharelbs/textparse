@@ -75,53 +75,38 @@ function popMeUp() {
     var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
     var wordCounter = 1;
-    var array3 = []; //test
-    var arrSText = []; //test
+
     var temporalDivSLElement = document.createElement("divSLtemp");
 
     if(document.getElementById("wholeWord").checked == false) { 
-        
          for (var b = 0; b < arrwl.length; b++) {
             
-            if (strippedText.indexOf(arrwl[b]) > -1 && arrwl[b].length !=0){//words containing other words   
-
-                    temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                    arrSText  +=arrwl[b]+',';
+            if (strippedText.indexOf(arrwl[b]) > -1 && arrwl[b].length != 0){//words containing other words
+                temporalDivSLElement.innerHTML +=arrwl[b]+',';
 
                 document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
                 document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
             }
         }
-    }
-    
-        else {
-           for(var z = 0; z < arrtext.length; z++) {
-
+        } else {
+            for(var z = 0; z < arrtext.length; z++) {
                 for (var b = 0; b < arrwl.length; b++) { //words are the same
-                    if (arrtext[z] === arrwl[b] && arrtext[z].length != 0){//words containing other words
-                        
-                        // if(arrtext[z].length == arrwl[b].length){
-                        //     array3.push(arrwl[b] + ' length --> ' + arrwl[b].length + '  arrtext ' + arrtext[z] + '  length: '+arrtext[z].length);
-                        // }
-
-                        temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                        document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
+                    if (arrtext[z] === arrwl[b] && arrtext[z].length != 0 && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
+                    temporalDivSLElement.innerHTML +=arrwl[b]+',';
+                    document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+                    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
                     }
                 }
-            } 
-       }
-    console.log('hbs --> ' + array3);
-
+            }
+        }
+        
     var words = temporalDivSLElement.innerHTML.split(',');
     var newHTML = document.getElementById('divetext').innerHTML;
+    words.forEach(word =>
+            newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
-    
+    document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
-     words.forEach(word =>
-             newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
-
-            document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
     var wordsFound = document.getElementById("divsl").innerText;
 
@@ -132,17 +117,14 @@ function popMeUp() {
         //check if one word
         var count = (wordsFound.match(/[a-zA-Z]\n/g)).length;
         if(count == 1)
-            document.getElementById("wordsInText").innerHTML = '<span class="#headlines">' + '1/ ' + arrwl.length + ' word found</span>';
+            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + '1/ ' + arrwl.length + ' word found</span>';
         else
-            document.getElementById("wordsInText").innerHTML = '<span class="#headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
+            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
     }
-
-
 }
 
-
 function myCSSclass() {
-    var highlightText = document.getElementById("myBlueText").checked;
+    var highlightText = document.getElementById("mudgashText").checked;
     var colorText = document.getElementById("colorText").checked;
     var ulText = document.getElementById("ulText").checked;
 
@@ -153,7 +135,7 @@ function myCSSclass() {
     var answer4 = ' myText'; //bold
 
     if (highlightText == true) {
-        answer = ' myBlueText ';
+        answer = ' mudgashText ';
     }
     if (colorText == true) {
         answer1 = ' colorText ';
