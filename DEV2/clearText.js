@@ -7,7 +7,8 @@ function clearText(id, labelId) {
         document.getElementById(id).innerHTML = "";
         document.getElementById('wordsInText').innerHTML = '<span class="headlines">Words Found in Text</span>';
         document.getElementById("divurl").innerHTML = "";
-
+    } else if (id === 'divetext') {
+        document.getElementById(id).value = "";
     } else {
         document.getElementById(id).innerHTML = "";
     }

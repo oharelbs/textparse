@@ -47,22 +47,6 @@
             temporalDivElementWl.innerHTML = orgwordlist;
             var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
 
-            //let's add capital letters if the band three checkbox is false
-            if(document.getElementById('band3').checked == false && document.getElementById('band2').checked == false) {
-                var wrds = [];
-                wrds = orgwordlist;
-                wrds = wrds.toString().split('XXX');
-                for (var t = 0; t < wrds.length; t++) {
-                    if (t == 0) { //add a new line for the first item in the list, in case there is no line break before
-                        nt = '\n' + wrds[0].charAt(0).toUpperCase() + wrds[0].slice(1)+'\n';
-                    } else if (t > 0) { //for the rest of the items in the list
-                        nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
-                    }
-                    document.getElementById("divwl").value += nt;
-                }
-            }
-            ////////End of Word List parse and capital letters/////
-
             var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
             arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/[ ]/g, '').split('XXX'); //array after split
 
@@ -78,35 +62,23 @@
 
             var temporalDivSLElement = document.createElement("divSLtemp");
 
-            if(document.getElementById("wholeWord").checked == false) { 
-                 for (var b = 0; b < arrwl.length; b++) {
-                    
-                    if (strippedText.indexOf(arrwl[b]) > -1 && arrwl[b].length != 0){//words containing other words
-                        temporalDivSLElement.innerHTML +=arrwl[b]+',';
+            var myWord = matchWords(strippedText1, arrwl);
+            var sepWords = myWord.toString().split("<br>");
+            
+            document.getElementById("divsl").innerHTML += myWord;
+            document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + myWord + '" target="_blank">' + myWord + '</a></div>';
 
-                        document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                    }
-                }
-                } else {
-                    for(var z = 0; z < arrtext.length; z++) {
-                        for (var b = 0; b < arrwl.length; b++) { //words are the same
-                            if (arrtext[z] === arrwl[b] && arrtext[z].length != 0 && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
-                            temporalDivSLElement.innerHTML +=arrwl[b]+',';
-                            document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
-                            document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
-                            }
-                        }
-                    }
-                }
-                
+            temporalDivSLElement.innerHTML +=sepWords;
+                 
             var words = temporalDivSLElement.innerHTML.split(',');
+            
             var newHTML = document.getElementById('divetext').innerHTML;
+
             words.forEach(word =>
                     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
             document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
-
+                
 
             var wordsFound = document.getElementById("divsl").innerText;
 
@@ -121,6 +93,33 @@
                 else
                     document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
             }
+        }
+        function matchWords(orgtextf, arrwl) { //this checks if a ord matches
+            var regexMetachars = /[(){[*+?.\\^$|]/g;
+        
+            for (var i = 0; i < arrwl.length; i++) {
+                arrwl[i] = arrwl[i].replace(regexMetachars, "\\$&");
+            }
+       
+            var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
+            var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s
+                
+           // return orgtextf.match(regex);
+           var bbb = [];
+           var ccc = [];
+           var aaa = orgtextf.match(regex);
+           var pl = orgtextf.match(regexPL);
+           for(var t = 0;  t < aaa.length; t++) {
+               if(aaa[t].length > 1) {
+                   bbb += aaa[t] + '<br>';
+               }
+            }
+            for(var p = 0;  p < pl.length; p++) {
+                if(pl[p].length > 1) {
+                    bbb += pl[p] + '<br>';
+                }
+             }
+            return(bbb)
         }
 
         function myCSSclass() {
@@ -149,3 +148,41 @@
 
             return answer + answer1 + answer2 + answer3 + answer4;
         }
+                   // if(document.getElementById("wholeWord").checked == false) { 
+                
+            //      for (var b = 0; b < arrwl.length; b++) {
+            //         var myWord = arrwl[b];
+            //         if (strippedText.indexOf(myWord) > -1 && myWord.length != 0){//words containing other words
+            //             temporalDivSLElement.innerHTML +=myWord+',';
+
+            //             document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + myWord + '<br>';
+            //             document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + myWord + '" target="_blank">' + myWord + '</a></div>';
+            //         }
+            // }
+            //     } else {
+            //         for(var z = 0; z < arrtext.length; z++) {
+            //             for (var b = 0; b < arrwl.length; b++) { //words are the same
+            //                 if (arrtext[z] === arrwl[b] && arrtext[z].length != 0 && arrtext[z] !='in' && arrtext[z] !='on' && arrtext[z] !='at' && arrtext[z] !='of' ) { //words must be the same
+            //                 temporalDivSLElement.innerHTML +=arrwl[b]+',';
+
+            //                 document.getElementById("divsl").innerHTML += wordCounter++ + '. ' + arrwl[b] + '<br>';
+            //                 document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + arrwl[b] + '" target="_blank">' + arrwl[b] + '</a></div>';
+            //                 }
+            //             }
+            //         }
+            //     }
+                       //let's add capital letters if the band three checkbox is false
+            // if(document.getElementById('band3').checked == false && document.getElementById('band2').checked == false) {
+            //     var wrds = [];
+            //     wrds = orgwordlist;
+            //     wrds = wrds.toString().split('XXX');
+            //     for (var t = 0; t < wrds.length; t++) {
+            //         if (t == 0) { //add a new line for the first item in the list, in case there is no line break before
+            //             nt = '\n' + wrds[0].charAt(0).toUpperCase() + wrds[0].slice(1)+'\n';
+            //         } else if (t > 0) { //for the rest of the items in the list
+            //             nt = wrds[t].charAt(0).toUpperCase() + wrds[t].slice(1)+'\n';
+            //         }
+            //         document.getElementById("divwl").value += nt;
+            //     }
+            // }
+            ////////End of Word List parse and capital letters/////
