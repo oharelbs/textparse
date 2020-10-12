@@ -65,12 +65,15 @@ function popMeUp() {
     var sepWords = myWord.toString().split("<br>");
     
     document.getElementById("divsl").innerHTML += myWord;
-    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + sepWords + '" target="_blank">' + sepWords + '</a></div>';
+ //   document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + myWord + '" target="_blank">' + myWord + '</a></div>';
 
     temporalDivSLElement.innerHTML +=sepWords;
          
     var words = temporalDivSLElement.innerHTML.split(',');
     
+    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + myWord + '" target="_blank">' + myWord + '</a></div>';
+
+
     var newHTML = document.getElementById('divetext').innerHTML;
 
     words.forEach(word =>
