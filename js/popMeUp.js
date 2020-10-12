@@ -71,7 +71,7 @@ function popMeUp() {
          
     var words = temporalDivSLElement.innerHTML.split(',');
     
-    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + myWord + '" target="_blank">' + myWord + '</a></div>';
+    document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + words + '" target="_blank">' + words + '</a></div>';
 
 
     var newHTML = document.getElementById('divetext').innerHTML;
