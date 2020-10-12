@@ -70,14 +70,11 @@
             }
 
             document.getElementById("divsl").innerHTML += myWord;
-            //document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + sepWords + '" target="_blank">' + myWord + '</a></div>';
-
+            
             temporalDivSLElement.innerHTML +=sepWords;
                  
             var words = temporalDivSLElement.innerHTML.split(',');
             
-            
-
             var newHTML = document.getElementById('divetext').innerHTML;
 
             words.forEach(word =>
