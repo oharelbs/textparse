@@ -65,6 +65,7 @@
             var myWord = matchWords(strippedText1, arrwl);
             var sepWords = myWord.toString().split("<br>");
 
+            //populate the divurl list words
             for (var sp = 0; sp < sepWords.length; sp++) {
                 document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + sepWords[sp] + '" target="_blank">' + sepWords[sp] + '</a></div>';  
             }
