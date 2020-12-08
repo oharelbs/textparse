@@ -55,11 +55,11 @@ arm
 around
 arrive
 art
-as far as
-as much as possible
-as quickly as possible
-as soon as possible
-as usual
+far
+much as possible
+quickly
+soon
+usual
 as well
 as
 at
