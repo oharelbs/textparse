@@ -106,11 +106,14 @@ function matchWords(orgtextf, arrwl) { //this checks if a ord matches
 
     var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
     var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s
+    var regexED = new RegExp("\\b(?:" + arrwl.join("|") + ")[ed]+\\b", "gi"); //this shows only words with ed
         
    // return orgtextf.match(regex);
    var bbb = [];
    var aaa = orgtextf.match(regex);
    var pl = orgtextf.match(regexPL);
+   var ed = orgtextf.match(regexED);
+
    for(var t = 0;  t < aaa.length; t++) {
        if(aaa[t].length > 1) { //whole word
            bbb += aaa[t] + '<br>';
@@ -119,6 +122,11 @@ function matchWords(orgtextf, arrwl) { //this checks if a ord matches
     for(var p = 0;  p < pl.length; p++) { //plura!
         if(pl[p].length > 1) {
             bbb += pl[p] + '<br>';
+        }
+     }
+     for(var e = 0; e < ed.length; e++) {
+        if(ed[e].length > 1) {
+            bbb += ed[e] + '<br>';
         }
      }
     return(bbb)
