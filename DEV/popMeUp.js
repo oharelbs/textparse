@@ -115,6 +115,7 @@
            var aaa = orgtextf.match(regex);
            var pl = orgtextf.match(regexPL);
            var ed = orgtextf.match(regexED);
+           
            for(var t = 0;  t < aaa.length; t++) {
                if(aaa[t].length > 1) {
                    bbb += aaa[t] + '<br>';
