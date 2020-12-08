@@ -2,7 +2,8 @@ a bit
 a little
 a lot
 a while
-a.m./A.M.
+a.m.
+A.M.
 about
 above
 accept
@@ -27,12 +28,14 @@ agreement
 air
 album
 all
-all right/alright
+all right
+alright
 all sorts of things
 all the time
 almost
 alone
-along /down a road
+along
+down a road
 already
 also
 always
@@ -52,13 +55,13 @@ arm
 around
 arrive
 art
-as far as …
+as far as
 as much as possible
 as quickly as possible
 as soon as possible
 as usual
 as well
-as…as
+as
 at
 at all
 at home
@@ -70,7 +73,8 @@ autumn
 away
 baby
 back
-backward/backwards
+backward
+backwards
 badly
 bake
 ball
@@ -80,7 +84,7 @@ band
 bank
 bath
 be
-be called sth
+be called 
 be going to
 beach
 bear
@@ -113,7 +117,6 @@ bookshelf
 boot
 born
 both
-both ... and
 bottle
 bottom
 bread
@@ -146,7 +149,8 @@ carpet
 carrot
 carry
 catch
-center/centre
+center
+centre
 central
 chair
 chance
@@ -186,7 +190,8 @@ come
 come from
 come home
 come in
-come to/for
+come to
+come for
 comfortable
 comic
 comparison
@@ -240,14 +245,15 @@ dinner
 direct
 directly
 do
-do the cleaning/cooking
-Do you mind…?
+cleaning
+cooking
+do you mind
 doctor
 doll
 dollar
-Don't forget
+don't forget
 don't need 
-Don't worry
+don't worry
 door
 double
 down
@@ -273,7 +279,7 @@ effort
 eight
 eighteen
 eighty
-either; either…or
+either
 elephant
 elevator
 eleven
@@ -330,7 +336,7 @@ film
 final
 finally
 find
-find out (sth)/find (sth) out
+find out
 fine
 finger
 finish
@@ -381,7 +387,7 @@ get
 get better
 get down
 get in
-get sth back
+get  back
 get to
 get together
 gift
@@ -400,16 +406,19 @@ go away
 go back
 go by
 go down
-go in/into
+go in
+go into
 go out
-go out/outside
+go out
+go outside
 go up
 going to
 good
 good for you
 good!
 grade
-gram/kilogram
+gram
+kilogram
 grape
 grass
 gray
@@ -434,14 +443,15 @@ hardly
 hat
 hate
 have
-have (got) sth on
+have (got)  on
 have a good time
 have a problem
 have a talk
 have fun
-have to do sth
-have/have got
-have/take a look
+have to do 
+have
+have got
+take a look
 head
 headscarf
 health
@@ -473,8 +483,8 @@ hotel
 hour
 house
 how
-how about?
-How much is it?
+how about
+how much is it
 however
 huge
 hundred
@@ -522,7 +532,7 @@ June
 just
 just now
 keep
-keep on doing sth
+keep on doing 
 key
 kick
 kill
@@ -544,7 +554,7 @@ last
 late
 later
 laugh
-laugh at sb/sth
+laugh at
 law
 lay
 lazy
@@ -553,15 +563,16 @@ learn
 least
 leave
 left
-left-hand (side)
+left-hand
 leg
 lemonade
 lend
 less
 lesson
-let go/let go of
-let sb/sth in
-let sb/sth out
+let go
+let go of
+let in
+let out
 let us
 letter
 level
@@ -579,7 +590,8 @@ list
 listen
 little
 live
-live in/at
+live in 
+live at
 living room
 local
 long
@@ -602,9 +614,11 @@ lunchtime
 mad
 magic
 make
-make sb do sth
+make sb do 
 make sure (that)
-make/take a note/notes
+make note
+take a note
+notes
 man
 many
 march
@@ -669,7 +683,7 @@ nearly
 neck
 need
 need to
-needn't do sth
+needn't do 
 negative
 neighbor
 never
@@ -697,9 +711,11 @@ north
 northern
 nose
 not bad
-not very good/tall/happy
+good
+tall
+happy
 note
-note/notes
+note
 notebook
 nothing
 nothing else
@@ -720,7 +736,8 @@ often
 oh dear!
 Oh!
 oil
-OK/okay
+OK
+okay
 old
 on
 once
@@ -741,7 +758,8 @@ out of
 outside
 over
 own
-p.m./P.M.
+p.m.
+P.M.
 pack
 page
 pain
@@ -799,7 +817,8 @@ point
 pole
 police
 pool
-pool - swimming pool
+pool
+swimming pool
 poor
 popular
 positive
@@ -820,7 +839,8 @@ price
 prize
 probably
 problem
-program/programme
+program
+programme
 project
 public
 publish
@@ -830,9 +850,9 @@ purple
 purpose
 push
 put
-put sth away
-put sth on
-put sth somewhere
+put away
+put on
+put somewhere
 quarter
 queen
 question
@@ -868,7 +888,7 @@ rich
 ride
 right
 right away
-right-hand (side)
+right-hand
 risk
 road
 rock
@@ -947,7 +967,8 @@ skirt
 sky
 sleep
 slow
-slow down/up
+slow down
+slow up
 slowly
 small
 smile
@@ -1028,7 +1049,7 @@ take away
 Take care!
 take from
 take off
-take sth off
+take  off
 talk
 talk about
 talk of
@@ -1056,7 +1077,12 @@ the same as
 their
 them
 then
-there is/are/was/were; there's/there're
+there is
+there are
+there was
+there were
+there's
+there're
 these
 thin
 thing
@@ -1084,7 +1110,9 @@ tomato sauce
 tomorrow
 tonight
 too
-too small/hard/much
+too small
+too hard 
+too much
 tooth
 toothbrush
 town
@@ -1099,13 +1127,16 @@ tree
 true 
 truth
 try
-try on/try sth on
+try on
 Tuesday
 turn
-turn left/right
-turn off/out
+turn left
+turn right
+turn off
+turn out
 turn on
-turn round/around
+turn round
+turn around
 twelve
 twenty
 twice
@@ -1130,7 +1161,7 @@ vacation
 valuable
 vegetable
 very
-very good!
+very good
 village
 visit
 vote
@@ -1165,9 +1196,10 @@ well-made
 west
 wet
 what
-What day is (it) today?
-what does sb do?
-What else?
+What day is it today
+what does
+what do 
+What else
 when
 where
 which
@@ -1200,10 +1232,10 @@ world
 worry
 worst
 would
-would love sth
-Would you like sth
-Would you like to do sth
-Would you like…?
+would love 
+Would you like 
+Would you like to do
+Would you like
 wow!
 write
 write down
