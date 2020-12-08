@@ -79,7 +79,7 @@
             var newHTML = document.getElementById('divetext').innerHTML;
 
             words.forEach(word =>
-                    newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+                    newHTML = newHTML.replace(word, '<span class="' + myCSSc() + '">' + word + '</span>'))
 
             document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
                 
@@ -107,12 +107,14 @@
        
             var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
             var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s
+            var regexED = new RegExp("\\b(?:" + arrwl.join("|") + ")[ed]+\\b", "gi"); //this shows only words with ed
                 
            // return orgtextf.match(regex);
            var bbb = [];
            var ccc = [];
            var aaa = orgtextf.match(regex);
            var pl = orgtextf.match(regexPL);
+           var ed = orgtextf.match(regexED);
            for(var t = 0;  t < aaa.length; t++) {
                if(aaa[t].length > 1) {
                    bbb += aaa[t] + '<br>';
@@ -123,10 +125,16 @@
                     bbb += pl[p] + '<br>';
                 }
              }
+             for(var e = 0; e < ed.length; e++) {
+                if(ed[e].length > 1) {
+                    bbb += ed[e] + '<br>';
+                }
+             }
+
             return(bbb)
         }
 
-        function myCSSclass() {
+        function myCSSc() {
             var highlightText = document.getElementById("mudgashText").checked;
             var colorText = document.getElementById("colorText").checked;
             var ulText = document.getElementById("ulText").checked;
@@ -135,7 +143,7 @@
             var answer1 = '';
             var answer2 = '';
             var answer3 = '';
-            var answer4 = ' myText'; //bold
+//            var answer4 = ''; //bold
 
             if (highlightText == true) {
                 answer = ' mudgashText ';
@@ -150,7 +158,7 @@
                 answer3 = 'unFormattedText';
             }
 
-            return answer + answer1 + answer2 + answer3 + answer4;
+            return answer + answer1 + answer2 + answer3;// + answer4;
         }
                    // if(document.getElementById("wholeWord").checked == false) { 
                 
