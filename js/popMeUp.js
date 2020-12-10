@@ -105,23 +105,35 @@ function matchWords(orgtextf, arrwl) { //this checks if a ord matches
     }
 
     var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
-    var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s
+    var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s / present simple s
+    var regexES = new RegExp("\\b(?:" + arrwl.join("|") + ")[es]+\\b", "gi"); //this shows only words with plural es / present simple es
     var regexED = new RegExp("\\b(?:" + arrwl.join("|") + ")[ed]+\\b", "gi"); //this shows only words with ed
+    var regexD = new RegExp("\\b(?:" + arrwl.join("|") + ")[d]+\\b", "gi"); //this shows only words with d
+//            var regexING = new RegExp("\\b(?:" + arrwl.join("|") + ")[\n\g]+\\b", "gi"); //this shows only words with ing
         
    // return orgtextf.match(regex);
    var bbb = [];
+   var ccc = [];
    var aaa = orgtextf.match(regex);
    var pl = orgtextf.match(regexPL);
-   var ed = orgtextf.match(regexED);
-
+   var es = orgtextf.match(regexES);
+   var ed = orgtextf.match(regexED);           
+   var d = orgtextf.match(regexD);
+//          var pg = orgtextf.match(regexING);
+   
    for(var t = 0;  t < aaa.length; t++) {
-       if(aaa[t].length > 1) { //whole word
+       if(aaa[t].length > 1) {
            bbb += aaa[t] + '<br>';
        }
     }
-    for(var p = 0;  p < pl.length; p++) { //plura!
+    for(var p = 0;  p < pl.length; p++) {
         if(pl[p].length > 1) {
             bbb += pl[p] + '<br>';
+        }
+     }
+     for(var ses = 0;  ses < es.length; ses++) {
+        if(es[ses].length > 1) {
+            bbb += es[ses] + '<br>';
         }
      }
      for(var e = 0; e < ed.length; e++) {
@@ -129,6 +141,17 @@ function matchWords(orgtextf, arrwl) { //this checks if a ord matches
             bbb += ed[e] + '<br>';
         }
      }
+     for(var sd = 0; sd < d.length; sd++) {
+        if(d[sd].length > 1) {
+            bbb += d[sd] + '<br>';
+        }
+     }
+    //  for(var sn = 0; sn < pg.length; sn++) {
+    //     if(pg[sn].length > 1) {
+    //         bbb += pg[sn] + '<br>';
+    //     }
+    //  }
+
     return(bbb)
 }
 
