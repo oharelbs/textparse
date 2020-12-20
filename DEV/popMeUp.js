@@ -131,7 +131,6 @@
             }
         }
             if(pl) {
-                console.log('hbs --> found pl')
             for(var p = 0;  p < pl.length; p++) {
                 if(pl[p].length > 0) {
                     bbb += pl[p] + '<br>';
@@ -139,7 +138,6 @@
              }
             }
             if(es) {
-                console.log('hbs --> found es')
              for(var ses = 0;  ses < es.length; ses++) {
                 if(es[ses].length > 1) {
                     bbb += es[ses] + '<br>';
@@ -147,7 +145,6 @@
              }
             }
             if(ed) {
-                console.log('hbs --> found ed')
              for(var e = 0; e < ed.length; e++) {
                 if(ed[e].length > 1) {
                     bbb += ed[e] + '<br>';
@@ -155,7 +152,6 @@
             }
         }
             if(sd) {
-                console.log('hbs --> found sd')
              for(var sd = 0; sd < d.length; sd++) {
                 if(d[sd].length > 1) {
                     bbb += d[sd] + '<br>';
