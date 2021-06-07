@@ -63,6 +63,7 @@
             var temporalDivSLElement = document.createElement("divSLtemp");
 
             var myWord = matchWords(strippedText1, arrwl);
+            //add remove non-unique
             var sepWords = myWord.toString().split("<br>");
 
             //populate the divurl list words
