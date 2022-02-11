@@ -210,3 +210,25 @@
     border-radius: 3px;
     width: 400px;
 } */
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    /* border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px; */
+    cursor: pointer;
+    background-color: #1c87c9;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+}
