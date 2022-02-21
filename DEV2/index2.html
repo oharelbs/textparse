@@ -3,6 +3,7 @@
 <!--  https://oharelbs.github.io/textparse/ -->
 
 <head>
+    <meta charset="utf-8" />
     <h3 style="text-align: center">Find Words in Text</h3>
 
     <link rel="stylesheet" type="text/css" href="mystyles.css">
@@ -24,7 +25,30 @@
     <script src="checkAllBoxes.js"></script>
     <script src="clearText.js"></script>
     <script src="copyFunction.js"></script>
-    <!--<script src="loadDoc.js"></script>-->
+    <script src="mammoth.browser.js"></script>
+    
+  <script>
+      
+      
+      
+     function readDOCFile(input){
+         
+        mammoth.convertToHtml({path: input})
+        
+    .then(function(result){
+        var html = result.value; // The generated HTML
+        var messages = result.messages; // Any messages, such as warnings during conversion
+        alert(html)
+    })
+    
+
+    .done();
+     }
+</script>
+
+
+
+
 
 <body style="background-color:rgb(235, 238, 223);">
     </style>
@@ -117,30 +141,27 @@
 </body>
 </head>
 
-<!-- TEST for FILE INPUT-->
-<!--
-https://javascript.info/file    
-
-
-https://developer.mozilla.org/en-US/docs/Web/API/FileReader
-  https://developer.mozilla.org/en-US/docs/Web/API/File/Using_files_from_web_applications
-
--->
 <label class="custom-file-upload">
 <input type="file" onchange="readFile(this)" display: none;>Upload a file
 </label>
+<br><br><br>
+<label class="custom-file-upload">
+    <input type="file" onchange="parseWordDocxFile(this)" display: none;>Upload a file docx
+</label>
+
+ 
 
 <script>
 function readFile(input) {
   let file = input.files[0];
-
+ 
   let reader = new FileReader();
 
   reader.readAsText(file);
-
+  
   reader.onload = function() {
-    console.log(reader.result);
-    document.getElementById("divetext").innerHTML = reader.result;
+      document.getElementById("divetext").innerHTML = reader.result;
+       
   };
 
   reader.onerror = function() {
@@ -148,8 +169,37 @@ function readFile(input) {
     document.getElementById("divetext").innerHTML = reader.error;
     
   };
-
 }
+
+// <input type="file" onchange="parseWordDocxFile(this)">
+function parseWordDocxFile(inputElement) {
+    var files = inputElement.files || [];
+    if (!files.length) return;
+    var file = files[0];
+
+    console.time();
+    var reader = new FileReader();
+    reader.onloadend = function(event) {
+      var arrayBuffer = reader.result;
+      
+      mammoth.convertToHtml({arrayBuffer: arrayBuffer}).then(function (resultObject) {
+        document.getElementById('divetext').innerHTML = resultObject.value
+       alert(resultObject.value)
+      })
+      console.timeEnd();
+
+      mammoth.extractRawText({arrayBuffer: arrayBuffer}).then(function (resultObject) {
+        //result2.innerHTML = resultObject.value
+       //alert(resultObject.value)
+      })
+
+      mammoth.convertToMarkdown({arrayBuffer: arrayBuffer}).then(function (resultObject) {
+        //result3.innerHTML = resultObject.value
+        //alert(resultObject.value)
+      })
+    };
+    reader.readAsArrayBuffer(file);
+  }
 </script>
 
 
