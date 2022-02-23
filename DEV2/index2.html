@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <h3 style="text-align: center">Find Words in Text</h3>
+    <h2 style="text-align: center">Find Words in Text</h2>
 
     <link rel="stylesheet" type="text/css" href="mystyles.css">
     <!-- prepare for PDF-->
@@ -16,8 +16,6 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
     <a href="band3.html"></a>
 
-    <!--<script src="https://raw.githubusercontent.com/oharelbs/textparse/master/DEV/hi.js"></script> -->
-
     <script src="getBandTwoWords.js"></script>
     <script src="getBandThreeWords.js"></script>
     <script src="getSampleText.js"></script>
@@ -26,30 +24,8 @@
     <script src="clearText.js"></script>
     <script src="copyFunction.js"></script>
     <script src="mammoth.browser.js"></script>
+    <script src="readFiles.js"></script>
     
-  <script>
-      
-      
-      
-     function readDOCFile(input){
-         
-        mammoth.convertToHtml({path: input})
-        
-    .then(function(result){
-        var html = result.value; // The generated HTML
-        var messages = result.messages; // Any messages, such as warnings during conversion
-        alert(html)
-    })
-    
-
-    .done();
-     }
-</script>
-
-
-
-
-
 <body style="background-color:rgb(235, 238, 223);">
     </style>
 
@@ -68,8 +44,8 @@
                     <label for="contar">
                         <font class="headlines">Highlighted words from text</font>
                     </label><br>
-                    <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca"
-                        class="clearField" onClick="clearText(this.id)">Clear Text</button>
+                    <div contenteditable="true" id="divca" name="divca" class="divca "></div>
+                    <button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
                 </td>
             </tr>
             <td id="489" style="width: 50%;">
@@ -83,7 +59,7 @@
                     </div>
                     <input type="checkbox" class="largeCheckBox" style="opacity: 100;" id="band2" name="band2"
                         onClick="getBandTwoWords(this)" /><label class="checkboxLabel">Band II Words</label><br>
-                    <!--style="opacity:0;" remove label: Band II Words-->
+                    
                     <input type="checkbox" class="largeCheckBox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label class="checkboxLabel">Band III
                         Words</label><br>
                     <input type="checkbox" class="largeCheckBox" id="wholeWord" name="wholeWord" /><label class="checkboxLabel">Find whole words</label><br>
@@ -102,7 +78,7 @@
                         <input type="checkbox" class="largeCheckBox" id="colorText" name="colorText" /><label class="checkboxLabel" style="color: red;">Color
                             Text</label><br>
                         <input type="checkbox" class="largeCheckBox" id="ulText" name="ulText" /><label class="checkboxLabel" 
-                            style="text-decoration: underline;">Underline Text</label><br><br><br>
+                            style="text-decoration: underline;">Underline Text</label><br><br><br><br>
                         
                         <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button"
                             value="Look'em up">Look'em up</button>
@@ -142,70 +118,14 @@
 </body>
 </head>
 
+
 <label class="custom-file-upload">
-<input type="file" onchange="readFile(this)" display: none;>Upload a file
-</label>
-<br><br><br>
+    <input type="file" onchange="parseWordDocxFile(this)" >docx
+</label>  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
 <label class="custom-file-upload">
-    <input type="file" onchange="parseWordDocxFile(this)" display: none;>Upload a file docx
+<input type="file" onchange="readFile(this)">txt
 </label>
-
- 
-
-<script>
-function readFile(input) {
-  let file = input.files[0];
- 
-  let reader = new FileReader();
-
-  reader.readAsText(file);
-  
-  reader.onload = function() {
-      document.getElementById("divetext").innerHTML = reader.result;
-       
-  };
-
-  reader.onerror = function() {
-    console.log(reader.error);
-    document.getElementById("divetext").innerHTML = reader.error;
-    
-  };
-}
-
-//taken from https://jstool.gitlab.io/demo/mammoth-js-word-docx-preview-and-convert/
-
-function parseWordDocxFile(inputElement) {
-    var files = inputElement.files || [];
-    if (!files.length) return;
-    var file = files[0];
-
-    console.time();
-    var reader = new FileReader();
-    reader.onloadend = function(event) {
-      var arrayBuffer = reader.result;
-      
-      mammoth.convertToHtml({arrayBuffer: arrayBuffer}).then(function (resultObject) {
-        document.getElementById('divetext').innerHTML = resultObject.value
-      })
-      console.timeEnd();
-
-      //We do not need the option below.
-      /*mammoth.extractRawText({arrayBuffer: arrayBuffer}).then(function (resultObject) {
-        //result2.innerHTML = resultObject.value
-       //alert(resultObject.value)
-      })
-
-      mammoth.convertToMarkdown({arrayBuffer: arrayBuffer}).then(function (resultObject) {
-        //result3.innerHTML = resultObject.value
-        //alert(resultObject.value)
-      }) */
-    };
-    reader.readAsArrayBuffer(file);
-  }
-</script>
-
 
 <body>
-
    
 </html>

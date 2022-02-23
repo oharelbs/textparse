@@ -95,23 +95,6 @@ function popMeUp() {
 
     document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
-    ////////////// this determines the header in the "Words found" text box //////////////
-
-    // we fill the divsl box without the count for each word, because we want to count them //
-    var wordsFound = document.getElementById("divsl").innerText;
-
-    if (wordsFound == '') {
-        document.getElementById("wordsInText").innerHTML = '<span class="headlines">Nothing was found</span>';
-        return;
-    } else if (wordsFound != '') {
-        //check if one word
-        var count = (wordsFound.match(/[a-zA-Z]\n/g)).length;
-        if (count == 1)
-            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + '1/ ' + arrwl.length + ' word found</span>';
-        else
-            document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
-    }
-
     ////////////// count words found //////////////
 
     //Now we clear the divsl box and add the number of time each word is found
@@ -125,8 +108,6 @@ function popMeUp() {
                 cw++;
             }
         }
-        //console.log('hbs --> ' + sepWords[cc] + '  ->> ' + cw)
-
         document.getElementById("divsl").innerHTML += sepWords[cc] + ' : ' + cw + '<br>';
     }
 
@@ -149,8 +130,16 @@ function popMeUp() {
     document.getElementById("divsl").innerHTML = '';
     document.getElementById("divsl").innerHTML += splitUnique;
 
+    splitUnique = splitUnique.toString().split('<br>');
 
-
+//show number of words found    
+    if (splitUnique.length-1 == 0) {
+        document.getElementById("wordsInText").innerHTML = '<span class="headlines">I have no words...</span>';
+        return;
+    } else {
+        var divslcount = splitUnique.length-1;
+        document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + divslcount + ' / ' + arrwl.length + ' word(s) found</span>';
+    }
 
 }
 
