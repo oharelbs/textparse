@@ -30,9 +30,9 @@ function popMeUp() {
 
     //get only the text from the text area
     var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will nto be recognized
-    var temporalDivElement = document.createElement("div");
-    temporalDivElement.innerHTML = orgtext;
-    var strippedText = temporalDivElement.textContent || temporalDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
+    var temporaryDivElement = document.createElement("div");
+    temporaryDivElement.innerHTML = orgtext;
+    var strippedText = temporaryDivElement.textContent || temporaryDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
 
     strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(','); //remove new lines and anything with a space
     arrtext = strippedText.toString().split(',');
@@ -42,9 +42,9 @@ function popMeUp() {
     //get only the text from the word list///
     var orgwordlist = wordlist.toString().replace(/\n\s*/g, "XXX");
 
-    var temporalDivElementWl = document.createElement("divTempwl");
-    temporalDivElementWl.innerHTML = orgwordlist;
-    var strippedTextWl = temporalDivElementWl.textContent || temporalDivElementWl.innerText || ""; //--> this is the text from the word list
+    var temporaryDivElementWl = document.createElement("divTempwl");
+    temporaryDivElementWl.innerHTML = orgwordlist;
+    var strippedTextWl = temporaryDivElementWl.textContent || temporaryDivElementWl.innerText || ""; //--> this is the text from the word list
 
     var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
     arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/[ ]/g, '').split('XXX'); //array after split
@@ -53,36 +53,51 @@ function popMeUp() {
     arrtext = strippedText.toString().replace(/\!/g, '').replace(/\./g, '').replace(/\;/g, '').replace(/\?/g, '').replace(/\"/g, '').replace(/\–/g, '').replace(/\-/g, '').split(',');
 
     var orgtextf = text.toString();
-    var temporalDivElement = document.createElement("divftemp");
-    temporalDivElement.innerHTML = orgtextf;
-    var strippedText1 = temporalDivElement.textContent || temporalDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
+    var temporaryDivElement = document.createElement("divftemp");
+    temporaryDivElement.innerHTML = orgtextf;
+    var strippedText1 = temporaryDivElement.textContent || temporaryDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
     var wordCounter = 1;
 
-    var temporalDivSLElement = document.createElement("divSLtemp");
+    var temporaryDivSLElement = document.createElement("divSLtemp");
 
     var myWord = matchWords(strippedText1, arrwl); //this matches the text to the list of words
     var sepWords = myWord.toString().split("<br>");
 
-    //populate the divurl list words
+    ////////////// this populate the divurl list words //////////////
     for (var sp = 0; sp < sepWords.length; sp++) {
         document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + sepWords[sp] + '" target="_blank">' + sepWords[sp] + '</a></div>';
     }
 
+    ////////////// this enters them into the "Words found" text box //////////////
     document.getElementById("divsl").innerHTML += myWord;
 
-    temporalDivSLElement.innerHTML += sepWords;
 
-    var words = temporalDivSLElement.innerHTML.split(',');
+
+    ////////////// this prepares the words for coloring //////////////
+    temporaryDivSLElement.innerHTML += sepWords;
+
+    var words = temporaryDivSLElement.innerHTML.split(',');
 
     var newHTML = document.getElementById('divetext').innerHTML;
 
-    words.forEach(word =>
-        newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+    ////////////// this finds and colors the first match it finds for each word //////////////
+    // words.forEach(word =>
+    //     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
+
+
+    // var cw = 0;//cw = count words
+    ////////////// this find all of the words and colors them //////////////
+    for (var wrds = 0; wrds < words.length - 1; wrds++) {
+        newHTML = newHTML.replaceAll(words[wrds], '<span class="' + myCSSclass() + '">' + words[wrds] + '</span>')
+
+    }
 
     document.getElementById("divca").innerHTML = newHTML; //put it all in the Highlighted text field
 
+    ////////////// this determines the header in the "Words found" text box //////////////
 
+    // we fill the divsl box without the count for each word, because we want to count them //
     var wordsFound = document.getElementById("divsl").innerText;
 
     if (wordsFound == '') {
@@ -96,16 +111,59 @@ function popMeUp() {
         else
             document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + count + ' / ' + arrwl.length + ' words found</span>';
     }
+
+    ////////////// count words found //////////////
+
+    //Now we clear the divsl box and add the number of time each word is found
+    document.getElementById("divsl").innerHTML = '';
+    for (cc = 0; cc < sepWords.length-1; cc++) { //length-1, because speWords array gives: word, word, word, --> with a trailing comma
+
+        var cw = 0;
+        for (dd = 0; dd < sepWords.length; dd++) {
+
+            if (sepWords[cc].toLowerCase() == sepWords[dd].toLowerCase()) {
+                cw++;
+            }
+        }
+        //console.log('hbs --> ' + sepWords[cc] + '  ->> ' + cw)
+
+        document.getElementById("divsl").innerHTML += sepWords[cc] + ' : ' + cw + '<br>';
+    }
+
+    //Show unique - remove duplicate from divsl
+    function onlyUnique(value, index, self) {
+        return self.indexOf(value) === index;
+      }
+
+    var divslArray = document.getElementById("divsl").innerHTML;
+    divslArray = divslArray.toString().split('<br>');
+    var unique = divslArray.filter(onlyUnique);
+    
+    document.getElementById("divsl").innerHTML = '';
+    document.getElementById("divsl").innerHTML += unique;
+
+    var splitUnique = document.getElementById("divsl").innerText;
+    splitUnique = splitUnique.toString().split(',');
+    splitUnique = splitUnique.join('<br>');
+
+    document.getElementById("divsl").innerHTML = '';
+    document.getElementById("divsl").innerHTML += splitUnique;
+
+
+
+
 }
+
+///////////this section is for identifying the words and returning an array////////////////////
 
 function matchWords(orgtextf, arrwl) { //this checks if a word matches
     var regexMetachars = /[(){[*+?.\\^$|]/g;
-        
-    
+
+
     for (var i = 0; i < arrwl.length; i++) {
         arrwl[i] = arrwl[i].replace(regexMetachars, "\\$&");
-        
-        
+
+
     }
 
     var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
@@ -117,7 +175,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
 
     // return orgtextf.match(regex);
     var bbb = [];
-    var ccc = [];
+    ///var ccc = [];
     var aaa = orgtextf.match(regex);
     var pl = orgtextf.match(regexPL);
     var es = orgtextf.match(regexES);
@@ -130,7 +188,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             if (aaa[t].length > 1) {
                 bbb += aaa[t] + '<br>';
 
-                
+
             }
         }
     }
@@ -139,7 +197,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             if (pl[p].length > 0) {
                 bbb += pl[p] + '<br>';
 
-                
+
             }
         }
     }
@@ -148,7 +206,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             if (es[ses].length > 1) {
                 bbb += es[ses] + '<br>';
 
-                
+
             }
         }
     }
@@ -157,7 +215,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             if (ed[e].length > 1) {
                 bbb += ed[e] + '<br>';
 
-                
+
             }
         }
     }
@@ -166,7 +224,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             if (d[sd].length > 1) {
                 bbb += d[sd] + '<br>';
 
-                
+
             }
         }
     }

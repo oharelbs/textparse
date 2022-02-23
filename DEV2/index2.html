@@ -171,7 +171,8 @@ function readFile(input) {
   };
 }
 
-// <input type="file" onchange="parseWordDocxFile(this)">
+//taken from https://jstool.gitlab.io/demo/mammoth-js-word-docx-preview-and-convert/
+
 function parseWordDocxFile(inputElement) {
     var files = inputElement.files || [];
     if (!files.length) return;
@@ -184,11 +185,11 @@ function parseWordDocxFile(inputElement) {
       
       mammoth.convertToHtml({arrayBuffer: arrayBuffer}).then(function (resultObject) {
         document.getElementById('divetext').innerHTML = resultObject.value
-       alert(resultObject.value)
       })
       console.timeEnd();
 
-      mammoth.extractRawText({arrayBuffer: arrayBuffer}).then(function (resultObject) {
+      //We do not need the option below.
+      /*mammoth.extractRawText({arrayBuffer: arrayBuffer}).then(function (resultObject) {
         //result2.innerHTML = resultObject.value
        //alert(resultObject.value)
       })
@@ -196,7 +197,7 @@ function parseWordDocxFile(inputElement) {
       mammoth.convertToMarkdown({arrayBuffer: arrayBuffer}).then(function (resultObject) {
         //result3.innerHTML = resultObject.value
         //alert(resultObject.value)
-      })
+      }) */
     };
     reader.readAsArrayBuffer(file);
   }
