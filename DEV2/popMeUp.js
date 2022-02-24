@@ -62,17 +62,7 @@ function popMeUp() {
     var temporaryDivSLElement = document.createElement("divSLtemp");
 
     var myWord = matchWords(strippedText1, arrwl); //this matches the text to the list of words
-    var sepWords = myWord.toString().split("<br>");
-
-    ////////////// this populate the divurl list words //////////////
-    for (var sp = 0; sp < sepWords.length; sp++) {
-        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + sepWords[sp] + '" target="_blank">' + sepWords[sp] + '</a></div>';
-    }
-
-    ////////////// this enters them into the "Words found" text box //////////////
-    document.getElementById("divsl").innerHTML += myWord;
-
-
+    var sepWords = myWord.toString().split("<br>"); //.sort();
 
     ////////////// this prepares the words for coloring //////////////
     temporaryDivSLElement.innerHTML += sepWords;
@@ -86,7 +76,6 @@ function popMeUp() {
     //     newHTML = newHTML.replace(word, '<span class="' + myCSSclass() + '">' + word + '</span>'))
 
 
-    // var cw = 0;//cw = count words
     ////////////// this find all of the words and colors them //////////////
     for (var wrds = 0; wrds < words.length - 1; wrds++) {
         newHTML = newHTML.replaceAll(words[wrds], '<span class="' + myCSSclass() + '">' + words[wrds] + '</span>')
@@ -99,7 +88,7 @@ function popMeUp() {
 
     //Now we clear the divsl box and add the number of time each word is found
     document.getElementById("divsl").innerHTML = '';
-    for (cc = 0; cc < sepWords.length-1; cc++) { //length-1, because speWords array gives: word, word, word, --> with a trailing comma
+    for (cc = 0; cc < sepWords.length - 1; cc++) { //length-1, because speWords array gives: word, word, word, --> with a trailing comma
 
         var cw = 0;
         for (dd = 0; dd < sepWords.length; dd++) {
@@ -112,36 +101,45 @@ function popMeUp() {
     }
 
     //Show unique - remove duplicate from divsl
+    var wordNumeralBullet = 0;
+
     function onlyUnique(value, index, self) {
-        return self.indexOf(value) === index;
-      }
+        if (value != '')
+            return self.indexOf(value) === index;
+    }
 
     var divslArray = document.getElementById("divsl").innerHTML;
     divslArray = divslArray.toString().split('<br>');
     var unique = divslArray.filter(onlyUnique);
-    
+
     document.getElementById("divsl").innerHTML = '';
     document.getElementById("divsl").innerHTML += unique;
 
-    var splitUnique = document.getElementById("divsl").innerText;
-    splitUnique = splitUnique.toString().split(',');
-    splitUnique = splitUnique.join('<br>');
+    var splitUnique = (document.getElementById("divsl").innerText).toString().split(',');
+    splitUnique = splitUnique.sort().join('<br>');
 
     document.getElementById("divsl").innerHTML = '';
     document.getElementById("divsl").innerHTML += splitUnique;
 
-    splitUnique = splitUnique.toString().split('<br>');
-
-//show number of words found    
-    if (splitUnique.length-1 == 0) {
+    //show number of words found    
+    if (unique.length - 1 == 0) {
         document.getElementById("wordsInText").innerHTML = '<span class="headlines">I have no words...</span>';
         return;
     } else {
-        var divslcount = splitUnique.length-1;
+        var divslcount = unique.length - 1;
         document.getElementById("wordsInText").innerHTML = '<span class="headlines">' + divslcount + ' / ' + arrwl.length + ' word(s) found</span>';
     }
 
+    ////////////// this populate the divurl list words //////////////
+
+    var linkedWords = sepWords.filter(onlyUnique);
+    linkedWords = linkedWords.toString().split(',').sort();
+    
+    for (var sp = 0; sp < linkedWords.length; sp++) {
+        document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + linkedWords[sp] + '" target="_blank">' + linkedWords[sp] + '</a></div>';
+    }
 }
+
 
 ///////////this section is for identifying the words and returning an array////////////////////
 
@@ -160,17 +158,19 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
     var regexES = new RegExp("\\b(?:" + arrwl.join("|") + ")[es]+\\b", "gi"); //this shows only words with plural es / present simple es
     var regexED = new RegExp("\\b(?:" + arrwl.join("|") + ")[ed]+\\b", "gi"); //this shows only words with ed
     var regexD = new RegExp("\\b(?:" + arrwl.join("|") + ")[d]+\\b", "gi"); //this shows only words with d
-    //            var regexING = new RegExp("\\b(?:" + arrwl.join("|") + ")[\n\g]+\\b", "gi"); //this shows only words with ing
+    var regexPos = new RegExp("\\b(?:" + arrwl.join("|") + ")[\'s]+\\b", "gi"); //this shows only words with 's
+    var regexING = new RegExp("\\b(?:" + arrwl.join("|") + ")[\ing]+\\b", "gi"); //this shows only words with ing
 
     // return orgtextf.match(regex);
     var bbb = [];
-    ///var ccc = [];
+
     var aaa = orgtextf.match(regex);
     var pl = orgtextf.match(regexPL);
     var es = orgtextf.match(regexES);
     var ed = orgtextf.match(regexED);
     var d = orgtextf.match(regexD);
-    //          var pg = orgtextf.match(regexING);
+    var pos = orgtextf.match(regexPos);
+    var pg = orgtextf.match(regexING);
 
     if (aaa) {
         for (var t = 0; t < aaa.length; t++) {
@@ -181,6 +181,27 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             }
         }
     }
+
+    if (pg) {
+        for (var pgw = 0; pgw < pg.length; pgw++) {
+            if (pg[pgw].length > 1) {
+                bbb += pg[pgw] + '<br>';
+
+
+            }
+        }
+    }
+
+    if (pos) {
+        for (var posw = 0; posw < pos.length; posw++) {
+            if (pos[posw].length > 1) {
+                bbb += pos[posw] + '<br>';
+
+
+            }
+        }
+    }
+
     if (pl) {
         for (var p = 0; p < pl.length; p++) {
             if (pl[p].length > 0) {
@@ -217,11 +238,6 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             }
         }
     }
-    //  for(var sn = 0; sn < pg.length; sn++) {
-    //     if(pg[sn].length > 1) {
-    //         bbb += pg[sn] + '<br>';
-    //     }
-    //  }
 
     return (bbb)
 }
