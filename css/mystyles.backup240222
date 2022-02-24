@@ -16,10 +16,6 @@
     position: absolute;
 }
 
-.button:hover {
-    background-color: #3e8e41;
-  }
-
 #mudgashText {
     background-color: yellow;
 }
@@ -59,7 +55,7 @@
     border: 1px solid;
 }
 .divetext{
-    height: 350px;
+    height: 420px;
     width: 95%;
     background-color: white;
     color: black;
@@ -70,7 +66,7 @@
     border: 1px solid;
 }
 .divca {
-    height: 350px !important;
+    height: 420px !important;
     width: 95%;
     background-color: white;
     color: black;
@@ -94,7 +90,6 @@
     background-color: #FFCCBC;
     border: 1px;
     border-radius: 1px;
-    border-color: #FFCCBC;
     color: black;
     padding: 1px 1px;
     text-align: center;
@@ -103,13 +98,7 @@
     font-size: 18px;
     margin: 2px 2px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
 }
-
-.clearField:hover {
-    background-color: #3e8e41;
-  }
-
 #copyText{
     cursor: pointer;
 }
@@ -127,10 +116,6 @@
     margin: 2px 2px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
-.copyText:hover {
-    background-color: #3e8e41;
-  }
 
 #divurl {
     border: 1px solid;
@@ -196,48 +181,31 @@
     float: right;
 }
 
+/* .mail-image.imagetooltiptext{
+    visibility: hidden;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.mail-image:hover.imagetooltiptext {
+    visibility: visible;
+} */
+
 #limitations {
     color: red;
 }
 
-input[type="file"] {
-    display: none;
-}
-.custom-file-upload {
-   
-    cursor: pointer;
-    background-color: #1c87c9;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 10px 34px;
-    text-align: center;
-    text-decoration: none;
+/* .limitations:hover:after {
     display: inline-block;
-    font-size: 20px;
-    margin: 2px 2px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    content: attr(data-tooltip);
+    white-space: pre-wrap;
     position: absolute;
-    margin: 0 auto;
-    width: 50px;
-}
-
-.custom-file-upload:hover {
-    background-color: #3e8e41;
-  }
-
-.checkboxLabel {
-
+    background-color: black;
+    color: #fff;
+    text-align: left;
     font-size: 20px;
-
-}
-/*scale checkbox */
-input.largeCheckBox {
-    transform: scale(1.4);
-  }
-
-  .textButton {
-    width: 200px;
-    margin: 0 auto;
-    display: inline;
-}
+    border-radius: 3px;
+    width: 400px;
+} */
