@@ -64,9 +64,7 @@ army
 around
 arrival
 article
-as 
 ask
-at
 attention
 attitude
 attractive
@@ -87,7 +85,6 @@ baseball
 basket
 battery
 battle
-be
 bear
 beauty
 Bedouin
@@ -127,7 +124,6 @@ business
 businessman
 businesswoman
 but
-by
 café
 calendar
 call
@@ -443,7 +439,6 @@ hunger
 hunting
 hurry
 hurt
-I
 idea
 identify
 ignore
@@ -456,7 +451,6 @@ important
 impossible
 improve
 improvement
-in
 included
 including
 increase
@@ -478,7 +472,6 @@ invent
 invention
 involve
 Islam
-it
 item
 itself
 jail
@@ -618,16 +611,13 @@ noun
 object
 obvious
 obviously
-of
 of sth 
 off
 offer
 officer
 oh
 old
-on
 on sth
-one
 one
 open
 operate
@@ -635,7 +625,6 @@ operator
 opinion
 opportunity
 option
-or
 order
 ordinary
 organization
@@ -777,8 +766,6 @@ same
 sauce
 sausage
 save
-sb
-sb/sth
 scarf
 scientific
 scientist
@@ -840,7 +827,6 @@ smart
 smell
 smoke
 smoking
-so
 soccer
 soft
 software
@@ -933,7 +919,6 @@ timetable
 tin
 tiny
 title
-to
 toast
 today
 toe
@@ -978,7 +963,6 @@ unless
 unnecessary
 unpleasant
 until
-up
 up 
 use
 used
@@ -995,7 +979,6 @@ warn
 warning
 watch
 wave
-we
 website
 weekly
 weight
