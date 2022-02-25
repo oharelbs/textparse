@@ -1,3 +1,30 @@
+function parseTheFile(inputFile) {
+
+    document.getElementById("divetext").innerHTML = '';
+
+    var files = inputFile.files || [];
+    if (!files.length) return;
+    var file = files[0];
+
+    console.time();
+    var reader = new FileReader();
+
+    //check extenstion - should be docx only
+    var extension = inputFile.files[0].name.split('.').pop().toLowerCase()
+    
+    if (extension == 'docx') {
+        parseWordDocxFile(inputFile)
+    } else if (extension == 'txt') {
+        readFile(inputFile)
+    } else {
+        alert('Only MS Word docx or txt files are accepted');
+        return false;
+    }
+}
+
+/////text////
+
+
 function readFile(input) {
 
     document.getElementById("divetext").innerHTML = '';
@@ -27,6 +54,9 @@ function readFile(input) {
     };
 }
 
+
+
+/////docx////
 //taken from https://jstool.gitlab.io/demo/mammoth-js-word-docx-preview-and-convert/
 
 function parseWordDocxFile(inputElement) {
