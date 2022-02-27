@@ -1,48 +1,62 @@
-a little bit
-a pity
-a shame
-a variety of
 abroad
 accent
+accept
 accident
 accompany
-according to
+according
 ache
 achieve
+achievement
 across
 activity
+ad
+addition
 adequate
 adjective
 adjust
+adjustment
 admire
 admit
 advantage
 adventure
+adventurous
 adverb
+advert
 advertise
+advertisement
 affect
+afford
 afraid
+after
+afterward
 afterwards
 aim
+aimed
+air
 airport
 album
 alive
-all the best
+all
 along
 aloud
 alter
 although
+amaze
 amazing
 among
 amount
 and
 announce
+announcement
+another
 anticipate
 anymore
 anyway
 apartment
+apologize
 apology
 appointment
+approximate
 approximately
 Arab
 area
@@ -50,15 +64,10 @@ army
 around
 arrival
 article
-as much
-as soon as
-as you know
 ask
-at first
-at present
-at the moment
 attention
 attitude
+attractive
 audience
 author
 available
@@ -66,6 +75,7 @@ awake
 away
 back
 backward
+backwards
 bad
 baker
 balloon
@@ -75,33 +85,22 @@ baseball
 basket
 battery
 battle
-be able to do
-be crazy about
-be located in
-be made of
-be off
-be responsible for
-be supposed to do
-be unable to do
-be used to
-be willing
-be worth
-be worth it
-be wrong 
 bear
 beauty
 Bedouin
 bedtime
+before
 behave
 behavior
 belief
-belong to  
+belong
 below
 beside
-best wishes
+best
 Bible
 blanket
 blond
+blonde
 blood
 blow
 body
@@ -111,29 +110,27 @@ boot
 border
 borrow
 boss
+bossy
 bowl
 boyfriend
 brain
 branch
 brave
 break
-break down
 bridge
-bring back
 broken
 burn
 business
-by mistake
-by the way
+businessman
+businesswoman
+but
 café
 calendar
 call
 calm
-can afford
+can
 cancer
 candle
-can't stand
-can't wait
 cap
 capital
 card
@@ -141,21 +138,21 @@ care
 careless
 carrot
 carry
-carry on
-carry out
 case
 cash
 castle
 catch
-catch fire
 Catholic
 ceiling
 celebrate
+celebration
 cent
 centimeter
 century
 certain
+certainly
 champion
+championship
 chance
 change
 channel
@@ -174,32 +171,40 @@ Circassian
 circus
 clap
 clear
+clearly
 click
 close
-closing time
+closely
 coach
 code
 coin
 cold
 comb
+combination
 combine
-come down
+come
 comma
+communicate
 communication
 compare
+comparison
 compete
 complete
+completely
 concert
 confident
-Congratulations!
+Congratulations
+connect
 connection
 contact
 contents
 context
 continue
+continuous
 contract
 control
 convince
+convinced
 cooking
 copy
 corn
@@ -212,17 +217,19 @@ cousin
 crazy
 cream
 create
+creation
 credit
 crisp
 crossing
 cry
+cultural
 culture
 cupboard
 curtain
-cut up or cut up
 daily
 danger
-date of birth
+dangerous
+day
 deal
 death
 definitely
@@ -230,13 +237,15 @@ degree
 delay
 demand
 dentist
-department store
+department
 dependent
+depends
 description
 desert
 dessert
 destroy
 develop
+development
 diary
 dictation
 differently
@@ -248,16 +257,24 @@ direct
 directions
 director
 dirt
+dirty
 disappear
 discount
 discover
 discuss
+discussion
 disease
 dish
+dishes
 distance
+distant
+do
+don't
 doubt
+down
 drawer
 dream
+drink
 drive
 drop
 drum
@@ -265,38 +282,50 @@ Druze
 duck
 due
 duty
-each other
+each
 earn
 earring
 Earth
 education
+educational
 effect
 election
+electric
 electricity
 elevator
 email
 emoji
 employ
+employee
+end
 ending
 enemy
 energy
+ensure
 enter
+entry
 envelope
 environment
+environmental
 equipment
 error
+etc.
 euro
 even
 event
+ever
 everyday
 exact
+exam
 examine
 excited
+exciting
 exercise
 exit
 expect
 expensive
 experience
+experienced
 explanation
 explore
 express
@@ -306,19 +335,20 @@ factory
 fair
 fairly
 fall
-fall down
-FALSE
 familiar
+Family
 fan
 fantastic
+far
 fashion
 fear
 feather
 feel
+feeling
 fight
-fill in
 fine
-first of all
+fire
+first
 fish
 fishing
 fit
@@ -328,18 +358,20 @@ flat
 flight
 flour
 fog
+foggy
 follow
-for sale
+foot
+for
 form
 forward
 frame
 free
 freedom
 fresh
-fresh air
 friendship
 from
-full stop
+front
+full
 fully
 fur
 furniture
@@ -347,18 +379,15 @@ gain
 gap
 garbage
 gas
+gasoline
 gather
 general
+generally
 geography
-get back or get back
-get married
-get to know 
-get together
+get
 girlfriend
-give back
 glove
-go abroad
-go back
+go
 god
 gold
 golden
@@ -366,30 +395,27 @@ good-looking
 government
 grammar
 great
-grow up 
+greatly
+grow
 guard
 guest
 guide
 guy
 gym
 habit
+half
 hall
-hand out
 handbag
+hands
+happy
 hard
 hardly
-hardly ever
 hate
-have to
-have a question
-have a talk
-have
 head
-head back
 headache
+headscarf
 health
 healthy
-hear from
 hearing
 heart
 heavily
@@ -405,7 +431,6 @@ hobby
 honey
 horrible
 housewife
-How do you do?
 however
 hug
 human
@@ -416,10 +441,8 @@ hurry
 hurt
 idea
 identify
-if you like 
 ignore
 ill
-I'm afraid
 image
 imagine
 immediate
@@ -427,18 +450,14 @@ importance
 important
 impossible
 improve
-in addition
-in case of
-in front
-in love
-in the end
-in time
-in two
+improvement
 included
+including
 increase
+industrial
 industry
 inform
-information technology
+information
 ingredient
 inner
 insect
@@ -450,15 +469,16 @@ international
 interval
 introduce
 invent
+invention
 involve
 Islam
-it looks like
 item
 itself
 jail
 jazz
 Jew
 jewelry
+Jewish
 job
 join
 joke
@@ -466,98 +486,111 @@ joy
 Judaism
 judge
 just
-just a moment
 kick
 kilogram
 kilometer
 kite
 know
-lack of
+known
+lack
 lake
 lamp
 land
+landing
 laptop
 largely
 latest
-laugh at
+laugh
 law
 lawyer
 lead
 leaf
 leave
-leave out
 left
 lemon
 lemonade
 lend
-let know
+let
 level
 library
 licence
+license
 lick
 lift
+lights
 like
 limit
 line
 lion
+list
 liter
+living
 local
+locally
 locate
+location
 lock
 long
-look around
-look like
-look nice
-Look out!
-look up or look up
+look
+looks
 lose
 loud
-all my love
-lots of love 
+love
 luck
 lucky
 luggage
 machine
+made
 magic
 mail
 main
 mainly
-make a face
-make sure that
+make
+mall
 manage
 map
+mark
+married
 marry
 match
+matter
 maximum
 measure
 medal
 medicine
 medium
 meet
+meeting
+member
 memory
 midday
 midnight
 military
 mind
+mind 
+minimal
 minimum
 mirror
 miss
+mistake
 modern
 moment
+money
 Moslem
 mosque
 most
 mostly
 mouse
 move
-move in
 murder
 muscle
 musical
 musician
+muslim
 myself
 name
 nation
+national
 nationality
 natural
 near
@@ -565,8 +598,11 @@ nearby
 necessary
 necklace
 neither
-never mind 
+never
+nice
+no
 normally
+not
 note
 nothing
 notice
@@ -574,33 +610,30 @@ noticeboard
 noun
 object
 obvious
-of course
-of course not
+obviously
+of sth 
 off
 offer
 officer
 oh
-on business
-on fire
-on foot
-on offer
-on time
+old
+on sth
 one
-one another
-one day
 open
 operate
+operator
 opinion
 opportunity
 option
-or something like that
 order
 ordinary
 organization
 organize
+organizer
 original
+other
 ourselves
-out of order
+out
 over
 owe
 p.m.
@@ -609,7 +642,7 @@ pain
 pajamas
 palace
 parcel
-part of  
+part
 pass
 passenger
 passport
@@ -622,14 +655,17 @@ pension
 pepper
 performance
 period
+person
 personal
 petrol
 physical
+physically
 physics
 piano
-pick up
+pick
 piece
 pillow
+pity
 play
 playground
 please
@@ -640,22 +676,30 @@ point
 polite
 poor
 popcorn
+popular
 position
 possibility
 post
+postman
 potential
 powerful
+prefer
 preparation
+prepared
+present
 press
 prison
+prisoner
 private
 produce
+product
 professional
 program
 promise
 property
 proposal
 protect
+protection
 proud
 prove
 public
@@ -665,15 +709,13 @@ purple
 purpose
 purse
 push
-put off
-put on
-put up
-put down
-put together
+put
 puzzle
+pyjamas
 quality
 quantity
-question mark
+question
+quiet
 quietly
 quite
 race
@@ -681,40 +723,52 @@ range
 rat
 reach
 reaction
-read out
+read
 real
 realize
 really
 reasonable
 receive
 recent
+recently
 recognize
 record
+recording
 reduce
-refer to
+refer
 relations
 religion
+religious
 remain
+remaining
 remove
 repair
 reply
 resource
+responsibility
 responsible
+rest
 rich
-right away
+right
+right 
 ring
+road
 rock
 role
 roll
+room
 round
 row
 safe
+sale
 salty
+same
 sauce
 sausage
 save
 scarf
 scientific
+scientist
 scissors
 scooter
 score
@@ -722,23 +776,30 @@ scream
 season
 secret
 secretary
-seem happy
+seem
 select
+selection
 selfie
+sensation
 sense
 separate
+seriously
 serve
+service
 set
 sex
 shadow
-shake hands
+shake
+shame
 shape
 share
+shared
 sheet
 shelf
 ship
 shoot
 shopping
+shot
 shout
 shut
 shy
@@ -752,23 +813,27 @@ simple
 single
 sink
 sir
-sitting room
+sitting
 situation
 skate
+skating
 ski
+skiing
 sleep
+sleepy
 slice
 slim
 smart
 smell
 smoke
-so far
+smoking
 soccer
 soft
-soft drink
 software
 soldier
 somehow
+something
+soon
 sort
 space
 speech
@@ -778,79 +843,76 @@ stage
 standard
 star
 state
+statement
 stay
 steam
 step
+sth
 stomach
-stomach ache
 stone
 stop
+store
 story
 straight
+strange
 strawberry
+street
 strength
 strongly
 study
 style
 subject
 succeed
-such a(n)
-such as 
+such
 suggest
+suggestion
 suit
 sunglasses
 suppose
+supposed
+sure
 surely
 surprise
+surprising
 swim
+swimmer
 synagogue
 take
-take a break
-take an exam
-take back or take back
-take out or take out
 taste
 teaching
 team
 tear
 teaspoon
+technological
 technology
+teenage
 teenager
 tell
-tell to do
-tend to do  
+tend
 terrible
+terribly
 text
 thanks
-popular
-that's all right 
-the air
-the army
-the best
-the day after tomorrow
-the day before yesterday
-the dishes
-the first
-the matter
-the most attractive
-the same
-the young
+that
+that's
+the
 theater
 their
 themselves
 then
 therefore
-there's no doubt
+there's
 thick
-think of
 think
 though
 thought
 threat
+threaten
 throat
 thumb
 thunder
-tidy up
+thunderstorm
+tidy
 tie
 time
 timetable
@@ -860,23 +922,28 @@ title
 toast
 today
 toe
+toenail
 together
 tongue
-too bad
+too
 toothache
 toothpaste
 top
 topic
 total
+totally
 touch
 tour
 toward
+towards
 towel
 tower
 trade
 traffic
 train
+training
 tram
+travel
 traveler
 treat
 trouble
@@ -884,10 +951,10 @@ trousers
 truck
 trust
 try
-try on
 tune
 turn
 turning
+two
 ugly
 understanding
 uniform
@@ -896,10 +963,11 @@ unless
 unnecessary
 unpleasant
 until
-up the street
+up 
 use
-used to do
+used
 usual
+variety
 video
 virus
 visit
@@ -908,7 +976,8 @@ volume
 vote
 warm
 warn
-watch out
+warning
+watch
 wave
 website
 weekly
@@ -916,56 +985,31 @@ weight
 well
 well-made
 wet
-What is 
+What
 wheel
 whenever
 whether
-whether … or
 which
 whose
-Why don't you?
-Why not? 
+Why
 widely
 wild
 window
 wing
 wish
+wishes
 wonder
 wool
 work
+working
 worried
+worry
 worse
-would love
-would love to
-would prefer
-wow!
-wrap up or wrap up
+worth
+wow
+wrap
+writing
 wrong
-you know
-your big brother
+young
 yourself
 yourselves
-afterward
-quickly
-backwards
-blonde
-fill out
-gasoline
-meeting
-have got
-down
-what about?
-half
-as if
-that depends
-or leave
-license
-strange, etc.
-with love from
-Muslim
-move out
-pyjamas
-or pick
-electric scooter
-seriously
-do one's best

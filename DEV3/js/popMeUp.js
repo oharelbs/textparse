@@ -29,7 +29,7 @@ function popMeUp() {
     document.getElementById("divwl").value = wordlist;
 
     //get only the text from the text area
-    var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will nto be recognized
+    var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will not be recognized
     var temporaryDivElement = document.createElement("div");
     temporaryDivElement.innerHTML = orgtext;
     var strippedText = temporaryDivElement.textContent || temporaryDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
@@ -47,7 +47,8 @@ function popMeUp() {
     var strippedTextWl = temporaryDivElementWl.textContent || temporaryDivElementWl.innerText || ""; //--> this is the text from the word list
 
     var arrwl = new Array(strippedTextWl); //copy the data from the temporary div divTempwl
-    arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/[ ]/g, '').split('XXX'); //array after split
+    //arrwl = orgwordlist.toString().replace(/\n\s*/g, '').replace(/[ ]/g, '').split('XXX'); //array after split
+    arrwl = orgwordlist.toString().split('XXX'); //array after split
 
     var arrtext = new Array(strippedText);
     arrtext = strippedText.toString().replace(/\!/g, '').replace(/\./g, '').replace(/\;/g, '').replace(/\?/g, '').replace(/\"/g, '').replace(/\–/g, '').replace(/\-/g, '').split(',');
@@ -57,7 +58,7 @@ function popMeUp() {
     temporaryDivElement.innerHTML = orgtextf;
     var strippedText1 = temporaryDivElement.textContent || temporaryDivElement.innerText || ""; //--> this is the text from the unseen, cleaned of HTML tags
 
-    var wordCounter = 1;
+    //var wordCounter = 1;
 
     var temporaryDivSLElement = document.createElement("divSLtemp");
 
@@ -134,7 +135,7 @@ function popMeUp() {
 
     var linkedWords = sepWords.filter(onlyUnique);
     linkedWords = linkedWords.toString().split(',').sort();
-    
+
     for (var sp = 0; sp < linkedWords.length; sp++) {
         document.getElementById("divurl").innerHTML += '<div><a href="https://www.morfix.co.il/' + linkedWords[sp] + '" target="_blank">' + linkedWords[sp] + '</a></div>';
     }
@@ -147,11 +148,13 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
     var regexMetachars = /[(){[*+?.\\^$|]/g;
 
 
-    for (var i = 0; i < arrwl.length; i++) {
-        arrwl[i] = arrwl[i].replace(regexMetachars, "\\$&");
+        for (var i = 0; i < arrwl.length; i++) {
+            arrwl[i] = arrwl[i].replace(regexMetachars, "\\$&");
+    
+    
+        }
 
-
-    }
+        var bbb = []; //this array is returned for coloring
 
     var regex = new RegExp("\\b(?:" + arrwl.join("|") + ")\\b", "gi"); // this shows only complete words
     var regexPL = new RegExp("\\b(?:" + arrwl.join("|") + ")[s]+\\b", "gi"); //this shows only words with plural s / present simple s
@@ -162,7 +165,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
     var regexING = new RegExp("\\b(?:" + arrwl.join("|") + ")[\ing]+\\b", "gi"); //this shows only words with ing
 
     // return orgtextf.match(regex);
-    var bbb = [];
+    
 
     var aaa = orgtextf.match(regex);
     var pl = orgtextf.match(regexPL);
@@ -176,8 +179,6 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
         for (var t = 0; t < aaa.length; t++) {
             if (aaa[t].length > 1) {
                 bbb += aaa[t] + '<br>';
-
-
             }
         }
     }
@@ -238,6 +239,50 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             }
         }
     }
+    
+  /*  var myarrwl = arrwl.toString().split(',');
+    for (var item of myarrwl) {
+
+        var CAPitem = item.charAt(0).toUpperCase() + item.slice(1);
+        //console.log(CAPitem)
+
+        var itemsp = item.toString().replace(item, " " + item + " ");
+        var itemS = item.toString().replace(item,  " " + item + 's' + " ");
+        var itemES = item.toString().replace(item,  " " + item + 'es' + " ");
+        var itemD = item.toString().replace(item,  " " + item + 'd' + " ");
+        var itemED = item.toString().replace(item,  " " + item + 'ed' + " ");
+        var itemING = item.toString().replace(item,  " " + item + 'ing' + " ");
+        var itemAS = item.toString().replace(item,  " " + item + '\'s' + " ");
+
+        var CAPitemsp = CAPitem.toString().replace(CAPitem, " " + CAPitem + " ");
+        var CAPitemS = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 's' + " ");
+        var CAPitemES = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'es' + " ");
+        var CAPitemD = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'd' + " ");
+        var CAPitemED = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'ed' + " ");
+        var CAPitemING = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'ing' + " ");
+        var CAPitemAS = CAPitem.toString().replace(CAPitem,  " " + CAPitem + '\'s' + " ");
+
+        var myVarArray = [itemsp, itemS, itemES, itemD, itemED, itemING, itemAS, CAPitemsp, CAPitemS, CAPitemES, CAPitemD, CAPitemED, CAPitemING, CAPitemAS]
+        
+        myVarArray = myVarArray.toString().split(',');
+            
+        if (orgtextf.includes(itemsp)) {
+            bbb += itemsp + '<br>';
+        }
+
+        if (orgtextf.includes(CAPitemsp)) {
+            bbb += CAPitemsp + '<br>';
+        }
+
+        
+        for(var myvar = 0; myvar < myVarArray.length; myvar++) {
+            if (orgtextf.includes(myVarArray[myvar])) {
+                bbb += myVarArray[myvar] + '<br>'
+        }
+    }
+
+} 
+*/
 
     return (bbb)
 }
