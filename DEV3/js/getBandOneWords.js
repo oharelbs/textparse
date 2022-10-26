@@ -6,7 +6,7 @@ function getBandOneWords(element) {
                 document.getElementById('divwl').value = "";
                 jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band2.txt', function(data) {
                     document.getElementById('divwl').value = data;
-                }
+                });
             }
 
 

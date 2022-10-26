@@ -1204,8 +1204,6 @@ on the way to
 on time
 once again
 once more
-one
-one 
 one another
 one day
 one of these days
@@ -1229,7 +1227,6 @@ original
 originally
 ought to
 ourselves 
-out
 out loud
 out of 
 out of date
@@ -1551,8 +1548,6 @@ slim
 smart
 smell
 smoke 
-so
-so 
 so far
 so far as I know
 so long as
@@ -1693,7 +1688,6 @@ thanks
 that
 that 
 that's all right 
-the
 the air
 the army
 the best 
@@ -1745,7 +1739,6 @@ tip
 tire
 tissue
 title
-to
 to be honest
 to begin with 
 toast 
