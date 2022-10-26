@@ -1,4 +1,4 @@
-function getListAWords(element) {
+function getListBWords(element) {
     var boxchecked = element.checked;
        if(boxchecked == false) {
            document.getElementById('divwl').value = "";
