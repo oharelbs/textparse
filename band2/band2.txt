@@ -722,7 +722,6 @@ fog
 follow
 follower 
 following 
-for
 for days
 for instance
 for sale 
