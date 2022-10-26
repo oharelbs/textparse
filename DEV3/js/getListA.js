@@ -5,7 +5,7 @@ function getListAWords(element) {
         } else {
             document.getElementById('band2').checked = false;
             document.getElementById('divwl').value = "";
-            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/liss/getListA.txt', function(data) {
+            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/liss/ListA.txt', function(data) {
             document.getElementById('divwl').value = data;
         });
     }
