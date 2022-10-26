@@ -12,6 +12,3 @@ function getBandThreeWords(element) {
         });
     }
 }
-
-// https://github.com/oharelbs/textparse/blob/907fcc9057b03ed43bc431c5d931eef45438d37d/bandWords/band3.txt
-// bandWords/band3.txt
