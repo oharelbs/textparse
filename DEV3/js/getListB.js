@@ -7,7 +7,7 @@ function getListBWords(element) {
             //document.getElementById('divwl').value = "";
             jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/DEV3/lists/ListB.txt', function(data) {
             var existingData = document.getElementById('divwl').value;
-            document.getElementById('divwl').value = existingData + data;
+            document.getElementById('divwl').value = existingData  + '\n' +  data;
         });
    }
 }

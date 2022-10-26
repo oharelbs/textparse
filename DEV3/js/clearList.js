@@ -1,5 +1,6 @@
 function clearList() {
-    document.getElementById("divwl").innerHTML = "";
+    
+    document.getElementById("divwl").value = "";
     document.getElementById('band2').checked = false;
     document.getElementById('band3').checked = false;
     document.getElementById('lista').checked = false;
