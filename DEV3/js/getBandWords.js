@@ -1,3 +1,6 @@
+//to do: when importing words, remove empty lines at the end
+//https://stackoverflow.com/questions/16369642/javascript-how-to-use-a-regular-expression-to-remove-blank-lines-from-a-string
+
 function getBandOneWords(element) {
 
     var boxchecked = element.checked;
@@ -71,12 +74,15 @@ function getBandThreeWords(element) {
         }
     } else {
         document.getElementById('band2').checked = false;
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
+        //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
+            jQuery.get('/bandWords/band3.txt', function (data) {
             var existingData = document.getElementById('divwl').value;
-            if (existingData == '')
+            if (existingData == '') {
                 document.getElementById('divwl').value = data;
-            else
+            } else {
+                data = data.match(/^\s*\n/gm)
                 document.getElementById('divwl').value = existingData + '\n' + data;
+            }
         });
     }
 }
