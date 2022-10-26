@@ -1216,7 +1216,6 @@ opportunity
 oppose
 opposite
 option
-or
 or not  
 order
 order 
