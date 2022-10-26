@@ -107,7 +107,6 @@ arrange
 arrest 
 arrival
 article
-as
 as far as I know
 as if
 as long as

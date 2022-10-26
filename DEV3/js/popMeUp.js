@@ -34,7 +34,7 @@ function popMeUp() {
     temporaryDivElement.innerHTML = orgtext;
     var strippedText = temporaryDivElement.textContent || temporaryDivElement.innerText || ""; //this is the text from the unseen, cleaned of HTML tags
 
-    strippedText = strippedText.replace(/<br>\s*/g, ",").match(/[^ ,]+/g).join(','); //remove new lines and anything with a space
+    strippedText = strippedText.replace(/<br>\s*/g, ",").replace(/<[^>]*>/g, '').match(/[^ ,]+/g).join(','); //remove new lines and anything with a space
     arrtext = strippedText.toString().split(',');
 
     /////end of text area preparation
