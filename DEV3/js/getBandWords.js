@@ -80,7 +80,7 @@ function getBandThreeWords(element) {
             if (existingData == '') {
                 document.getElementById('divwl').value = data;
             } else {
-                data = data.match(/^\s*\n/gm)
+                //data = data.match(/^\s*\n/gm)
                 document.getElementById('divwl').value = existingData + '\n' + data;
             }
         });
