@@ -74,13 +74,12 @@ function getBandThreeWords(element) {
         }
     } else {
         document.getElementById('band2').checked = false;
-        //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
-            jQuery.get('/bandWords/band3.txt', function (data) {
+        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
             var existingData = document.getElementById('divwl').value;
             if (existingData == '') {
                 document.getElementById('divwl').value = data;
             } else {
-                //data = data.match(/^\s*\n/gm)
+                data = data.match(/^\s*\n/gm)
                 document.getElementById('divwl').value = existingData + '\n' + data;
             }
         });
