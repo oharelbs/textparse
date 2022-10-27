@@ -1,13 +1,23 @@
 function getWordList(element) {
     var boxchecked = element.checked;
+    var elementName = element.name;
     if (boxchecked == false) {
         document.getElementById('divwl').value = "";
     } else {
         uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
-        document.getElementById('divwl').value = "";
-                jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/' + element.name + '.txt', function (data) {
-                    
-            document.getElementById('divwl').value = excludeWord(data);
+        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/' + elementName + '.txt', function (data) {
+
+            if (elementName.toString().indexOf('band') > -1) { //band lists are standalone; we do not join lists
+                document.getElementById('divwl').value = "";
+                document.getElementById('divwl').value = excludeWord(data);
+            } else { //Lists can be joined
+               // checkIfBandIsChecked();
+                var existingData = document.getElementById('divwl').value;
+                if (existingData == '')
+                    document.getElementById('divwl').value = excludeWord(data);
+                else
+                    document.getElementById('divwl').value = existingData + '\n' + excludeWord(data);
+            }
         });
     }
 }
@@ -23,7 +33,7 @@ function excludeWord(data) {
 }
 
 function uncheckListsAndButtons(elementName) {
-    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band2', 'band3']; //add band1 when applicable
+    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band1', 'band2', 'band3']; //add band1 when applicable
 
     //remove the element from the array
     var index = myCheckboxes.indexOf(elementName);
@@ -31,106 +41,14 @@ function uncheckListsAndButtons(elementName) {
 
     myCheckboxes = myCheckboxes.toString().split(',');
     for (var i = 0; i < myCheckboxes.length; i++) {
-        document.getElementById(myCheckboxes[i]).checked = false;
-    }
-}
-
-
-
-/*
-function getBandOneWords(element) {
-
-    var boxchecked = element.checked;
-    if (boxchecked == false) {
-        //check if the lists are on, and keep them if they are
-        var myListbuttons = ['ListA', 'ListB', 'ListC', 'ListD'];
-        myListbuttons = myListbuttons.toString().split(',');
-        for (var i = 0; i < myListbuttons.length; i++) {
-            if (document.getElementById(myListbuttons[i]).checked == true) {
+        if (elementName.toString().indexOf('band') > -1) { //if element is band, uncheck everything
+            document.getElementById(myCheckboxes[i]).checked = false;
+            
+        } else {                                            //if not band, uncheck only band
+            if (myCheckboxes[i].indexOf('band') > -1 && document.getElementById(myCheckboxes[i]).checked == true) {
+                document.getElementById(myCheckboxes[i]).checked = false;
                 document.getElementById('divwl').value = "";
-                jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/lists/' + myListbuttons[i] + '.txt', function (data) {
-                    document.getElementById('divwl').value = data;
-                });
             }
         }
-    } else {
-        document.getElementById('band2').checked = false;
-        document.getElementById('band3').checked = false;
-        document.getElementById('divwl').value = "";
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band1.txt', function (data) {
-            var existingData = document.getElementById('divwl').value;
-            if (existingData == '')
-                document.getElementById('divwl').value = data;
-            else
-                document.getElementById('divwl').value = existingData + '\n' + data;
-        });
     }
 }
-*/
-
-
-/*
-function getBandOneWords(element) {
-
-    var boxchecked = element.checked;
-    if (boxchecked == false) {
-        document.getElementById('divwl').value = "";
-    } else {
-        uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
-        document.getElementById('divwl').value = "";
-
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band1.txt', function (data) {
-            document.getElementById('divwl').value = excludeWord(data);
-        });
-    }
-}
-
-function getBandTwoWords(element) {
-    var boxchecked = element.checked;
-    if (boxchecked == false) {
-        document.getElementById('divwl').value = "";
-    } else {
-        uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
-        document.getElementById('divwl').value = "";
-
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band2.txt', function (data) {
-            document.getElementById('divwl').value = excludeWord(data);
-        });
-    }
-}
-
-function getBandThreeWords(element) {
-    var boxchecked = element.checked;
-    document.getElementById('divwl').value = "";
-    if (boxchecked == false) {
-        //check if the lists are on, and keep them if they are
-        var myListbuttons = ['ListA', 'ListB', 'ListC', 'ListD'];
-        myListbuttons = myListbuttons.toString().split(',');
-        for (var i = 0; i < myListbuttons.length; i++) {
-            if (document.getElementById(myListbuttons[i]).checked == true) {
-                document.getElementById('divwl').value = "";
-                jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/lists/' + myListbuttons[i] + '.txt', function (data) {
-                    document.getElementById('divwl').value = data;
-                });
-            }
-        }
-    } else {
-        if (document.getElementById('band2').checked == true) {
-            document.getElementById('band2').checked = false;
-            document.getElementById('divwl').value = "";
-        }
-        //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/DEV3/band3/band3.txt', function (data) {
-
-            var mydata = excludeWord(data); //exluded key words that mess up the HTML
-            var existingData = document.getElementById('divwl').value;
-            if (existingData == '') {
-                document.getElementById('divwl').value = mydata;
-            } else {
-
-                document.getElementById('divwl').value = existingData + '\n' + mydata;
-            }
-        });
-    }
-}
-*/
