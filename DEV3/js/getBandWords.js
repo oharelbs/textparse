@@ -68,6 +68,7 @@ function getBandTwoWords(element) {
 
 function getBandThreeWords(element) {
     var boxchecked = element.checked;
+    document.getElementById('divwl').value = "";
     if (boxchecked == false) {
         //check if the lists are on, and keep them if they are
         var myListbuttons = ['ListA', 'ListB', 'ListC', 'ListD'];
@@ -86,12 +87,31 @@ function getBandThreeWords(element) {
             document.getElementById('divwl').value = "";
         }
         //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
-            jQuery.get('https://github.com/oharelbs/textparse/blob/master/DEV3/band3/band3.txt', function (data) {
+            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/DEV3/band3/band3.txt', function (data) {
+                
+            var excludedWords = ['for','in','one','to','out'];
+            //console.log(data);
+            excludedWords = excludedWords.toString().split(',');
+            for(var e = 0; e < excludedWords.length; e++) {
+                data = data.replace(excludedWords[e], '')
+            }//                data = data.match(/^\s*\n/gm)
+                
+            // const array = [data];
+            //     console.log(array);                
+            //     const index = array.toString().indexOf('\nfor');
+            //     if (index > -1) { // only splice array when item is found
+            //       array.splice(index, 1); // 2nd parameter means remove one item only
+            //     }
+            data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");     
+            console.log(data); 
+
+
+
             var existingData = document.getElementById('divwl').value;
             if (existingData == '') {
                 document.getElementById('divwl').value = data;
             } else {
-//                data = data.match(/^\s*\n/gm)
+
                 document.getElementById('divwl').value = existingData + '\n' + data;
             }
         });
