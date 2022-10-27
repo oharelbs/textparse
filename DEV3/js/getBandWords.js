@@ -1,6 +1,43 @@
-//to do: when importing words, remove empty lines at the end
-//https://stackoverflow.com/questions/16369642/javascript-how-to-use-a-regular-expression-to-remove-blank-lines-from-a-string
+function getWordList(element) {
+    var boxchecked = element.checked;
+    if (boxchecked == false) {
+        document.getElementById('divwl').value = "";
+    } else {
+        uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
+        document.getElementById('divwl').value = "";
+                jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/' + element.name + '.txt', function (data) {
+                    
+            document.getElementById('divwl').value = excludeWord(data);
+        });
+    }
+}
 
+function excludeWord(data) {
+    var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or'];
+    excludedWords = excludedWords.toString().split(',');
+    for (var e = 0; e < excludedWords.length; e++) {
+        data = data.replace(excludedWords[e], '')
+    }
+    data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "").replace('a.m.', 'a.m.\n');
+    return data;
+}
+
+function uncheckListsAndButtons(elementName) {
+    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band2', 'band3']; //add band1 when applicable
+
+    //remove the element from the array
+    var index = myCheckboxes.indexOf(elementName);
+    myCheckboxes.splice(index, 1); // 2nd parameter means remove one item only 
+
+    myCheckboxes = myCheckboxes.toString().split(',');
+    for (var i = 0; i < myCheckboxes.length; i++) {
+        document.getElementById(myCheckboxes[i]).checked = false;
+    }
+}
+
+
+
+/*
 function getBandOneWords(element) {
 
     var boxchecked = element.checked;
@@ -29,39 +66,35 @@ function getBandOneWords(element) {
         });
     }
 }
+*/
 
-function getBandTwoWords(element) {
+
+/*
+function getBandOneWords(element) {
 
     var boxchecked = element.checked;
     if (boxchecked == false) {
-
-        //check if the lists are on, and keep them if they are
-        var myListbuttons = ['ListA', 'ListB', 'ListC', 'ListD'];
-        myListbuttons = myListbuttons.toString().split(',');
-        for (var i = 0; i < myListbuttons.length; i++) {
-            if (document.getElementById(myListbuttons[i]).checked == true) {
-                document.getElementById('divwl').value = "";
-                jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/lists/' + myListbuttons[i] + '.txt', function (data) {
-                    document.getElementById('divwl').value += data;
-                });
-            }
-        }
+        document.getElementById('divwl').value = "";
     } else {
-        if(document.getElementById('band3').checked == true) {
-            document.getElementById('band3').checked = false;
-            document.getElementById("ListA").checked = false;
-            document.getElementById("ListB").checked = false;
-            document.getElementById("ListC").checked = false;
-            document.getElementById("ListD").checked = false;
-            document.getElementById('divwl').value = "";
-        }
-        
+        uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
+        document.getElementById('divwl').value = "";
+
+        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band1.txt', function (data) {
+            document.getElementById('divwl').value = excludeWord(data);
+        });
+    }
+}
+
+function getBandTwoWords(element) {
+    var boxchecked = element.checked;
+    if (boxchecked == false) {
+        document.getElementById('divwl').value = "";
+    } else {
+        uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
+        document.getElementById('divwl').value = "";
+
         jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band2.txt', function (data) {
-            var existingData = document.getElementById('divwl').value;
-            if (existingData == '')
-                document.getElementById('divwl').value = data;
-            else
-                document.getElementById('divwl').value = existingData + '\n' + data;
+            document.getElementById('divwl').value = excludeWord(data);
         });
     }
 }
@@ -82,39 +115,22 @@ function getBandThreeWords(element) {
             }
         }
     } else {
-        if(document.getElementById('band2').checked == true) {
+        if (document.getElementById('band2').checked == true) {
             document.getElementById('band2').checked = false;
             document.getElementById('divwl').value = "";
         }
         //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
-            jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/DEV3/band3/band3.txt', function (data) {
-                
-            var excludedWords = ['for','in','one','to','out'];
-            //console.log(data);
-            excludedWords = excludedWords.toString().split(',');
-            for(var e = 0; e < excludedWords.length; e++) {
-                data = data.replace(excludedWords[e], '')
-            }
-               
-            // const array = [data];
+        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/DEV3/band3/band3.txt', function (data) {
 
-            data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");
-            //console.log(data); 
-
-        
-            data = data.replace(/(?:(\r\n|\r|\n)\s*){2}/gm, "");
-            document.getElementById('divca').innerHTML = data;
-
-
-
-
+            var mydata = excludeWord(data); //exluded key words that mess up the HTML
             var existingData = document.getElementById('divwl').value;
             if (existingData == '') {
-                document.getElementById('divwl').value = data;
+                document.getElementById('divwl').value = mydata;
             } else {
 
-                document.getElementById('divwl').value = existingData + '\n' + data;
+                document.getElementById('divwl').value = existingData + '\n' + mydata;
             }
         });
     }
 }
+*/
