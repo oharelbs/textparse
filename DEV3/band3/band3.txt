@@ -1,4 +1,9 @@
 a.m.
+for
+in
+one
+to
+out
 absence
 absolute
 abstract

@@ -47,7 +47,15 @@ function getBandTwoWords(element) {
             }
         }
     } else {
-        document.getElementById('band3').checked = false;
+        if(document.getElementById('band3').checked == true) {
+            document.getElementById('band3').checked = false;
+            document.getElementById("ListA").checked = false;
+            document.getElementById("ListB").checked = false;
+            document.getElementById("ListC").checked = false;
+            document.getElementById("ListD").checked = false;
+            document.getElementById('divwl').value = "";
+        }
+        
         jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band2.txt', function (data) {
             var existingData = document.getElementById('divwl').value;
             if (existingData == '')
@@ -73,8 +81,12 @@ function getBandThreeWords(element) {
             }
         }
     } else {
-        document.getElementById('band2').checked = false;
-        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
+        if(document.getElementById('band2').checked == true) {
+            document.getElementById('band2').checked = false;
+            document.getElementById('divwl').value = "";
+        }
+        //jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/band3.txt', function (data) {
+            jQuery.get('https://github.com/oharelbs/textparse/blob/master/DEV3/band3/band3.txt', function (data) {
             var existingData = document.getElementById('divwl').value;
             if (existingData == '') {
                 document.getElementById('divwl').value = data;
