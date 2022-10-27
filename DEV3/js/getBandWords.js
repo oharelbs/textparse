@@ -94,16 +94,17 @@ function getBandThreeWords(element) {
             excludedWords = excludedWords.toString().split(',');
             for(var e = 0; e < excludedWords.length; e++) {
                 data = data.replace(excludedWords[e], '')
-            }//                data = data.match(/^\s*\n/gm)
-                
+            }
+               
             // const array = [data];
-            //     console.log(array);                
-            //     const index = array.toString().indexOf('\nfor');
-            //     if (index > -1) { // only splice array when item is found
-            //       array.splice(index, 1); // 2nd parameter means remove one item only
-            //     }
-            data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");     
-            console.log(data); 
+
+            data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");
+            //console.log(data); 
+
+        
+            data = data.replace(/(?:(\r\n|\r|\n)\s*){2}/gm, "");
+            document.getElementById('divca').innerHTML = data;
+
 
 
 
