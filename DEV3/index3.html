@@ -21,7 +21,6 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <!-- <a href="band3.html"></a> -->
-<script src="js/exportToWrd.js"></script>
 <script src="js/getBandWords.js"></script>
 <!-- <script src="js/getBandOneWords.js"></script>
 <script src="js/getBandTwoWords.js"></script>
@@ -41,7 +40,7 @@
 <script src="js/copyFunction.js"></script>
 <script src="js/mammoth.browser.js"></script>
 <script src="js/readFiles.js"></script>
-<script src="js/html-docx-js-master/dist/html-docx.js"></script>
+<script src="js/copyHTMLFunction.js"></script>
 <script src="js/FileSaver.js-master/dist/FileSaver.js"></script>
 
 
@@ -58,7 +57,7 @@
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
                         <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
-                        <button id="divca" class="clearField" onClick="downloadInnerHtml(divca)">Export to MSWord</button>
+                        <button id="copyHTML" title="...and paste in MSWord" class="copyText" onClick="copyHTMLFunction('divca')">Copy Text</button>
                     </td>
                 </tr>
             <td id="489" style="width: 50%;">

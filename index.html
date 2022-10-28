@@ -31,6 +31,8 @@
 <script src="js/copyFunction.js"></script>
 <script src="js/mammoth.browser.js"></script>
 <script src="js/readFiles.js"></script>
+<script src="js/copyHTMLFunction.js"></script>
+<script src="js/FileSaver.js-master/dist/FileSaver.js"></script>
 
     <body  style="background-color:rgb(235, 238, 223);"></style>
 
@@ -45,6 +47,7 @@
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
                         <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
+                        <button id="copyHTML" title="...and paste in MSWord" class="copyText" onClick="copyHTMLFunction('divca')">Copy Text</button>
                     </td>
                 </tr>
             <td id="489" style="width: 50%;">
@@ -57,8 +60,6 @@
                     <br>
                     <br>
                     <br>
-<!--                    <input type="checkbox" id="wholeWord" name="wholeWord" /><label>Find whole words</label><br> -->
-<!--                    <input type="checkbox" id="sampleText" name="sampleText" onClick="getSampleText(this)"/><label>sample text</label><br> -->
                     <br><br>
                     <div>
                         <font style="text-decoration: underline; font-weight: bold">Visibility</font><br>
