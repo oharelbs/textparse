@@ -2,10 +2,10 @@ function copyHTMLFunction(containerid) {
 
   //https://stackoverflow.com/questions/36639681/how-to-copy-text-from-a-div-to-clipboard
 
-  if (document.getElementById(containerid).innerHTML == '')
+  if (document.getElementById(containerid).innerHTML == '') {
     alert('Nothing to copy.');
 
-  else {
+  } else {
 
     var range = document.createRange();
     range.selectNode(document.getElementById(containerid));
