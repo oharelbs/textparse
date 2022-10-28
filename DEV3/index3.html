@@ -17,7 +17,7 @@
 <!-- Load the stylesheet first thing-->
     <link rel="stylesheet" type="text/css" href="css/mystyles.css">
 
-<!-- jQuery library  -->
+    <!-- jQuery library  -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
 <!-- <a href="band3.html"></a> -->
@@ -44,7 +44,7 @@
 <script src="js/FileSaver.js-master/dist/FileSaver.js"></script>
 
 
-    <body  style="background-color:rgb(235, 238, 223);"></style>
+    <body  style="background-color:rgb(235, 238, 223);" onload="disableButtonsOnLoad()"></style>
 
         <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
             <tbody>
@@ -96,7 +96,7 @@
                 </div>
                 <br>
                 <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
-                <br><button id="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
+                <br><button id="divwl" name="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
             </td>
             <td id="510" style="width: 50%;">
 
@@ -113,6 +113,11 @@
             </tr>
         </table>
     </body>
+    <script>
+        function disableButtonsOnLoad() {
+          //document.getElementById('copyHTML').disabled = true;
+        }
+        </script>
 </head>
 <label class="custom-file-upload">
     <input type="file" onchange="parseTheFile(this)" >Upload file
