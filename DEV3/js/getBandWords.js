@@ -27,7 +27,7 @@ function excludeWord(data) {
     for (var e = 0; e < excludedWords.length; e++) {
         data = data.replace(excludedWords[e], '')
     }
-    data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "").replace('a.m.', 'a.m.\n');
+    data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");
     return data;
 }
 
