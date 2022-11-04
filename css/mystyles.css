@@ -245,7 +245,6 @@ input.largeCheckBox {
 }
 
 .mailbtn {
-
     background-color: #1c87c9; /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
@@ -257,4 +256,4 @@ input.largeCheckBox {
   /* Darker background on mouse-over */
   .mailbtn:hover {
     background-color: #3e8e41;
-  } 
+  }
