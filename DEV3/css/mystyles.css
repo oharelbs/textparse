@@ -248,10 +248,30 @@ input[type="file"] {
   }
 
 .checkboxLabel {
-
     font-size: 20px;
-
 }
+ 
+.checkboxLabel .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: relative;
+    z-index: 1;
+    top: -5px;
+    left: 05%;
+  }
+  
+  .checkboxLabel:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
 /*scale checkbox */
 input.largeCheckBox {
     transform: scale(1.4);

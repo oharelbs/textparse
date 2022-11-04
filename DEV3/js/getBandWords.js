@@ -1,8 +1,10 @@
 function getWordList(element) {
     var boxchecked = element.checked;
     var elementName = element.name;
+
     if (boxchecked == false) {
         document.getElementById('divwl').value = "";
+
     } else {
         uncheckListsAndButtons(element.name); //uncheck all checkboxes, except for the element clicked
         jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/' + elementName + '.txt', function (data) {
@@ -51,5 +53,10 @@ function uncheckListsAndButtons(elementName) {
         }
     }
 }
-    // var elementLastModified = document.lastModified;
-    // alert(elementLastModified)
+/*
+    var myelementLabel = element.id + 'Label';
+    var elementLabel = document.getElementById(myelementLabel);
+    var nameLabel = elementLabel.getAttribute("labelName");
+    document.getElementById(myelementLabel).innerHTML = nameLabel; //change to the value of the checkbox label
+    document.getElementById(myelementLabel).innerHTML = nameLabel + ', last updated on ' + getUpdatedTime(elementName); //show when last updated
+*/    
