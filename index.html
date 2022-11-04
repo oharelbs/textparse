@@ -19,12 +19,9 @@
 <!-- jQuery library  -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
-<a href="band3.html"></a>
-
-<script src="js/getBandOneWords.js"></script>
-<script src="js/getBandThreeWords.js"></script>
-<script src="js/getBandTwoWords.js"></script>
+<script src="js/getBandWords.js"></script>
 <script src="js/getSampleText.js"></script>
+<script src="js/clearList.js"></script>
 <script src="js/popMeUp.js"></script>
 <script src="js/checkAllBoxes.js"></script>
 <script src="js/clearText.js"></script>
@@ -54,7 +51,7 @@
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only and other </font><a href="https://oharelbs.github.io/textparse/limitations.html" target="_blank">limitations</a></div>
-                    <!--<input type="checkbox" id="band1" name="band1" onClick="getBandOneWords(this)" /><label class="checkboxLabel">Band I Words</label><br> -->
+                    <input type="checkbox" class="largeCheckBox" id="band1" name="band1" onClick="getWordList(this)" /><label class="checkboxLabel">Band I Words</label><br>
                     <input type="checkbox" class="largeCheckBox" id="band2" name="band2" onClick="getBandTwoWords(this)" /><label class="checkboxLabel">Band II Words</label><br>
                     <input type="checkbox" class="largeCheckBox" id="band3" name="band3" onClick="getBandThreeWords(this)" /><label class="checkboxLabel">Band III Words</label><br>
                     <br>
@@ -68,7 +65,7 @@
                         <input type="checkbox" class="largeCheckBox" id="mudgashText" name="mudgashText" /><label  class="checkboxLabel" style="background-color: yellow;">Highlight Text</label><br>
                         <input type="checkbox" class="largeCheckBox" id="colorText" name="colorText" /><label  class="checkboxLabel" style="color: red;">Color Text</label><br>
                         <input type="checkbox" class="largeCheckBox" id="ulText" name="ulText" /><label  class="checkboxLabel" style="text-decoration: underline;">Underline Text</label><br><br><br><br>
-                        <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Look'em up</button>
+                        <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Look'em up">Find words</button>
                         </div>
                     </div>
                 </div>

@@ -11,7 +11,6 @@ function getWordList(element) {
                 document.getElementById('divwl').value = "";
                 document.getElementById('divwl').value = excludeWord(data);
             } else { //Lists can be joined
-               // checkIfBandIsChecked();
                 var existingData = document.getElementById('divwl').value;
                 if (existingData == '')
                     document.getElementById('divwl').value = excludeWord(data);
@@ -52,3 +51,5 @@ function uncheckListsAndButtons(elementName) {
         }
     }
 }
+    // var elementLastModified = document.lastModified;
+    // alert(elementLastModified)
