@@ -23,7 +23,7 @@ function getWordList(element) {
 }
 
 function excludeWord(data) {
-    var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or'];
+    var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or', 'my'];
     excludedWords = excludedWords.toString().split(',');
     for (var e = 0; e < excludedWords.length; e++) {
         data = data.replace(excludedWords[e], '')
