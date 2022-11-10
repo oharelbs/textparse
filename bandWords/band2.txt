@@ -143,7 +143,6 @@ arrangement
 arrest
 arrival
 article
-as
 as if
 as much
 as quickly

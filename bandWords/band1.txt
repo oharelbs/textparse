@@ -6,8 +6,8 @@ a bit
 a lot
 a lots
 a quarter to
-a quarter past 
-a while 
+a quarter past
+a while
 a.m.
 about
 above
@@ -22,7 +22,7 @@ advise
 afraid
 after
 afternoon
-again 
+again
 against
 age
 ago
@@ -32,11 +32,11 @@ airplane
 plane
 all
 all right
-all sorts 
+all sorts
 almost
 alone
-along 
-alphabet 
+along
+alphabet
 already
 also
 always
@@ -48,13 +48,11 @@ answer
 any
 anybody
 anyone
-anyone 
 anything
-anything else 
+anything else
 anyway
-anyway 
 anywhere
-anywhere else 
+anywhere else
 apple
 april
 arabic
@@ -62,12 +60,11 @@ arm
 around
 arrive
 art
-artist 
-as
-as usual 
-as well 
+artist
+as usual
+as well
 as well as
-asleep 
+asleep
 at least
 august
 aunt
@@ -83,14 +80,14 @@ banana
 band
 bank
 bath
-bathroom 
+bathroom
 called
-going to do 
+going to do
 beach
 beard
-beautiful 
+beautiful
 because
-because of 
+because of
 bedroom
 beer
 before
@@ -107,7 +104,7 @@ bird
 birthday
 biscuit
 black
-blouse 
+blouse
 blue
 board
 boat
@@ -120,13 +117,12 @@ both
 bottle
 bottom
 bread
-break 
+break
 break your arm
 break your leg
 breakfast
 bright
 bring
-bring 
 brother
 brown
 build
@@ -144,10 +140,10 @@ can
 candy
 capital letter
 car
-card 
+card
 care
 careful
-carefully 
+carefully
 catch
 cellphone
 center
@@ -164,11 +160,10 @@ cinema
 circle
 city
 class
-classmate 
-classroom 
+classmate
+classroom
 clean
 clear
-clear 
 clever
 climb
 clock
@@ -178,17 +173,16 @@ clothes
 cloud
 cloudy
 clown
-club 
+club
 coat
-coffee 
+coffee
 cold
 collect
 collection
 color
 come
-come along 
-come from 
-come from swh
+come along
+come from
 come home
 come in 
 comfortable
@@ -199,31 +193,30 @@ computer
 contain
 conversation
 cook
-cookie 
+cookie
 cool
 corner
 correct
 count
 country
 countryside
-cover 
+cover
 cow
 crazy
 cream
 cross
 crossing
-cry 
+cry
 cup
-cup 
 customer
 daddy
-dance 
+dance
 dark
 date
 daughter
 day
 dead
-dear 
+dear
 december
 decide
 decision
@@ -248,15 +241,15 @@ do you mind
 doctor
 document
 doll
-dollar 
-don't forget 
-don't need to do 
+dollar
+don't forget
+don't need to do
 don't needn't do
-don't worry 
+don't worry
 door
-double 
+double
 down
-downstairs 
+downstairs
 draw
 drawing
 dress
@@ -277,17 +270,17 @@ eat
 effort
 eight
 eighteen
-eighth 
+eighth
 eighty
 either
-elephant 
+elephant
 eleven
 else
-empty 
+empty
 engine
 english
 enjoy
-enjoy yourself 
+enjoy yourself
 enough
 entry
 especially
@@ -296,7 +289,7 @@ ever
 every
 everybody
 everyone
-everything 
+everything
 everywhere
 exactly
 exam
@@ -305,7 +298,7 @@ example
 excellent
 except
 except for
-excuse me 
+excuse me
 exercise
 explain
 extra
@@ -318,25 +311,23 @@ fall
 family
 famous
 far
-far 
 farm
 farmer
 fast
-fast food 
+fast food
 fat
 father
 favorite
 february
 feed
 feel
-feeling 
+feeling
 field
 fifteen
 fifty
 fill
 final
 find
-find 
 find out
 or find out
 fine
@@ -344,22 +335,21 @@ finger
 finish
 fire
 first
-first name 
+first name
 firstly
 fish
 five
 flat
 floor
-floor 
 flower
 fly
-folder 
+folder
 follow
 following
 food
 foot
 football
-for 
+for
 for example
 forest
 forget
@@ -369,7 +359,7 @@ forty
 four
 fourteen
 fourth
-friday 
+friday
 fridge
 friendly
 from
@@ -379,29 +369,28 @@ full
 fun
 game
 garden
-garlic 
+garlic
 gate
-get up 
+get up
 get better
 get cancer
 get flu
 get down
 get in
-get off 
+get off
 get on
-girl 
+girl
 give
 give in
 or give in
-give out 
+give out
 or give out
 glass
-glass 
 glasses
 go down
 go in
 go in into
-go shopping 
+go shopping
 goal
 good
 good afternoon
@@ -424,17 +413,17 @@ group
 grow
 guess
 guess what!
-guitar 
+guitar
 gun
 hair
 half past one
-half past two 
+half past two
 half past three
-half-price 
+half-price
 hall
 hand
 hang
-hang on 
+hang on
 happen
 happy
 happy to do 
@@ -446,7 +435,6 @@ have a nice time
 have a problem
 have got
 head
-head 
 hear
 heart
 heavy
@@ -461,7 +449,7 @@ high
 hill
 his
 hold
-hold on 
+hold on
 hole
 holiday
 home
@@ -480,13 +468,13 @@ huge
 hundred
 hungry
 husband
-i don't mind 
+i don't mind
 i mean
 i
 i you
-he had better do 
+he had better do
 ice
-ice cream 
+ice cream
 idea
 imagine
 immediately
@@ -495,21 +483,19 @@ in
 include
 information
 inside
-inside 
 instead
 instructions
 interesting
 internet
 into
-into 
 invitation
 invite
 island
 israel
 it
-itself 
+itself
 jacket
-jam 
+jam
 january
 jeans
 join
@@ -519,16 +505,15 @@ july
 jump
 june
 just
-just 
-just now 
+just now
 keep
-key 
-keyboard 
+key
+keyboard
 kick
 kill
 kind
 king
-kiss 
+kiss
 kitchen
 knee
 knife
@@ -549,10 +534,9 @@ laugh
 lazy
 learn
 least
-leather 
+leather
 leave
-leave 
-left-hand 
+left-hand
 leg
 less
 lesson
@@ -561,7 +545,6 @@ lie
 lie down
 life
 light
-light 
 like
 line
 lip
@@ -572,21 +555,19 @@ little
 live
 live in
 live at
-living room 
+living room
 long
-look 
-look after 
+look
+look after
 lose
-lose 
 love
 lovely
 low
 lunch
-lunchtime 
+lunchtime
 mad
 magazine
 make
-make 
 make a mistake
 make do 
 many
@@ -602,7 +583,7 @@ meaning
 meat
 medical
 meet
-meeting 
+meeting
 member
 memory
 message
@@ -611,21 +592,20 @@ million
 mine
 minute
 miss
-miss 
 mistake
-mobile 
+mobile
 model
 moment
 monday
 money
-monkey 
+monkey
 month
-more 
+more
 morning
-most 
+most
 mother
 mountain
-mouse 
+mouse
 mouth
 move
 movie
@@ -636,45 +616,43 @@ mug
 museum
 music
 must
-my
 name
 narrow
 nature
 near
-nearly 
+nearly
 neck
 need
-need to do 
+need to do
 negative
-neighbor 
+neighbor
 never
 new
-new 
 news
-newspaper 
-next 
+newspaper
+next
 next week
- next year 
- next monday
+next year
+next monday
 nice
-night 
+night
 nine
 nineteen
 ninety
 no
-nobody 
+nobody
 noise
 noisy
-none 
+none
 noon
 normal
 north
 nose
 not
 not bad
-not too 
-not very good 
- tall 
+not too
+not very good
+tall
 not yet
 note
 notebook
@@ -692,27 +670,23 @@ often
 oil
 ok
 old
-old 
-olympic games 
+olympic games
 on
-"
-on the"
+on the
 on your right
 on your
 on left
 once
 one
 one two
- one three o'clock
-onion  
+one three o'clock
+onion
 online
 only
-only 
 open
-opposite 
+opposite
 or
 orange
-orange 
 order
 other
 our
@@ -731,7 +705,6 @@ paper
 parent
 park
 part
-part 
 partly
 party
 pass
@@ -744,37 +717,35 @@ perfectly
 perhaps
 person
 personally
-"personal  
-"
+personal
 phone
 photo
 photograph
-
 pick
 pick up
 up
-picnic 
+picnic
 picture
 piece
 pig
 pilot
-pink 
+pink
 pizza
 place
 plan
 plan to do
 plant
-plastic 
+plastic
 plate
-platform 
+platform
 play
 player
 pleasant
-please 
+please
 pocket
-point 
+point
 police
-police station 
+police station
 "policeman
 policewoman
 police officer"
@@ -800,24 +771,22 @@ pupil
 push
 put away
 or put away
-put down 
-or put 
-or put down
-put out 
-or put out 
 put down
+or put
+or put down
+put out
+or put out
 put in
 put on
 quarter
 queen
 question
-question 
 quick
 quickly
 quiet
 quiz
 rabbit
-radio 
+radio
 railroad
 railway
 rain
@@ -829,36 +798,36 @@ reader
 reading
 ready
 real
-really 
+really
 reason
-refrigerator 
+refrigerator
 relationship
 remember
-remember to do 
+remember to do
 remind
 repeat
-report card 
+report card
 restaurant
 result
 return
-rice 
+rice
 rich
 ride
 right
-right-hand 
+right-hand
 ring
 river
 road
 roof
 room
 round
-ruler 
-runner 
+ruler
+runner
 safe
-salad 
+salad
 salt
 same
-sandwich 
+sandwich
 save
 say
 school
@@ -866,7 +835,7 @@ science
 screen
 sea
 seat
-second 
+second
 see
 see you later
 see soon
@@ -882,19 +851,17 @@ seventy
 several
 shake hands
 she
-sheep 
+sheep
 shirt
 shoe
 shop
-short 
+short
 should
 shoulder
 show
-show 
 shower
 shut
 sick
-sick 
 side
 sign
 simple
@@ -905,16 +872,16 @@ singer
 sister
 sixteen
 sixty
-size 
-skirt 
+size
+skirt
 sky
 slow
 slowly
 small
 smile
 smoke
-snack 
-snake 
+snack
+snake
 snow
 soap
 sock
@@ -922,7 +889,7 @@ some
 somebody
 someone
 something
-sometimes 
+sometimes
 somewhere
 son
 song
@@ -930,7 +897,7 @@ soon
 sorry
 sound
 soup
-south 
+south
 space
 spare time 
 speak
@@ -939,12 +906,12 @@ special
 spell
 spelling
 spend
-spoon 
+spoon
 sport
 spring
 square
 stairs
-stamp 
+stamp
 stand
 star
 start
@@ -956,9 +923,9 @@ step
 still
 stop
 store
-storm    
+storm
 story
-stove 
+stove
 straight
 strange
 street
@@ -967,7 +934,7 @@ student
 study
 subject
 sugar
-suit 
+suit
 suitcase
 summer
 sunday
@@ -975,52 +942,49 @@ sunny
 supermarket
 supper
 sure
-surname 
+surname
 surprise
 surprised
 sweet
-sweet 
-swimming pool 
+swimming pool
 table
 table tennis
 take
-take 
 take away
 or take away
 take off
-or take off 
-talk 
-tall
-task 
+or take off
+talk
+task
 taxi
 taxi driver
 tea
 teach
 teacher
-telephone 
+telephone
 television
-tell 
+tell
 tennis
 tenth
-text 
-thank 
-that 
-the 
+text
+thank
+that
+the
 the cold
 the future
-the ground floor 
-the middle 
+the ground floor
+the middle
 the moon
 the news
 the past
 the present
-the rest 
+the rest
 the truth
 the whole of
-theirs 
-there 
+theirs
+there
 these
-thin 
+thin
 thing
 think
 third
@@ -1035,24 +999,24 @@ throw
 thursday
 ticket
 tidy
-tights 
+tights
 till
 time
 tired
 to
 today
-together 
+together
 toilet
-tomato 
-tomorrow 
+tomato
+tomorrow
 tonight
 too
 too much
 too so much 
-too small 
+too small
 too hard
 tooth
-toothbrush 
+toothbrush
 top
 town
 toy
@@ -1064,13 +1028,12 @@ try
 t-shirt
 tuesday
 turn
-turn 
-turn off 
+turn off
 or turn on
 twelve
 twenty
 twice
-twin 
+twin
 two
 type
 umbrella
@@ -1081,12 +1044,12 @@ unhappy
 university
 until
 unususal
-upstairs 
+upstairs
 use
-useful 
+useful
 usually
 vacation
-vegetable 
+vegetable
 verb
 very
 very much
@@ -1097,8 +1060,8 @@ vocabulary
 wait
 wait a minute
 wait a moment
-waiter 
-waitress 
+waiter
+waitress
 wake up
 walk
 wall
@@ -1111,7 +1074,6 @@ watch
 water
 wave
 way
-way 
 we
 wear
 weather
@@ -1148,18 +1110,18 @@ wonderful
 wood
 wooden
 word
-work 
-worker 
+work
+worker
 world
 worry
 worst
 would
 would like
-would like to do 
+would like to do
 write
 write down
-or write down 
-writing 
+or write down
+writing
 wrong
 year
 yellow
@@ -1169,6 +1131,6 @@ yogurt
 you
 young
 your
-yours 
+yours
 zero
 zoo
