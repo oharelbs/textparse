@@ -45,18 +45,11 @@ function uncheckListsAndButtons(elementName) {
         if (elementName.toString().indexOf('band') > -1) { //if element is band, uncheck everything
             document.getElementById(myCheckboxes[i]).checked = false;
             
-        } else {                                            //if not band, uncheck only band
-            if (/*myCheckboxes[i].toString().indexOf('band') > -1 &&*/ document.getElementById(myCheckboxes[i]).checked == true) {
+        } else { //if not band, uncheck only band
+            if (document.getElementById(myCheckboxes[i]).checked == true) {
                 document.getElementById(myCheckboxes[i]).checked = false;
                 document.getElementById('divwl').value = "";
             }
         }
     }
 }
-/*
-    var myelementLabel = element.id + 'Label';
-    var elementLabel = document.getElementById(myelementLabel);
-    var nameLabel = elementLabel.getAttribute("labelName");
-    document.getElementById(myelementLabel).innerHTML = nameLabel; //change to the value of the checkbox label
-    document.getElementById(myelementLabel).innerHTML = nameLabel + ', last updated on ' + getUpdatedTime(elementName); //show when last updated
-*/    
