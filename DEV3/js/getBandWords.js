@@ -15,9 +15,9 @@ function getWordList(element) {
             } else { //Lists can be joined
                 var existingData = document.getElementById('divwl').value;
                 if (existingData == '')
-                    document.getElementById('divwl').value = /*excludeWord*/(data);
+                    document.getElementById('divwl').value = excludeWord(data);
                 else
-                    document.getElementById('divwl').value = existingData + '\n' + /*excludeWord*/(data);
+                    document.getElementById('divwl').value = existingData + '\n' + excludeWord(data);
             }
         });
     }
