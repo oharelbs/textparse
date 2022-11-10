@@ -83,7 +83,7 @@ tired
 sad
 thirsty
 happy
-I am years old.
+I am years old
 I feel well
 I have …
 I like … I don't like …
@@ -144,7 +144,8 @@ rent
 rest
 run 
 sad
-say it again please
+say it again 
+please
 see you later 
 send
 show me
@@ -211,7 +212,7 @@ who has
 who is this?
 Who's this? 
 yes
-yes, please 
+yes please 
 you
 you're welcome
 sit down
