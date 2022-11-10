@@ -32,7 +32,7 @@ function excludeWord(data) {
 }
 
 function uncheckListsAndButtons(elementName) {
-    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band1', 'band2', 'band3']; //add band1 when applicable
+    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD','band0', 'band1', 'band2', 'band3']; //add band1 when applicable
 
     //remove the element from the array
     var index = myCheckboxes.indexOf(elementName);
@@ -51,5 +51,3 @@ function uncheckListsAndButtons(elementName) {
         }
     }
 }
-    // var elementLastModified = document.lastModified;
-    // alert(elementLastModified)
