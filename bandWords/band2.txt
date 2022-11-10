@@ -1,130 +1,169 @@
-a good deal 
-a great deal
+i suppose
+in case 
+a good deal
+great deal
 a little bit
-a load of 
 a pity
-a sense of humor 
+sense of humor 
 a shame
-a variety of
+variety of 
 ability
 abroad
+absence
 absent
+absolute
 absolutely
 abstract
 academic
 accent
 accept
+acceptable
 accident
-accomodation 
+accommodation
 accompany
 according to
 accurate
+accurately
+accuracy
 ache
 achieve
+achievement
 across
 act
 active
+actively
 activity
+actor
+actress
 actual
+actually
 adapt
+adaptation
 add
 adequate
 adjective
 adjust
+adjustment
 admire
 admit
 adopt
+adoption
 advantage
 adventure
+adventurous
 adverb
 advertise
+ad
+advert
+advertisement
 affect
 afraid
-after dark
-afterward
 afterwards
-again and again 
+afterward
+again and again
 against
 agency
+agent
 agree
+agreement
 ahead
 aid
 aim
-aircraft 
+aim to
+aimed at
+aircraft
 airport
-album 
-alcohol 
+album
+alcohol
+alcoholic
 alike
 alive
-all day long 
-all my love
-all the best 
+all day long
+all the best
 allow
-along 
+allowed
+along
 aloud
-alphabetical 
+alphabetical
+alphabetically
 alter
 alternative
 although
+amaze
 amazing
-among 
+among
 amount
 ancient
 and
 and so on 
-angel 
+angel
+anger
 angry
-ankle 
-anniversary 
+ankle
+anniversary
 announce
-annual 
+announcement
+annual
+annually
 anticipate
 any
-anyhow 
+anyhow
 anymore
 anyway
 apart
 apart from
 apartment
+apologize
 apology
 appear
+appearance
 application
 apply
 appointment
 appreciate
+appreciation
 approach
+approval
 approve
+approximate
 approximately
-Arab
+arab
 architect
-Are you kidding?
+architecture
+kidding
+you're kidding! 
 area
 argue
+argument
 army
 around
-around 
+around
 arrange
-arrest 
+arrangement
+arrest
 arrival
 article
-as far as I know
+as
 as if
-as long as
-as much possible
-as quickly as possible
+as much
+as quickly
+as soon as possible
 as soon as
-as you know 
-ask 
+as you know
+as so far as i know
+as so long as
+ask
 aspect
 assess
+assessment
 assume
+at
+at last
 at all
 at first
-at his best
-at its best 
-at last
+at his
+at its best
 at least 
-at long last
 at once 
 at present
 at the moment
@@ -134,100 +173,132 @@ attach
 attack
 attempt
 attend
-attend church
-attend college
-attend school
+attend a church
+attend a college
+attend a school
+attendance
 attention
-Attention!
+attention!
 attitude
 attract
+attractive
 audience
 author
 authority
 available
-avatar 
-average 
+avatar
+average
 avoid
 awake
 award
 aware
+away
 awful
-babysit 
+babysit
+babysitter
 back
 backward
 backwards
-bad 
-baker 
+bad
+baker
 balance
-balloon 
-bandage 
+balloon
+bandage
 bar
 barbecue
 barber
 base
-baseball 
-based on
+base on
+baseball
 basic
 basin
 basis
 basket
 battery
-battle 
-be able to do 
-be crazy about 
-be off
-be supposed to do
-be up to 
-be up to sb
-be used to
-be worth 
-be worth it 
-be wrong 
+battle
+be
+be able to
+crazy about 
+dying for
+dying to
+expecting
+familiar with
+friends
+in doubt
+into
+known as
+located in
+located near
+located on
+made of
+off
+responsible for
+responsible
+short of
+supposed to
+unable to
+up to
+used to
+used
+welcome to
+willing
+worth
+worth it
+worth
+wrong 
+get
+keep in touch
 bean
 bear
 beat
 beauty
+become available
+become rich
 become
-Bedouin
+bedouin
 bedtime
 bee
 beef
+beekeeper
 before
-before dark
+after dark
 behave
 behavior
 belief
 belong
 belong to
+belong to 
 below
 belt
 beneath
+beneficial
 benefit
 beside
-best wishes 
+best wishes
 beyond
-Bible
+bible
 bill
 billion
-bin 
+bin
 binge-watch
 birth
 bite
-blame 
+blame
 blank
 blanket
 blind
 block
-blog 
-blond/blonde 
+blog
+blond
+blonde
 blood
 blow
-blow your nose 
+blow your nose
 board
-board 
+board
 body
 boil
-bomb 
+bomb
 bone
 book
 bookcase
@@ -235,6 +306,7 @@ boot
 border
 borrow
 boss
+bossy
 bother
 bottom
 bowl
@@ -245,56 +317,64 @@ brave
 break
 break a record
 break down
+break cut in half
 breath
+breathe
 bridge
 brief
-bring back 
+briefly
 bring happiness
 bring luck
 bring peace
+bring back 
+or bring back 
 broad
-broadcast 
+broadcast
 broken
 brush
 budget
 builder
 burger
-burn 
+burn
 business
+businessman businesswoman
 but
-butterfly 
+butterfly
 button
 by
-by 
-by accident 
-by contrast
+by accident
 by hand
 by heart
-by mistake 
+by mistake
 by oneself
 by the way
+in contrast 
 cabbage
 café
 cage
 calendar
 call
-call for sb
-calm 
-camp 
+call back
+or call back
+call for
+calm
+camp
+campsite
 can
-can 
+can
 can afford
 canal
 cancel
 cancer
 candidate
 candle
-can't help doing 
-can't stand 
+can't stand
 can't wait
+can't
+couldn't help
 cap
-capable 
-capable of 
+capable
+capable of
 capital
 captain
 card
@@ -302,61 +382,67 @@ care
 career
 careless
 carpet
-carrot 
-carry 
+carrot
+carry
 carry on
 carry out
-cartoon 
+cartoon
 case
-case 
+case
 cash
 cast
 castle
 catch
+catch fire
 catch attention
-catch fire 
+catch interest
 catch up with
 category
-Catholic
+catholic
 cause
 ceiling
 celebrate
+celebration
 celebrity
 cent
 centimeter
 central
+centrally
 century
 certain
+certainly
 certainty
 chain
 challenge
 champion
+championship
 chance
 change
 change your mind
+change one's mind
 channel
 chapter
 character
-charge 
-charity 
+charge
+charity
 chart
 chat
 check
 check-in
 cheek
-cheerful 
+cheerful
 chef
-chemistry 
+chemistry
 chest
-chewing gum 
+chewing gum
 chief
 childhood
 chin
-chip 
+chip
 choice
-Christian
+christian
 church
-Circassian
+circassian
 circular
 circumstance
 circus
@@ -364,11 +450,12 @@ citizen
 clap
 class
 clear
+clearly
 click
 client
 climate
 close
-close 
+closely
 closing time
 coach
 coast
@@ -377,16 +464,18 @@ coin
 cold
 colleague
 collect
+collection
 college
 column
-comb 
+comb
+combination
 combine
 combined
 come down
-come down 
-Come on!
+come down
+come on!
 come out
-come out 
+come out
 come true 
 comedy
 comma
@@ -395,55 +484,76 @@ commit
 commitment
 committee
 common
-common sense 
+common sense
+commonly
 communicate
 communication
 community
 compare
+comparison
 compete
 complain
+complaint
 complete
+completely
 complex
 concentrate
+concentration
 concern
+concerned
 concert
+conclude
 conclusion
 conference
 confidence
-confident 
-confirm 
+confident
+confident
+confirm
+confirmation
 conflict
+confuse
+cinfused
+confusing
 confusion
-Congratulations!
+congratulations
+connect
 connection
+conscious
 consciousness
 consider
-consist of 
+consideration
+consist of
 constant
+constantly
+construct
 construction
 contact
 content
 contents
 context
 continue
+continuous
 contract
 contrast
 contribute
+contribution
 control
+convenience
+conveniently
 convenient
 convert
 convince
+convinced
 cooking
-cool 
-copy 
+cool
+copy
 corn
 correct
 cottage
 cotton
 cough
 could
-could 
-couldn't help doing
+could
 council
 count
 county
@@ -454,19 +564,24 @@ cousin
 crazy
 cream
 create
-creature 
+creation
+creative
+creature
 credit
-crew 
+crew
 crime
+criminal
 crisis
-crisp 
-crossing 
+crisp
+crossing
 crowd
+crowded
 crown
 crucial
 cruel
 cry
-cucumber 
+cucumber
+cultural
 culture
 cupboard
 curious
@@ -475,33 +590,40 @@ currency
 curriculum
 curtain
 custom
-cut 
-cut down 
-cut up 
+cut
+cut down
+cut up
+or cut up
 daily
 daily life
 damage
-damn 
+damn
 danger
+dangerous
 dark
+darkness
 data
+database
 date of birth
 deal
-deal with 
-Dear Madam
-Dear Sir 
+deal with
+dear madam
+dear sir
 death
 debate
 defend
+defense
 define
 definite
 definitely
+definition
 degree
 delay
 delete
 delicious
 demand
 democracy
+democratic
 demonstrate
 dentist
 deny
@@ -509,34 +631,38 @@ department store
 depend on
 depend upon
 dependent
-depression 
-description 
+depressed
+depression
+description
 desert
 design
 desire
 desktop
-despite 
+despite
 dessert
 destroy
 detail
+detailed
 detective
 develop
+development
 device
 dialog
 dialogue
 diary
 dictation
 diet
-differently 
+differently
 difficulty
 dig
 digital
 diploma
-direct 
-directions 
+direct
+directions
 director
-director 
+director
 dirt
+dirty
 disadvantage
 disagree
 disappear
@@ -544,96 +670,110 @@ disappoint
 discount
 discover
 discuss
+discussion
 disease
 dish
 display
 distance
+distant
 district
-dive 
-divide 
+dive
+diver
+divide
 do
 do badly
 do well
 do your best
 documentary
-dolphin 
+dolphin
 domestic
 dot
 doubt
 download
 downtown
-drag and drop 
+drag
 drama
 drawer
 dream
 dressed
 drive
-driving license 
+driving license
 drop
 drug
 drum
-Druze
-duck 
+druze
+duck
 due
 due to
-dust 
+dust
+dustbin
 duty
-duty 
+duty
 duty-free
-dying for
-dying to
 each other
 earn
-earring 
-Earth
+earring
+earth
 eastern
+economic
 economy
 edge
 education
+educational
 effect
-effective 
-either
+effective
+effectively
+either … or
 election
 electric
-electric scooter
+electrical
 electricity
 electronic
 elementary
 elevator
-email 
+email
 emergency
-emoji 
+emoji
 employ
+employee 
+employer
 employment
-encourage 
-end up 
+encourage
+end up
 ending
 endless
 enemy
 energy
 engineer
+engineering
 enormous
 ensure
 enter
 entertain
+entertainment
 entire
-envelope 
+entirely
+entry
+entrance
+envelope
 environment
-environmentally friendly 
+environmental
+environmentally friendly
 equal
-equipment 
+equally
+equipment
 error
 escape
 essential
 establish
 estimate
 etc.
-euro 
+euro
 even
 event
 eventually
-ever since 
-every single 
+ever since
+every single
 everyday
 evidence
 exact
@@ -641,7 +781,8 @@ examine
 exchange
 excited
 excitement
-excuse 
+exciting
+excuse
 exercise
 exhibition
 exit
@@ -649,6 +790,7 @@ expect
 expectation
 expensive
 experience
+experienced
 experiment
 expert
 explanation
@@ -660,56 +802,63 @@ external
 extra
 extremely
 face
-face-to-face 
+face-to-face
 facilities
 facility
 factor
 factory
 fail
+failure
 fair
 fairly
 faith
 fall
-fall 
 fall asleep 
-fall down 
+fall down
+false
 familiar
-familiar with 
 fan
-fantastic 
-fashion 
+fantastic
+fashion
 fault
-fault 
 favor
 fear
 feather
 fee
 feel
-feel 
+feel
 feel at home 
-feel bad about 
+feel bad about
+feel bad doing
 feel like
-feel sorry for 
+feel as if 
+feel sorry for
+feeling
 female
 festival
 fever
 few
+fewer
 fiction
 fight
+fighting
 figure
-file 
+file
 fill in
 fill out
 finally
+find
 find easy
+find boring
+find funny
 fine
 finish
 fire
-fire station 
+fire station
 firefighter
-first of all 
+first of all
 fish
-fishing 
+fishing
 fit
 fix
 flag
@@ -719,16 +868,19 @@ flight
 flour
 flow
 fog
+foggy
 follow
-follower 
-following 
+follower
+following
+for
 for days
 for instance
-for sale 
+for sale
 for sure
 for years 
-force 
+force
 foreign
+foreigner
 forever
 forgive
 form
@@ -740,13 +892,13 @@ freedom
 freeze
 frequently
 fresh
-fresh air 
-friends with
+fresh air
+fried
 friendship
-from 
+from
 fry
 fuel
-full stop 
+full stop
 full-time
 fully
 funny
@@ -756,69 +908,81 @@ future
 gain
 gallery
 gap
-garage 
+garage
 garbage
 gas
-gasoline
+gas gasoline
 gather
 gay
 general
+generally
 gentle
+gently
 geography
 get around
-get back 
-get in touch
+get back
+or get back
 get married
-get rid of 
-get to know 
+get rid of
+get to know
+get to know 
 get together
+get become used to
+get become
+get go to sleep
 girlfriend
+give back
+or give back 
+give birth
 give a call
-give a ring
-give back 
-give birth 
+give ring
 global
+global warming
 glove
-go abroad 
+go abroad
 go back
 go badly
+go well
 go down
 go on
 go out
-go to sleep
 go up
-go well
-go wrong 
+go wrong
 goal
 god
 gold
-gold 
-golden 
-Good for you! 
+gold
+golden
+good for you! 
 good-looking
 goods
 government
-grade 
+grade
 grammar
 grant
 great
+greatly
 green
 greet
+greeting
 grounds
 grow
 grow up 
+growing
+growth
 guard
 guess
 guest
-guest 
-guide 
+guest
+guide
 guilty
 guy
 gym
 habit
 haircut
 hall
-hand in 
+hamburger
+hand in
 hand out
 handbag
 handle
@@ -829,76 +993,94 @@ hard
 hardly
 hardly ever
 hate
-have a meeting
-have a talk
-have an appointment
+have a temperature
+have on
+or have on
+have to do
+question
+idea
+plan
+talk
+meeting
+have no doubt
+have no idea
 have in common
-have no doubt 
-have no idea 
-head 
+have
+have got
+head
 head back
-headache 
+head down
+head towards
+headache
 headline
+headscarf
 health
-healthy 
+healthy
 hear from
 hearing
 heart
 heat
+heating
 heavily
+height
 help yourself
 helpful
 hero
-herself 
+herself
 hide
 high
 high-tech
+hi-tech
 highway
-himself 
+himself
 hire
 historical
 history
 hit
-hi-tech
 hobby
-hold your breath 
-Holocaust
+hold your breath
+holocaust
+the holocaust
 honest
-honey 
+honey
 honor
-hope to do 
+hope to do
 horrible
 hot
 household
 housewife
-housework 
-How about?
-How do you do?
+housework
+how do you do?
+how
+how about
+what about
 however
 hug
 human
+human being
 humor
-hundreds 
+hundreds
 hunger
 hunting
 hurry
 hurt
-hurt 
-I bet
-I guess 
-I suppose
-I suppose 
+hurt
+i bet
+i guess
+i suppose
+i suppose 
 idea
 identify
 identity
-if I were you 
-if only 
-if so 
+if
+if i were you
+if only
+if so
 if you like 
-ignore 
+ignore
 ill
 illegal
-I'm afraid
+i'm afraid …
 image
 imagination
 imagine
@@ -907,48 +1089,61 @@ importance
 important
 impossible
 improve
+improvement
+improved
+in
 in a way
-in actual fact
+or in some
+or in many ways
 in addition
-in advance 
-in case of 
+in advance
+in case of
 in common
-in contrast
-in detail 
-in doubt 
+have in common
+in detail
 in fact
-in front 
+in actual fact
+in front
+in full
 in general
-in half
 in love
-in order to
+in order to do
 in other words
 in particular
-in spite of 
+in secret
+in spite of
 in the end
 in time
 in two
+in half
+in writing
 included
+including
 income
 incorrect
 increase
 indeed
 independence
+independent
 individual
+industrial
 industry
 influence
 inform
-information technology
+technology
 ingredient
 injure
+injury
 inner
 insect
 inside
 insist
+institute
 institution
 instrument
 insult
 intend
+intention
 interest
 interested
 internal
@@ -957,56 +1152,64 @@ interval
 interview
 into
 introduce
-introduction 
+introduction
 invent
+invention
 involve
-iron 
-Islam
-it depends
-it looks as if
+iron
+islam
 it looks like
-It seems
+it looks as if
+it seems
+it
+depends
 item
-itself 
+itself
 jail
 jar
 jazz
 jet
-Jew
+jew
 jewelry
+jewish
 job
 join
 joke
 joy
-Judaism
+judaism
 judge
-jungle 
+judgement
+jungle
 just
-just 
+just
 just a moment
-just in case
+keep a
+secret
 keep in touch
-keep in touch 
 key
 kick
 killed
-kilogram 
+killer
+killing
+kilogram
 kilometer
 kind
-kite 
+kite
 knock
 know
-known as 
-Koran
+known
+koran
 lab
 label
 labor
-lack of 
+laboratory
+lack of
 ladder
 lady
 lake
 lamp
 land
+landing
 laptop
 largely
 last
@@ -1014,126 +1217,144 @@ lately
 later
 later on
 latest
-laugh at 
+laugh at
 law
 lawyer
 lay down in
-lay the table 
+lay down on
+lay the table
 lead
 leaf
 league
 lean against
 lean on
 leave
-leave 
-leave out 
+leave
+leave out
 left
 legal
 leisure
 lemon
-lemonade 
+lemonade
 lend
 length
 let me
 let us
+let know
 level
 library
 licence
 license
-lick 
+lick
 lie
 life
 lift
-lift 
 like
-likes and dislikes 
+likes and dislikes
 limit
 line
 link
-lion 
+lion
 lioness
 liter
 literature
-live 
+live
+living
 loads of
+a load of
 local
+locally
 locate
-lock 
+location
+lock
 long
 look around
+look round
 look like
 look nice
-Look out
+look strange
+look out!
 look up
 lose
 loss
 loud
 love
+love
+love from
+all my love
+lots of love 
 low
 luck
 lucky
-luggage 
+luggage
 machine
 mad
-made of 
 magic
 mail
 main
 mainly
 major
-majority 
-make 
-make a face 
+majority
+make
+make a face
 make friends
+make do
 make sure
 make-up
 male
-mall 
+mall
 manage
+managenment
+manager
 map
-marathon 
+marathon
 marry
-master 
+master
 match
-match 
+match
 material
-mathematics 
-matter 
+math
+mathematics
+matter
 maximum
 mean
 meanwhile
 measure
-medal 
+medal
 medicine
 medium
 meet
 memory
 metal
-meter 
+meter
 method
-midday 
+midday
 midnight
 might
 mile
 military
 mind
-mind 
+minimal
 minimum
 minister
 minor
 mirror
 miss
-miss an opportunity
+miss a chance
+miss a opportunity
 missing
 mix
 model
 modern
 moment
-Moslem
+money, a1
+evp resource
+moslem
+muslim
 mosque
 most
 mostly
-motor 
+motor
 mouse
 move
 move in
@@ -1141,18 +1362,18 @@ move out
 murder
 muscle
 musical
-musician 
-Muslim
-myself 
+musician
+myself
 myth
 name
 nation
-nationality 
-natural 
+national
+nationality
+natural
 near
 nearby
 necessary
-necklace 
+necklace
 negative
 neighborhood
 neither
@@ -1167,88 +1388,98 @@ northern
 not even
 not really 
 note
-nothing 
+nothing
 notice
-noticeboard 
-noun 
+noticeboard
+noun
 novel
 now
-nowadays 
+nowadays
 nowhere
-nuclear 
+nuclear
 obey
 object
 obvious
+obviously
 occasion
 occur
 ocean
 odd
-of 
+of
 of course
 of course not
-off
 offer
 officer
 oh
 old
-omelet
 omelette
-on business 
-on fire 
-on foot 
-on offer 
+omelet
+on business
+on fire
+on foot
+on offer
 on purpose
-on the way from
 on the way to
+on from
 on time
 once again
 once more
+one
+one
 one another
 one day
+one day
+some day
 one of these days
 onto
+onto on to
 open
 opera
 operate
+operator
 opinion
 opportunity
 oppose
 opposite
 option
-or not  
+or
 order
-order 
 ordinary
 organization
 organize
+organizer
 original
 originally
 ought to
-ourselves 
+ourselves
+out
 out loud
-out of 
-out of date
-out of order 
-out of work 
+out of
+out of order
+out of work
 outdoors
 out-of-date
+out of date
 oven
 over
-over 
+over
 over here
 over there
 owe
 own
+owner
 p.m.
 package
 pain
 pajamas
+pyjamas
 palace
 pan
 pants
 paragraph
-parcel 
+parcel
 park
+parking
 parliament
 part of 
 partner
@@ -1256,7 +1487,7 @@ party
 pass
 pass by
 pass over
-pass through
+pass by through
 passenger
 passport
 password
@@ -1265,122 +1496,153 @@ patient
 pattern
 pay
 pay attention
+payment
 peace
-pear 
-pension 
+pear
+pension
 pepper
 per
-per cent
 percent
+per cent
 perfectly
 perform
 performance
+performer
 period
 permanent
+permanently
+permission
 permit
 personal
 persuade
-petrol 
-photocopy 
+petrol
+photocopier
+photocopied
+photocopy
 photographer
-phrase 
+photography
+phrase
 physical
+physically
 physics
-piano 
+piano
 pick up
+pick
 pie
 piece
-pile 
-pillow 
-pipe 
+pile
+pillow
+pipe
 place
 plain
-plan
 play
-play 
+play
 play a joke
-playground 
+trick on 
+playground
+playground
 please
 pleased
 pleased to meet you 
 pleasure
-plenty 
-plural 
+plenty
+plural
 poem
 poet
+poetry
 point
-point 
+pointed
 polite
+political
+politician
+politically
 politics
 poor
 pop
-popcorn 
+popcorn
 port
 position
 positive
-possibility 
-possibly 
+possibility
+possibly
 post
-postpone 
+postman
+post office
+postpone
 pot
 potential
 power
 powerful
+powerful
 practical
+practice
 preparation
-presence 
+prepared
+presence
 press
 pretty
 previous
+previously
 prince
+princess
 print
+printer
 prison
+prisoner
 private
 process
 produce
+product
+production
 professional
 profit
 program
 progress
 promise
 pronounce
-proper 
+pronunciation
+proper
+properly
 property
 proposal
 protect
+protection
 proud
 prove
 provide
 public
 publish
+publisher
+publication
 puppy
 pure
-purple 
+purple
 purpose
-purse 
+purse
 push
-put down in writing
-put in writing
 put off
 put on
+put in writing
 put together
+or put together
 put up
-put up 
+or put up
 puzzle
-pyjamas
 quality
 quantity
-question mark 
+question mark
+quiet
 quietly
-quite 
-quite a bit 
+quite
+quite a bit
 quite a few
-quite a lot 
+quite a lot
 quite a while 
 race
 raise
 range
-rare 
+rare
+rarely
 rat
 rate
 rather
@@ -1388,52 +1650,63 @@ rather than
 reach
 reaction
 read out
+or read out
 real
-reality 
+reality
 realize
 really
 reasonable
 receipt
 receive
 recent
+recently
 reception
 recipe
 recognize
 record
+recording
 recover
+recovery
 reduce
-refer to 
+refer to
 refuse
 regular
+regularly
+relation
 relations
 relative
 relatively
 release
 religion
+religious
 remain
-remind
+remaining
+remind of
 remove
 repair
 reply
 report
 represent
 require
+requirement
 resource
 respond
+response
+responsibility
 responsible
-responsible for 
-result in 
+result in
 reward
 rich
 ride
+rider
 right
-right after
 right away
 right now
+right after
 ring
 rise
-roast 
-rock 
+roast
+rock
 role
 roll
 root
@@ -1445,83 +1718,100 @@ row
 royal
 rubber
 safe
-safety 
+safety
 sail
-sale 
-salty 
-sand 
-sauce 
-sausage 
+sailor
+sale
+salty
+sand
+sauce
+sausage
 save
 savings
 say
-scarf 
+sb's fault
+scarf
 scene
 scientific
+scientist
 scissors
 scooter
+electric scooter
 score
 scream
 search
 season
 second
-secret 
+secondly
+secondary
 secretary
 section
+secure
 security
 see
-seed 
-seek 
-seems as if
+see to
+seed
+seek
+seem happy
+seem
 seems like
+seems as if
 seems to
 select
-selfie 
-self-service 
+selection
+selfie
+self-service
 send back
+or send back
+sensation
 sense
 separate
 series
 serious
 serve
+service
 session
 set
-set a date
-set a time
+date
+time
 set off
-set out 
+set out
 set the table 
 sew
 sex
 shadow
 shake
-shake hands 
-shall 
+shake hands
+shall
 shape
 share
+shared
 sharp
 sheet
-shelf 
+shelf
 shine
-ship 
+ship
 shock
 shoot
 shop
 shop assistant
 shopping
-short of 
-shortly after
+shopping mall
 shortly afterward
+shortly after
 shortly before
+shot
 shout
-show 
-shower 
-shut 
+show
+show what to do
+how to do
+shower
+shut
 shy
 side
 sight
 sign
-silence 
+silence
 silly
 silver
 similar
@@ -1529,84 +1819,99 @@ simple
 simply
 since
 single
-single parent 
-singular 
-sink 
+single parent
+singular
+sink
 sir
 site
-sitting room 
+sitting room
 situation
-skate 
+skate
+skating
+
+skateboard
 ski
+skiing
 skill
 skin
 sleep
-slice 
+sleepy
+slice
 slim
 smart
 smell
-smoke 
+smoke
+smoking
+so
 so far
-so far as I know
-so long as
-soccer 
-social media 
-social networking 
+soccer
+social
+social media
+social networking
 society
-soft 
-soft drink 
-software 
+soft
+soft drink
+software
 soldier
 solid
-solve 
+solution
+solve
 somehow
 somewhat
-sorry 
+sorry
 sort
 soul
-sound as if
-sound as though
 sound like
+sound as if
+sound as though 
+sound good
+interesting
+sound strange
 source
 southern
-space
 spare  
 sparkling water
 sparkling wine
-speak 
+speak
+speaker
 speech
 spice
+spicy
 spot
 stadium
 staff
 stage
 standard
-star  
+star
 state
-state 
+statement
 station
-statue 
+statue
 stay
 steam
 step
 stick
+sticky
 stir
 stomach
-stomach ache 
+stomach ache
 stone
 stop
+storage
 store
 story
 straight
+straight away
 stranger
+strategic
 strategy
 strawberry
 strength
 stress
-strike 
-strong 
+strike
+strong
 strongly
-studio 
+studio
 study
 stuff
 stupid
@@ -1614,291 +1919,304 @@ style
 subject
 succeed
 success
+successful
+
+
+successfully
 such
 such a
 such as 
 sudden
+suddenly
 suffer
 suggest
+suggestion
 suit
 suitable
 sum
-sunglasses 
+sunglasses
 sunrise
-sunset 
+sunset
 sunshine
 supply
 support
+supporter
 suppose
 surely
 surprise
+surprsing
+
+surprisingly
 surround
 swallow
 swim
-switch 
+swimmer
+
+swimming
+switch
 switch off
-switch on
+sympathetic
 sympathy
 synagogue
 system
-tablespoon 
-tag 
+tablespoon
+tag
+take
 take a break
-take a deep breath 
 take a rest
-take an exam 
-take away
-take away 
-take back
-take care of 
+take a deep breath
+take an exam
+take care of
+take it
+take things easy
 take off
+take
+take seriously
+take back
 take out
-take seriously 
 take up
 talent
-talk 
-target 
+talented
+target
 task
 taste
 tax
 teaching
 team
 tear
-teaspoon 
+teaspoon
 technical
 technique
-technology
+technological
+teenage
 teenager
-telecommunications 
+telecommunications
 tell
-temperature 
+tell to do
+temperature
 temporary
-tend to 
+tend to do
 tense
 tent
 term
 terrible
-terrible 
+terribly
 terrific
 test
 text
-thanks 
+thanks
 that
-that 
 that's all right 
 the air
 the army
-the best 
-the day after tomorrow 
+the best
+the day after tomorrow
 the day before yesterday
-the dishes 
+the dishes
 the first
-the Holocaust
 the law
 the matter
-the most
+the most attractive
+the most important
+the most popular
+the other day
+the week
 the press
-the public 
+the public
 the same
-the same thing
 the sights
-the West
+the west
 the young
 theater
 their
-themselves 
+themselves
 then
 therefore
-there's no doubt 
-these days 
-they 
+there's no doubt
+these days
+they
 thick
-things 
-things like that 
+things
+things like that
 think
-think of 
+think of
 thirst
 though
 thought
-thread 
+thread
 threat
+threaten
 throat
 through
 thumb
 thunder
+thunderstorm
 tidy up
-tie 
-time
-time 
-timetable 
+tie
+timetable
 tin
 tiny
-tip 
+tip
 tire
+tire tyre
 tissue
 title
-to be honest
+to
 to begin with 
-toast 
-today 
+toast
+today
 toe
-together 
-tone 
+toenail
+together
+tone
 tongue
-too bad 
+too bad
 tool
 toothache
-toothpaste 
-top 
+toothpaste
+top
 topic
 total
-total 
+total
+totally
 touch
 tour
-tour 
+tour
+tour guide
+tourist
+tourism
 toward
 towel
-tower 
-track 
+tower
+track
 trade
-tradition 
-traffic  
+tradition
+traditional
+traffic
+traffic lights
 train
+training
+trainer
 tram
 translate
+translation
+translator
+travel
 traveler
 treat
+treatment
 trend
 trial
-trick on
-trouble 
-trousers 
-truck 
+trouble
+trousers
+truck
+truly
 trust
 truth
-try on 
-try out 
+try
+try on
+try out
+try do one's best
 tune
 tunnel
-turkey 
-turn 
-turn down 
-turning 
-tweet 
+turkey
+turn
+turn down
+turning
+tweet
+two weeks
+five hours
 type
 typical
-tyre
+typically
 ugly
-unable to do 
-under 
+under
 underground
 underline
-understanding 
-unfriendly 
+understanding
+unfriendly
 uniform
 unimportant
 unit
 unkind
 unless
-unnecessary 
-unpleasant 
+unnecessary
+unpleasant
 until
 up
-up the road
 up the street
-up to date
+up road
 update
 upper
 upset
 upside down
 up-to-date
+up to date
 use
 used to
 useless
+user
+used
 user-friendly
 usual
-valley 
+valley
+valuable
 value
+variety
 various
 vegetarian
 vehicle
 victory
-video 
+video
 violence
-viral 
-virtual 
+violent
+viral
+virtual
+virtually
 virus
 vision
 visit
 voice
 volume
+voluntary
 volunteer
 vote
-wallet 
+walk home
+walk to
+wallet
 warm
 warn
+warning
 waste
 watch out
 wave
 we
 weak
 website
-wedding 
-weekly 
+wedding
+weekly
 weight
-welcome to do 
 well
 well-known
 well-made
 western
 wet
-What about
-What about?
-What if
-What's up? 
+what if
+what is
+what like
+what's up 
 wheel
 whenever
 whether
+whether or
 which
 who
 whoever
 whose
-Why don't you?
-Why not? 
+why don't you
+why not do
+why not
 widely
 wild
-willing to
 win
 window
-wing
-wipe
-wish
-wish sb luck 
-with love from
-with the help of 
-without delay 
-wonder
-wonder 
-wood
-wool 
-work
-worried
-worse
-worth doing 
-would love to
-would prefer
-would rather 
-Would you mind
-wow
-wrap 
-wrap up 
-write 
-written
-wrong
-yet 
-you know 
-You're kidding
-yourself
-yourselves
-youth
-zone
