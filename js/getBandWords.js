@@ -22,7 +22,7 @@ function getWordList(element) {
 }
 
 function excludeWord(data) {
-    var excludedWords = ['\/\^out\n', 'so\n', 'the\n', 'or\n', '\/\^my\n']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
+    var excludedWords = ['\/\^out\n', 'so\n', 'the\n', '\/\^or', '\/\^my\n']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
     excludedWords = excludedWords.toString().split(',');
     for (var e = 0; e < excludedWords.length; e++) {
         data = data.replace(excludedWords[e], '')
