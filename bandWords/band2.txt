@@ -337,7 +337,8 @@ builder
 burger
 burn
 business
-businessman businesswoman
+businessman
+businesswoman
 but
 butterfly
 button
@@ -735,7 +736,7 @@ email
 emergency
 emoji
 employ
-employee 
+employee
 employer
 employment
 encourage
@@ -1828,7 +1829,6 @@ sitting room
 situation
 skate
 skating
-
 skateboard
 ski
 skiing
@@ -1920,8 +1920,6 @@ subject
 succeed
 success
 successful
-
-
 successfully
 such
 such a
@@ -1945,13 +1943,11 @@ suppose
 surely
 surprise
 surprsing
-
 surprisingly
 surround
 swallow
 swim
 swimmer
-
 swimming
 switch
 switch off
@@ -2185,38 +2181,3 @@ walk home
 walk to
 wallet
 warm
-warn
-warning
-waste
-watch out
-wave
-we
-weak
-website
-wedding
-weekly
-weight
-well
-well-known
-well-made
-western
-wet
-what if
-what is
-what like
-what's up 
-wheel
-whenever
-whether
-whether or
-which
-who
-whoever
-whose
-why don't you
-why not do
-why not
-widely
-wild
-win
-window

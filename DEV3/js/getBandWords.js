@@ -11,30 +11,31 @@ function getWordList(element) {
 
             if (elementName.toString().indexOf('band') > -1) { //band lists are standalone; we do not join lists
                 document.getElementById('divwl').value = "";
-                document.getElementById('divwl').value = excludeWord(data);
+                document.getElementById('divwl').value = /*excludeWord*/(data);
             } else { //Lists can be joined
                 var existingData = document.getElementById('divwl').value;
                 if (existingData == '')
-                    document.getElementById('divwl').value = excludeWord(data);
+                    document.getElementById('divwl').value = /*excludeWord*/(data);
                 else
-                    document.getElementById('divwl').value = existingData + '\n' + excludeWord(data);
+                    document.getElementById('divwl').value = existingData + '\n' + /*excludeWord*/(data);
             }
         });
     }
 }
 
 function excludeWord(data) {
-    var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or', 'my'];
+    //var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or', 'my']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
+    var excludedWords =[]
     excludedWords = excludedWords.toString().split(',');
     for (var e = 0; e < excludedWords.length; e++) {
-        data = data.replace(excludedWords[e], '')
+         data = data.replace(excludedWords[e], '')
     }
-    data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, "");
+    data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, ""); //replace empty lines
     return data;
 }
 
 function uncheckListsAndButtons(elementName) {
-    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band1', 'band2', 'band3']; //add band1 when applicable
+    var myCheckboxes = ['ListA', 'ListB', 'ListC', 'ListD', 'band0', 'band1', 'band2', 'band3']; //add band1 when applicable
 
     //remove the element from the array
     var index = myCheckboxes.indexOf(elementName);

@@ -60,32 +60,5 @@ function getListDWords(element) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //document.getElementById('band2').checked = false;
 //document.getElementById('divwl').value = "";

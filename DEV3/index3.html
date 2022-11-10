@@ -52,6 +52,7 @@
                 <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
                 <div style="width: 20%; float: right" class="checkboxDIV">
                     <div><font style="font-weight: bold">Use lower case only and other </font><a href="https://oharelbs.github.io/textparse/limitations.html" target="_blank"><span style="font-size:18px; color:red">important info</span></a></div>
+                    <input type="checkbox" class="largeCheckBox" id="band0" name="band0" onClick="getWordList(this)" /><label class="checkboxLabel">Pre band</label><br>
                     <input type="checkbox" class="largeCheckBox" id="band1" name="band1" onClick="getWordList(this)" /><label class="checkboxLabel" id="band1Label" labelName="Band I Words" > Band I Words</label><br>
 
                     <input type="checkbox" class="largeCheckBox" id="band2" name="band2" onClick="getWordList(this)" /><label class="checkboxLabel"> Band II Words</label><br>
@@ -73,8 +74,6 @@
                     <br><br>
                     <div>
                         <font style="text-decoration: underline; font-weight: bold">I want to</font><br>
-
-                        <input type="checkbox" class="largeCheckBox" id="band0" name="band0" onClick="getWordList(this)" /><label class="checkboxLabel">Pre band</label><br>
                         <input type="checkbox" class="largeCheckBox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt checkboxLabel">Check All</label><br>
                         <input type="checkbox" class="largeCheckBox" id="mudgashText" name="mudgashText" /><label  class="checkboxLabel" style="background-color: yellow;">Highlight Text</label><br>
                         <input type="checkbox" class="largeCheckBox" id="colorText" name="colorText" /><label  class="checkboxLabel" style="color: red;">Color Text</label><br>
