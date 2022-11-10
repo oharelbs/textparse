@@ -24,13 +24,12 @@ function getWordList(element) {
 }
 
 function excludeWord(data) {
-    //var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the', 'or', 'my']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
-    // var excludedWords = ['...', ',']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
-    // var excludedWords =[]
-    // excludedWords = excludedWords.toString().split(',');
-    // for (var e = 0; e < excludedWords.length; e++) {
-    //      data = data.replace(excludedWords[e], '')
-    // }
+    var excludedWords = ['as', 'for', 'in', 'one', 'to', 'out', 'so', 'the\n', 'or', 'my']; // --> /^beginning of line \n - end of line. Ensures that the word is the only word in that line
+    var excludedWords =[]
+    excludedWords = excludedWords.toString().split(',');
+    for (var e = 0; e < excludedWords.length; e++) {
+         data = data.replace(excludedWords[e], '')
+    }
     data = data.replace(/(?:(?:\r\n|\r|\n)\s*){2}/gm, ""); //replace empty lines
     return data;
 }
