@@ -5,7 +5,6 @@ and
 are you ready?
 ask 
 ask for
-at
 at home
 bad
 bag
