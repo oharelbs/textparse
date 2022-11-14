@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/mystyles.css">
     <button type="submit" id="takeMeBack" onclick="window.location.href='https://oharelbs.github.io/textparse/'" class="button"
     value="takemeback">Back to main page</button>
-    <div  style="text-align: center;"><h1>Limitations <font style="font-size: small;">and Some Small Print </font> </h1> </div> 
+    <div  style="text-align: center;"><h1>Versions, Bugs, Limitations<font style="font-size: small;">, and Some Small Print </font> </h1> </div> 
 
 
 <style>
@@ -34,10 +34,39 @@
     <div class="text">
         <span style="font-size: large;" >
 
-            <h4>Versions</h4>
-            <b>6. version 2.5 (FEB 2022)</b><br>
+            <font style="color:red">Lists updated: 11 November 2022</font>
+
+            <h3>Todo</h3>
+            <li>Option to find exact words in list, no partial words (Limitations (5))</li>
+
+            <h3>Versions</h3>
+
+            <b>12. version 3.7.5 (NOV 2022)</b><br>
+            &nbsp;&nbsp;a. You can now select more than one Band list at a time, same as you can with Lists.<br>
+            
+            <b>11. version 3.7.1 (NOV 2022)</b><br>
+            &nbsp;&nbsp;a. BUG (fixed): Unintentional behavior (sort of BUG): not possible to check multiple lists.<br>
+
+            <b>10. version 3.7 (NOV 2022)</b><br>
+            &nbsp;&nbsp;a. Pre band list was added.<br>
+            &nbsp;&nbsp;b. BUG (fixed): Exclusion words cause the letter combination disappear from the word list, i.e.: if "as" is in the excluded<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;words list, the word 'case' would apper as 'ce'.<br>
+            &nbsp;&nbsp;<del><font style="color:lightgray">c. Unintentional behavior (sort of BUG): not possible to check multiple lists.</font></del><br>
+
+            <b>9. version 3.5 (NOV 2022)</b><br>
+            &nbsp;&nbsp;a. LISTS added. You can check several list boxes. <del><font style="color:lightgray">You cannot select a Band list with a List (A-D).</font></del><br>
+            &nbsp;&nbsp;b. Band I list added.<br>
+            
+            <b>8. version 3.1 (OCT 2022)</b><br>
+            &nbsp;&nbsp;a. You can now copy the stylized text from "Highlighted words from text" into your preferred editor.<br>
+
+            <b>7. version 3 (FEB 2022)</b><br>
+            &nbsp;&nbsp;a. Can now find phrases or chunks of words. For example, if the Word list contains "absence of" in one line, it will find "absence of" in the text.<br>
+
+            <b>6. version 2.55 (FEB 2022)</b><br>
             &nbsp;&nbsp;a. <b>Removed</b> Band I due to issues with parsing phrases.<br>
-            &nbsp;&nbsp;b. Added two buttons under the predefined word list window: to upload MS Word <b>docx</b> files and to upload <b>txt</b> files (using mammoth).<br>
+            <del><font style="color:lightgray">&nbsp;&nbsp;b. Added two buttons under the predefined word list window: to upload MS Word <b>docx</b> files and to upload <b>txt</b> files (using mammoth).</font></del><br>
+            &nbsp;&nbsp;b. Added a button, under the predefined word list window, to upload files. Only MS Word <b>docx</b> and <b>txt</b> files are accepted (using mammoth).<br>
             &nbsp;&nbsp;c. Now highlighting all matching words in the text, not just the first one found.<br>
             &nbsp;&nbsp;d. Removed duplicates from "Words Found in Text" (see <b>limitations</b>).<br>
             &nbsp;&nbsp;e. "Words Found in Text" show a number next to each word; that's the number of time the word appears in the text. Example: video : 2<br>
@@ -46,39 +75,41 @@
             &nbsp;&nbsp;h. Enlarged check boxes size and label size.<br>
             &nbsp;&nbsp;i. All buttons now have a <span style="background-color: green;"><font style="color:white"><b>green</b></font></span> background when hovered over. Don't judge.<br>
             <br>
-            <font style="color: lightgrey">
-            5. version 2.4 (JUN 2021):<br>
-            &nbsp;&nbsp;a. update to Band III<br>
+            <!-- <font style="color: lightgrey"> -->
+            <b>5. version 2.4 (JUN 2021):</b><br>
+            &nbsp;&nbsp;a. uUdate to Band III<br>
             <br>
-            4. version 2.3 (DEC 2020):<br>
-            &nbsp;&nbsp;a. bug fix - sourced from version 2.2 a and b<br>
+            <b>4. version 2.3 (DEC 2020):</b><br>
+            &nbsp;&nbsp;a. BUG (fixed): sourced from version 2.2 a and b<br>
             <br>
-            3. version 2.2 (DEC 2020):<br>
-            &nbsp;&nbsp;a. can find v2 - d<br>
-            &nbsp;&nbsp;b. can find words + es<br>
+            <b>3. version 2.2 (DEC 2020):</b><br>
+            &nbsp;&nbsp;a. Can find v2 - d<br>
+            &nbsp;&nbsp;b. Can find words + es<br>
             &nbsp;&nbsp;c. "Clear Text" button of found words also clears the words in "Words Found in Text" and in "Links"<br>
             <br>
-            2. version 2.1 (DEC 2020):<br>
-            &nbsp;&nbsp;a. can find some v2 verbs<br>
-            &nbsp;&nbsp;b. can find verbs + ed (or rather, words from the list that do not end in ed, but in the text they do)<br>
+            <b>2. version 2.1 (DEC 2020):</b><br>
+            &nbsp;&nbsp;a. Can find some v2 verbs<br>
+            &nbsp;&nbsp;b. Can find verbs + ed (or rather, words from the list that do not end in ed, but in the text they do)<br>
             <br>
-            1. Version 2.0 (AUG 2020): can find plurals.<br>
-            <br><br>
-            </font>
-            <h4>Limitations</h4>
-            1. If something goes wrong, refresh the page by clicking on F5 on your keyboard<br>
+            <b>1. Version 2.0 (AUG 2020):</b><br>
+            &nbsp;&nbsp;a. Can find plurals.<br>
+            
+            <h3>Limitations</h3>
+            1. If something goes wrong, refresh the page by clicking the F5 key on your keyboard<br>
             <del><font style="color:lightgray">2. We're currently showing duplicate entried in "Words Found in Test" when ticking the "Find whole words" checkbox.</font></del><br>
             2. Duplicates in "Words Found in Text": the same word might appear with a capital letter and without, e.g. "video" and "Video".<br>
             3. This is an ongoing project, so if something does not work, or does not work as expected, or is not updated, email me: <a href="mailto:oharel@gmail.com?subject=Comments and suggestions">oharel@gmail.com</a><br>
             &nbsp;&nbsp;&nbsp;&nbsp;I promise to look at it when I have time.<br>
             4. If typing words manually, <font style="font-weight: bold;">use one per line</font> and <font style="font-weight: bold;">lower case only</font>. 
-            Clicking on "Look'em up" will duplicate the words and replace the first letter of each word with a capital letter.<br>
+            Clicking on <del><font style="color:lightgray">Look'em up</font></del>"Find words" will duplicate the words and replace the first letter of each word with a capital letter.<br>
             5. We're currently finding whole words as part of other words. For instance: 'low' in 'fel<font style="font-weight: bold; color: red;">low</font>'. This is useful when suffixes<br>
             &nbsp;&nbsp;&nbsp;&nbsp;are missing ('talk' vs 'talk<font style="font-weight: bold; color: red;">s</font>'), but less so in the case of 'low'-'fellow', especially if the list of words contains the word 'fellow'.<br>
+            6. MAKE SURE THAT THERE ARE NO EXTRA EMPTY LINES EITHER AT THE BEGINNING OR THE END OF THE LIST. AND ALSO, IN THE LIST ITSELF.<br>
             
             999. Use at your own discretion. This means that I'm not responsible bla bla bla...<br><br>
             
-            <h4>Special Thanks</h4>
+            <h3>Special Thanks</h3>
+            Avishag D. - taking care of lists and band words; saves a lot of time...<br>
             Marcin S. - coding and troubleshooting<br>
             Galia R. - for asking me to do it and patiently QAing<br>
             Ella B. - Hooray! Arrays!
