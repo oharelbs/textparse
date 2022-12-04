@@ -871,7 +871,6 @@ foggy
 follow
 follower
 following
-for
 for days
 for instance
 for sale
@@ -1090,7 +1089,6 @@ impossible
 improve
 improvement
 improved
-in
 in a way
 or in some
 or in many ways
@@ -1622,9 +1620,7 @@ put off
 put on
 put in writing
 put together
-or put together
 put up
-or put up
 puzzle
 quality
 quantity
@@ -1648,7 +1644,6 @@ rather than
 reach
 reaction
 read out
-or read out
 real
 reality
 realize
@@ -1760,7 +1755,6 @@ selection
 selfie
 self-service
 send back
-or send back
 sensation
 sense
 separate
@@ -2054,7 +2048,6 @@ tire
 tire tyre
 tissue
 title
-to
 to begin with 
 toast
 today

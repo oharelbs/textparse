@@ -329,7 +329,6 @@ fill
 final
 find
 find out
-or find out
 fine
 finger
 finish
@@ -349,7 +348,6 @@ following
 food
 foot
 football
-for
 for example
 forest
 forget
@@ -471,7 +469,6 @@ husband
 i don't mind
 i mean
 i
-i you
 he had better do
 ice
 ice cream
@@ -479,7 +476,6 @@ idea
 imagine
 immediately
 important
-in
 include
 information
 inside
@@ -685,7 +681,6 @@ online
 only
 open
 opposite
-or
 orange
 order
 other
@@ -951,9 +946,7 @@ table
 table tennis
 take
 take away
-or take away
 take off
-or take off
 talk
 task
 taxi
@@ -1003,7 +996,6 @@ tights
 till
 time
 tired
-to
 today
 together
 toilet
