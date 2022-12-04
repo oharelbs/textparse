@@ -79,7 +79,8 @@ function popMeUp() {
 
     ////////////// this find all of the words and colors them //////////////
     for (var wrds = 0; wrds < words.length - 1; wrds++) {
-        newHTML = newHTML.replaceAll(words[wrds], '<span class="' + myCSSclass() + '">' + words[wrds] + '</span>')
+         newHTML = newHTML.replaceAll(words[wrds], '<span class="' + myCSSclass() + '">' + words[wrds] + '</span>')
+        //newHTML = newHTML.replaceAll(words[wrds], myCSSclass()  + words[wrds] + '</span>')
 
     }
 
@@ -310,6 +311,6 @@ function myCSSclass() {
     if (highlightText == false && colorText == false && ulText == false) {
         answer3 = 'unFormattedText';
     }
-
-    return answer + answer1 + answer2 + answer3 + answer4;
-}
+    return  answer + answer1 + answer2 + answer3 + answer4;
+ //   return '<span class="' + answer + answer1 + answer2 + answer3 + answer4 + '">';
+ }

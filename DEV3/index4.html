@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<!--  https://oharelbs.github.io/textparse/ -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177916936-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-177916936-1');
+</script>
+
+    <h2 style="text-align: center">Find Words in Text</h2>
+<!-- Load the stylesheet first thing-->
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- jQuery library  -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="js/getBandWords.js"></script>
+<script src="js/clearList.js"></script>
+<script src="js/getSampleText.js"></script>
+<script src="js/popMeUp.js"></script>
+<script src="js/checkAllBoxes.js"></script>
+<script src="js/clearText.js"></script>
+<script src="js/copyFunction.js"></script>
+<script src="js/mammoth.browser.js"></script>
+<script src="js/readFiles.js"></script>
+<script src="js/copyHTMLFunction.js"></script>
+<script src="js/FileSaver.js-master/dist/FileSaver.js"></script>
+
+    <body  style="background-color:rgb(235, 238, 223);" onload="disableButtonsOnLoad()"></style>
+
+        <table style="border-collapse: collapse; width: 100.00%; height: 608px;" border="0">
+            <tbody>
+                <tr>
+                    <td style="width: 50%;">
+                        <label for="emtext"><font class="headlines">Text (paste it below)</font></label><br>
+                        <div contenteditable="true" id="divetext" name="divetext" class="divetext"></div>
+                        <button id="divetext" class="clearField" onClick="clearText(this.id)">Clear Text</button>
+                    </td>
+                    <td style="width: 50%;">
+                        <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
+                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
+                        <button id="copyHTML" title="...and paste in MSWord" class="copyText" onClick="copyHTMLFunction('divca')">Copy Text</button>
+                    </td>
+                </tr>
+            <td id="489" style="width: 50%;">
+                <label for="wordlist"><font class="headlines">Word list (one per line)</font></label>
+                <div style="width: 20%; float: right" class="checkboxDIV">
+                    <div><font style="font-weight: bold">Use lower case only and other </font><a href="https://oharelbs.github.io/textparse/limitations.html" target="_blank"><span style="font-size:18px; color:red">important info</span></a></div>
+                    <input type="checkbox" class="largeCheckBox" id="band0" name="band0" onClick="getWordList(this)" /><label class="checkboxLabel"> Pre band</label><br>
+                    <input type="checkbox" class="largeCheckBox" id="band1" name="band1" onClick="getWordList(this)" /><label class="checkboxLabel" id="band1Label" labelName="Band I Words" > Band I Words</label><br>
+
+                    <input type="checkbox" class="largeCheckBox" id="band2" name="band2" onClick="getWordList(this)" /><label class="checkboxLabel"> Band II Words</label><br>
+                    <input type="checkbox" class="largeCheckBox" id="band3" name="band3" onClick="getWordList(this)" /><label class="checkboxLabel"> Band III Words</label><br>
+
+                    <input type="checkbox" class="largeCheckBox" id="ListA" name="ListA" onClick="getWordList(this)" /><label class="checkboxLabel"> List A</label>
+                    <input type="checkbox" class="largeCheckBox" id="ListB" name="ListB" onClick="getWordList(this)" /><label class="checkboxLabel"> List B</label>
+                    <br>
+                    <input type="checkbox" class="largeCheckBox" id="ListC" name="ListC" onClick="getWordList(this)" /><label class="checkboxLabel"> List C</label>
+                    <input type="checkbox" class="largeCheckBox" id="ListD" name="ListD" onClick="getWordList(this)" /><label class="checkboxLabel"> List D</label>
+                    <br>
+                    <button id="checkBoxList" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearList(this.id)">Clear Lists</button>
+
+                    <br>
+                    <br>
+                    <br>
+<!--                    <input type="checkbox" id="wholeWord" name="wholeWord" /><label>Find whole words</label><br> -->
+                    <input type="checkbox" class="largeCheckBox" id="sampleText" name="sampleText" onClick="getSampleText(this)"/><label class="checkboxLabel">sample text</label><br>
+                    <br><br>
+                    <div>
+                        <font style="text-decoration: underline; font-weight: bold">I want to</font><br>
+                        <input type="checkbox" class="largeCheckBox" id="allAtt" name="allAtt" onClick="checkAllBoxes(this)" /><label class="allAtt checkboxLabel">Check All</label><br>
+                        <input type="checkbox" class="largeCheckBox" id="mudgashText" name="mudgashText" /><label  class="checkboxLabel" style="background-color: yellow;">Highlight Text</label><br>
+                        <input type="checkbox" class="largeCheckBox" id="colorText" name="colorText" /><label  class="checkboxLabel" style="color: red;">Color Text</label><br>
+                        <input type="checkbox" class="largeCheckBox" id="ulText" name="ulText" /><label  class="checkboxLabel" style="text-decoration: underline;">Underline Text</label><br><br><br><br>
+                        <button type="submit" id="mySubmitButton" onclick="popMeUp()" class="button" value="Find words">Find words</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <textarea id="divwl" name="divwl" type="text" class="wrdlstText"></textarea>
+                <br><button id="divwl" name="divwl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divwl" class="copyText" onclick="copyFunction('divwl')">Copy Text</button><br>
+            </td>
+            <td id="510" style="width: 50%;">
+
+                <label id="wordsInText" for="simlist"><font class="headlines">Words Found in Text</font></label>
+                <!-- this is the URL side -->
+                <label id="linkToWords" style="float: right" for="simURLlist"><font class="divURLheadlines">Links</font></label><br>
+                <div style="cursor: auto;" id="divurl" name="divurl" class="divurl"></div>
+                <div contenteditable="true" id="divsl" name="divsl" class="wrdlst"></div><button id="divsl" style="margin-left:10px; margin-right:3px" class="clearField" onClick="clearText(this.id)">Clear Text</button><button id="divsl" class="copyText" onclick="copyFunction(this.id)">Copy Text</button>
+                <!-- <div class="mail-image"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions">Click here to email me</a><br> -->
+                <div class="mail-image"><button class="mailbtn" title="Click here to email me"><a href="mailto:oharel@gmail.com?subject=Comments and suggestions"><i style="color:white" class="fa fa-solid fa-envelope"></i></a></button><br><br>
+                <a href="https://oharelbs.github.io/textparse/limitations.html" target="_blank">Version 3.8</a>
+                </div>
+            </td>
+            <tr id="521">
+            </tr>
+        </table>
+    </body>
+    <script>
+        function disableButtonsOnLoad() {
+          //document.getElementById('copyHTML').disabled = true;
+        }
+        </script>
+</head>
+<label class="custom-file-upload">
+    <input type="file" onchange="parseTheFile(this)" >Upload file
+</label>
+</html>
