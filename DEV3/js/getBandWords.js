@@ -1,40 +1,12 @@
 function getWordList(element) {
-    var boxchecked = element.checked;
-    var elementName = element.name;
     var checkedLists = [];
-
-    var myCheckboxes = ['band0', 'band1', 'band2', 'band3']; //add bands when applicable
-    myCheckboxes = myCheckboxes.toString().split(',');
-
-    var listsArray = ['ListA', 'ListB', 'ListC', 'ListD']; //add lists when applicable
-    listsArray = listsArray.toString().split(',');
-
-    //band checkboxes
-    //first, clear Lists checkboxes and window, so lists and bands are not mixed
-    if (elementName.toString().indexOf('band') > -1) { //if we clicked on Band, clear Lists checkboxes
-        for (var i = 0; i < listsArray.length; i++) {
-            document.getElementById(listsArray[i]).checked = false;
-        }
-
-        for (var i = 0; i < myCheckboxes.length; i++) {
-            if (document.getElementById(myCheckboxes[i]).checked == true) {
-                checkedLists.push(myCheckboxes[i])
-            }
-        }
-
-    } else { //it's a list
-        //first, clear band checkboxes and window, so lists and bands are not mixed
-        for (var i = 0; i < myCheckboxes.length; i++) {
-            document.getElementById(myCheckboxes[i]).checked = false;
-        }
-
-        for (var i = 0; i < listsArray.length; i++) {
-            if (document.getElementById(listsArray[i]).checked == true) {
-                checkedLists.push(listsArray[i])
-            }
+    var cboxes = ['band0', 'band1', 'band2', 'band3','ListA', 'ListB', 'ListC', 'ListD'];
+    cboxesArray = cboxes.toString().split(',');
+    for(var i = 0; i<cboxesArray.length; i++) {
+        if (document.getElementById(cboxesArray[i]).checked == true) {
+        checkedLists.push(cboxesArray[i]);
         }
     }
-    
     populateDivWithCheckedLists(checkedLists.toString());
 }
 

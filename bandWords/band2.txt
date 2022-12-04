@@ -1441,7 +1441,6 @@ opportunity
 oppose
 opposite
 option
-or
 order
 ordinary
 organization
