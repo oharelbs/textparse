@@ -20,6 +20,15 @@
 <!-- jQuery library  -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
+ <!-- tinyMCE related -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+      selector: '#divca'
+    });
+  </script>
+   <!-- tinyMCE related -->
+
 <script src="js/getBandWords.js"></script>
 <script src="js/clearList.js"></script>
 <script src="js/getSampleText.js"></script>
@@ -44,7 +53,13 @@
                     </td>
                     <td style="width: 50%;">
                         <label for="contar"><font class="headlines">Highlighted words from text</font></label><br>
-                        <div contenteditable="true" id="divca" name="divca" class="divca "></div><button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
+                        
+                        <!-- tinyMCE related -->
+                        <form method="post">
+                            <div contenteditable="true" id="divca" name="divca" class="divca "></div>
+                        </form>
+                        
+                        <button id="divca" class="clearField" onClick="clearText(this.id)">Clear Text</button>
                         <button id="copyHTML" title="...and paste in MSWord" class="copyText" onClick="copyHTMLFunction('divca')">Copy Text</button>
                     </td>
                 </tr>
@@ -102,6 +117,8 @@
             </tr>
         </table>
     </body>
+
+
     <script>
         function disableButtonsOnLoad() {
           //document.getElementById('copyHTML').disabled = true;
