@@ -27,6 +27,16 @@ function popMeUp() {
     //if none of the above is empty, populate the word list
 
     document.getElementById("divwl").value = wordlist;
+ 
+    var tstwrds = wordlist.toString().split('\n');
+    
+    for (var mii = 0; mii < tstwrds.length; mii++) {
+        //console.log(tstwrds[mii] + '--->')
+        checkRepeatingWordsInDifferentLists(tstwrds[mii]);
+
+   }
+
+
 
     //get only the text from the text area
     var orgtext = text.toString().replace(/\n\s*/g, ' XYYX ').replace(/<br>\s*/g, " "); //replace the full stop, otherwise words that end with . will not be recognized
@@ -240,51 +250,7 @@ function matchWords(orgtextf, arrwl) { //this checks if a word matches
             }
         }
     }
-    
-  /*  var myarrwl = arrwl.toString().split(',');
-    for (var item of myarrwl) {
-
-        var CAPitem = item.charAt(0).toUpperCase() + item.slice(1);
-        //console.log(CAPitem)
-
-        var itemsp = item.toString().replace(item, " " + item + " ");
-        var itemS = item.toString().replace(item,  " " + item + 's' + " ");
-        var itemES = item.toString().replace(item,  " " + item + 'es' + " ");
-        var itemD = item.toString().replace(item,  " " + item + 'd' + " ");
-        var itemED = item.toString().replace(item,  " " + item + 'ed' + " ");
-        var itemING = item.toString().replace(item,  " " + item + 'ing' + " ");
-        var itemAS = item.toString().replace(item,  " " + item + '\'s' + " ");
-
-        var CAPitemsp = CAPitem.toString().replace(CAPitem, " " + CAPitem + " ");
-        var CAPitemS = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 's' + " ");
-        var CAPitemES = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'es' + " ");
-        var CAPitemD = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'd' + " ");
-        var CAPitemED = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'ed' + " ");
-        var CAPitemING = CAPitem.toString().replace(CAPitem,  " " + CAPitem + 'ing' + " ");
-        var CAPitemAS = CAPitem.toString().replace(CAPitem,  " " + CAPitem + '\'s' + " ");
-
-        var myVarArray = [itemsp, itemS, itemES, itemD, itemED, itemING, itemAS, CAPitemsp, CAPitemS, CAPitemES, CAPitemD, CAPitemED, CAPitemING, CAPitemAS]
-        
-        myVarArray = myVarArray.toString().split(',');
-            
-        if (orgtextf.includes(itemsp)) {
-            bbb += itemsp + '<br>';
-        }
-
-        if (orgtextf.includes(CAPitemsp)) {
-            bbb += CAPitemsp + '<br>';
-        }
-
-        
-        for(var myvar = 0; myvar < myVarArray.length; myvar++) {
-            if (orgtextf.includes(myVarArray[myvar])) {
-                bbb += myVarArray[myvar] + '<br>'
-        }
-    }
-
-} 
-*/
-
+ 
     return (bbb)
 }
 
@@ -314,3 +280,26 @@ function myCSSclass() {
     return  answer + answer1 + answer2 + answer3 + answer4;
  //   return '<span class="' + answer + answer1 + answer2 + answer3 + answer4 + '">';
  }
+
+
+ function checkRepeatingWordsInDifferentLists(word) {
+     
+    var band0 = {checked: document.getElementById('band0').checked, name:'band0'};
+    var band1 = {checked: document.getElementById('band1').checked, name:'band1'};
+    var band2 = {checked: document.getElementById('band2').checked, name:'band2'};
+    var band3 = {checked: document.getElementById('band3').checked, name:'band3'};
+    var ListA = {checked: document.getElementById('ListA').checked, name:'ListA'};
+    var ListB = {checked: document.getElementById('ListB').checked, name:'ListB'};
+    var ListC = {checked: document.getElementById('ListC').checked, name:'ListC'};
+    var ListD = {checked: document.getElementById('ListD').checked, name:'ListD'};
+
+    var wordCheckBox = [band0, band1, band2, band3, ListA, ListB, ListC, ListD];
+    //wordCheckBox = wordCheckBox.toString().split(',')
+    for(var i=0; i< wordCheckBox.length; i++) {
+        if(wordCheckBox[i].checked) {
+       //     console.log( document.getElementById('tempelement').value)
+            //console.log(`hbs -->  ${word} `  + wordCheckBox[i].name, wordCheckBox[i].checked)
+        }
+    }  
+ }
+//var temporaryDivElement = document.createElement("divftemp");

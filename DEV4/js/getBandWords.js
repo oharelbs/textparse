@@ -1,4 +1,8 @@
 function getWordList(element) {
+
+    checkRepeatingWords(element.id);
+    
+
     var checkedLists = [];
     var cboxes = ['band0', 'band1', 'band2', 'band3','ListA', 'ListB', 'ListC', 'ListD'];
     cboxesArray = cboxes.toString().split(',');
@@ -8,6 +12,9 @@ function getWordList(element) {
         }
     }
     populateDivWithCheckedLists(checkedLists.toString());
+    
+    
+    //checkRepeatingWords(checkedLists.toString());
 }
 
 function populateDivWithCheckedLists(checklists) {
@@ -48,4 +55,28 @@ function excludeWord(data) {
 
     data = data.split(/\r?\n/).filter(line => line.trim() !== '').join('\n'); //remove extra lines
     return data;
+}
+
+function checkRepeatingWords(checklist) {
+
+    var temporaryCLElement = document.createElement(checklist);
+    console.log(temporaryCLElement)
+    var checklistname = [];
+    
+    // for (var i = 0; i < checklists.length; i++) {
+    //     //console.log(checklists[i])
+    //     var checklistsName = checklists[i];
+    //     var temporaryCLSpecificElement = document.createElement(checklists[i]);
+
+        jQuery.get('https://raw.githubusercontent.com/oharelbs/textparse/master/bandWords/' + checklist + '.txt', function (data) {
+
+                // var divtext = document.getElementById('divwl').value;
+                var checklist = document.createElement(checklist);
+                checklistname.push(excludeWord(data));
+                console.log('checklistsName --> ' + checklist + ' --> \n' +  checklistname)
+              
+        });
+ //  }
+
+ 
 }
