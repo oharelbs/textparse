@@ -138,7 +138,8 @@ be unclear about 
 be under the impression 
 be unfamiliar with 
 be wide awake
-bear/keep in mind
+bear in mind
+keep in mind
 beat
 become a reality 
 before
@@ -186,9 +187,7 @@ breeze
 brick
 bright
 brilliant
-brilliant
 bring out
-bring up
 bring up
 browse
 bucket
@@ -253,7 +252,7 @@ chatbot
 cheat
 check in
 check out
-Cheers!
+Cheers
 chew
 chip
 chop
@@ -290,7 +289,6 @@ come last
 come straight to the point
 come up
 come up with
-command
 command
 commerce
 commercial
@@ -364,7 +362,6 @@ cut across
 cut down
 cute
 cyberbullying
-cycle
 cycle
 dairy
 damp
@@ -466,10 +463,10 @@ domestic
 dominate
 donation
 done
-Don't ask me!
-Don't ask! 
+Don't ask me
+Don't ask 
 don't hesitate to
-Don't mention it!
+Don't mention it
 dose
 double
 doubt
@@ -618,7 +615,6 @@ firm
 first round
 fisherman
 fit
-fit
 fix
 fixed
 flame
@@ -718,7 +714,6 @@ give up
 glance
 glue
 go ahead
-go ahead
 go by
 go for
 go out
@@ -791,14 +786,14 @@ host
 human rights
 humanity
 hunt
-Hurrah!
+Hurrah
 hurry up
 hut
 I guess not
 I guess so
 I only hope
 I only wish
-I see!
+I see
 i.e.
 ideal
 identical
@@ -992,7 +987,6 @@ let sb down or let down sb
 let through
 liberty
 light
-light
 lightly
 lightning
 likely
@@ -1003,11 +997,9 @@ literally
 literary
 little
 little by little
-little by little
 lively
 liver
 living
-load
 load
 loaf
 loan
@@ -1060,7 +1052,6 @@ manipulate
 manner
 manners
 manufacture
-march
 march
 mark
 marketing
@@ -1116,7 +1107,6 @@ must
 mutual
 mystery
 nail
-nail
 naked
 name
 narrative
@@ -1157,6 +1147,7 @@ not have a clue 
 not make any difference 
 not only
 not quite 
+
 not to mention 
 not until 
 note
@@ -1298,7 +1289,6 @@ plant
 play a part in 
 plot
 point
-point
 point of view
 point out
 poison
@@ -1312,7 +1302,6 @@ population
 pork
 portion
 portrait
-position
 position
 positive
 possession
@@ -1368,7 +1357,6 @@ promote
 proof
 proportion
 propose
-propose
 propose to do 
 proposed
 pros and cons
@@ -1382,7 +1370,6 @@ public
 publicity
 pull down
 pull out
-pull up
 pull up
 pull off
 pump
@@ -1398,7 +1385,6 @@ put up with
 qualify
 quality
 quarrel
-question
 question
 questionnaire
 queue
@@ -1495,7 +1481,6 @@ return to 
 reveal
 reverse
 review
-review
 revise
 revolution
 rewrite
@@ -1528,7 +1513,6 @@ ruin
 rule
 rumor
 run
-run
 run away
 run into
 run out of
@@ -1549,7 +1533,6 @@ scene
 schedule
 scheme
 scope
-scratch
 scratch
 script
 sculpture
@@ -1666,7 +1649,6 @@ spokesperson
 sponsor
 sportsman
 spot
-spot
 spray
 spread
 spread out
@@ -1746,7 +1728,6 @@ survey
 survive
 suspect
 sustain
-swear
 swear
 sweat
 sweep
@@ -1955,7 +1936,7 @@ which
 while
 whisper
 whistle
-Who cares? 
+Who cares 
 whom
 widow
 width
@@ -1986,3 +1967,340 @@ yawn
 yell
 you never know 
 Yours sincerely
+accessible
+acquisition
+admission
+aged
+agricultural
+ambitious
+amusement
+analyze
+analyst
+annoyed
+annoying
+anxiety
+apparently
+appearance
+argument
+armed
+association
+assume
+assurance
+astonish
+beggar
+bent
+boiling
+browser
+calculator
+captive
+characterize
+charming
+civilian
+civilize
+classical
+classification
+clinical
+commit suicide
+competitor
+complicate
+conceive
+conception
+concerned
+concerning
+conclusion
+consequently
+consideration
+consumption
+consumer
+cooperation
+cooperative
+correctly
+correspondent
+correspondence
+corresponding
+courageous
+coverage
+criticism
+criticize
+criticism
+currently
+cyclist
+declaration
+decoration
+deeply
+deliberate
+delighted
+demonstration
+depart
+designer
+desperately
+determined
+developing
+developed
+devoted
+direction
+disappointment
+discriminate
+disposal
+distinction
+diversity
+divorced
+donate
+download
+upload
+economist
+editorial
+educated
+educator
+efficiency
+elected
+embarrassing
+embarrassment
+embarrass
+emotional
+emphasize
+encouraging
+engaged
+enjoyment
+enthusiastic
+equality
+estimated
+evaluation
+evidently
+evolve
+existence existing
+expansion
+experimental
+explorer
+explosion
+failure
+finance
+fingernail
+firmly
+fitness
+flexibility
+foolish
+formerly
+foundation
+frequency
+functional
+gardening
+gradually
+hacker
+harbour
+harmful
+high tide
+low tide
+hostess
+illustration
+immigrant
+implementation
+imply
+impressive
+in stock
+out of stock
+increased
+incredibly
+indication
+initially
+initiative
+inquiry
+inspection inspector
+inspiration
+installation
+instantly
+instructor
+insure
+integrate integrated
+intelligent
+intensity
+intensive
+intentional
+interact
+interpretation
+interruption
+investigation investigator
+investor
+investment
+involved
+involve
+irresponsible
+responsibility
+isolate
+isolation
+jogging
+justification
+laughter
+learned
+limitation
+logic
+loyal
+maintenance
+manufacturer
+manufacturing
+meaning
+mentally
+motivate
+motivation
+move
+mysterious
+narrator
+native language
+negotiate
+nervous
+objection
+observation
+observer
+occasionally
+occupied
+offence
+offensive
+opening
+painless
+participant
+participation
+particularly
+partnership
+patience
+peanut
+performance
+planned
+poisonous
+pollute
+possess
+potentially
+prayer
+precisely
+prediction
+predictable
+pregnancy
+presidency
+prevention
+primary
+prior to
+processing
+producer
+productivity
+producer
+professional
+progressive
+promotion
+proposal
+proposition
+psychological
+psychologist
+public sector
+private sector
+publicly
+punishment
+purely
+qualification
+racial
+rapidly
+reaction
+recommendation
+recovery
+reduced
+reflection
+regardless
+regional
+registration
+regularly
+regulate
+rejection
+related
+relationship
+relaxed
+relevance
+relieve
+remarkably
+replacement
+representation
+researcher
+reservation
+residential
+resignation
+resistance
+resolve
+respectable
+resulting
+retired retirement
+revision
+revolutionary
+robber
+role model
+romance
+roughly
+ruins
+ruler
+sadness
+satisfaction
+satisfactory
+satisfied
+semi-final
+senior
+sensible
+sensitivity
+separation
+serve
+settlement
+severely
+sexual
+sexually
+sexy
+shipping
+signature
+significantly
+significance
+skillful
+slightly
+social
+solar system
+specialize
+specifically
+specify
+speed limit
+spokesman
+spokeswoman
+sportswoman
+steadily
+stepmother
+stimulus
+submission
+substantially
+sufficiently
+superb
+supporter
+surgeon
+surroundings
+survival
+survivor
+suspicion
+suspicious
+symbolic
+temptation
+tense
+terrorism
+terrorist
+theoretical
+tightly
+traffic jam
+tragic
+transformation
+transportation
+tricky
+ultimately
+uncertainty
+understanding
+unfortunate
+unity
+unite
+universal
+urgently
+variation
+viewer
+virtual
+warmth
+wealthy
+widen
+wisdom

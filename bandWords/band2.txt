@@ -131,12 +131,11 @@ arab
 architect
 architecture
 kidding
-you're kidding! 
+you're kidding 
 area
 argue
 argument
 army
-around
 around
 arrange
 arrangement
@@ -176,7 +175,7 @@ attend a college
 attend a school
 attendance
 attention
-attention!
+attention
 attitude
 attract
 attractive
@@ -242,7 +241,6 @@ welcome to
 willing
 worth
 worth it
-worth
 wrong 
 get
 keep in touch
@@ -292,7 +290,6 @@ blonde
 blood
 blow
 blow your nose
-board
 board
 body
 boil
@@ -360,7 +357,6 @@ calm
 camp
 campsite
 can
-can
 can afford
 canal
 cancel
@@ -386,7 +382,6 @@ carry
 carry on
 carry out
 cartoon
-case
 case
 cash
 cast
@@ -471,9 +466,7 @@ combination
 combine
 combined
 come down
-come down
-come on!
-come out
+come on
 come out
 come true 
 comedy
@@ -505,7 +498,6 @@ conclude
 conclusion
 conference
 confidence
-confident
 confident
 confirm
 confirmation
@@ -551,7 +543,6 @@ correct
 cottage
 cotton
 cough
-could
 could
 council
 count
@@ -659,7 +650,6 @@ diploma
 direct
 directions
 director
-director
 dirt
 dirty
 disadvantage
@@ -707,7 +697,6 @@ due to
 dust
 dustbin
 duty
-duty
 duty-free
 each other
 earn
@@ -722,7 +711,8 @@ educational
 effect
 effective
 effectively
-either … or
+either
+or
 election
 electric
 electrical
@@ -814,7 +804,7 @@ faith
 fall
 fall asleep 
 fall down
-false
+FALSE
 familiar
 fan
 fantastic
@@ -824,7 +814,6 @@ favor
 fear
 feather
 fee
-feel
 feel
 feel at home 
 feel bad about
@@ -949,9 +938,8 @@ go wrong
 goal
 god
 gold
-gold
 golden
-good for you! 
+good for you 
 good-looking
 goods
 government
@@ -970,7 +958,6 @@ growing
 growth
 guard
 guess
-guest
 guest
 guide
 guilty
@@ -1062,12 +1049,9 @@ hunger
 hunting
 hurry
 hurt
-hurt
 i bet
 i guess
-i suppose
 i suppose 
-idea
 identify
 identity
 if
@@ -1078,7 +1062,7 @@ if you like 
 ignore
 ill
 illegal
-i'm afraid …
+i'm afraid
 image
 imagination
 imagine
@@ -1096,7 +1080,6 @@ in addition
 in advance
 in case of
 in common
-have in common
 in detail
 in fact
 in actual fact
@@ -1147,7 +1130,6 @@ internal
 international
 interval
 interview
-into
 introduce
 introduction
 invent
@@ -1157,6 +1139,7 @@ iron
 islam
 it looks like
 it looks as if
+
 it seems
 it
 depends
@@ -1178,11 +1161,9 @@ judge
 judgement
 jungle
 just
-just
 just a moment
 keep a
 secret
-keep in touch
 key
 kick
 killed
@@ -1225,7 +1206,6 @@ leaf
 league
 lean against
 lean on
-leave
 leave
 leave out
 left
@@ -1270,12 +1250,11 @@ look round
 look like
 look nice
 look strange
-look out!
+look out
 look up
 lose
 loss
 loud
-love
 love
 love from
 all my love
@@ -1307,7 +1286,6 @@ map
 marathon
 marry
 master
-match
 match
 material
 math
@@ -1422,7 +1400,6 @@ on time
 once again
 once more
 one
-one
 one another
 one day
 one day
@@ -1457,7 +1434,6 @@ outdoors
 out-of-date
 out of date
 oven
-over
 over
 over here
 over there
@@ -1532,10 +1508,8 @@ pipe
 place
 plain
 play
-play
 play a joke
 trick on 
-playground
 playground
 please
 pleased
@@ -1568,7 +1542,6 @@ postpone
 pot
 potential
 power
-powerful
 powerful
 practical
 practice
@@ -1686,7 +1659,6 @@ resource
 respond
 response
 responsibility
-responsible
 result in
 reward
 rich
@@ -1957,7 +1929,6 @@ take care of
 take it
 take things easy
 take off
-take
 take seriously
 take back
 take out
@@ -2063,10 +2034,8 @@ toothpaste
 top
 topic
 total
-total
 totally
 touch
-tour
 tour
 tour guide
 tourist
@@ -2139,10 +2108,8 @@ upside down
 up-to-date
 up to date
 use
-used to
 useless
 user
-used
 user-friendly
 usual
 valley
@@ -2171,3 +2138,87 @@ walk home
 walk to
 wallet
 warm
+I suppose
+acceptable
+accurately
+accuracy
+achievement
+actor
+actress
+actually
+adventurous
+advertisement, ad, advert
+aim to do sth
+alphabetically
+annually
+apologize
+approximate
+businessman businesswoman
+campsite
+confuse
+confused
+confusing
+constantly
+convenience
+conveniently
+creation
+creative
+electrical
+employee employer
+entry
+entrance
+growing
+growth
+have (got) a temperature
+human being
+improvement
+improved
+killer
+killing
+living
+management
+manager
+money
+EVP resource
+photocopier
+photocopied
+pointed
+political
+politician
+politically
+postman
+post office
+powerful
+product
+production
+publisher
+publication
+remaining
+secondly
+secondary
+shared
+show somebody what to do
+show somebody how to do something
+skating
+skateboard
+spare
+successful
+successfully
+surprising
+surprisingly
+swimmer
+swimming
+tourist
+tourism
+training
+trainer
+translation
+translator
+user
+used
+warning
+we
+working
+worry
+writer
+youth
