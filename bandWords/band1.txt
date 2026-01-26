@@ -393,7 +393,7 @@ goal
 good
 good afternoon
 good night
-good evening!
+good evening
 grade
 gram
 grandchild
@@ -410,7 +410,7 @@ ground
 group
 grow
 guess
-guess what!
+guess what
 guitar
 gun
 hair
@@ -546,7 +546,7 @@ line
 lip
 list
 listen
-listen!
+listen
 little
 live
 live in
@@ -741,9 +741,9 @@ pocket
 point
 police
 police station
-"policeman
+policeman
 policewoman
-police officer"
+police officer
 poor
 popular
 possible
@@ -1015,7 +1015,7 @@ toy
 train
 travel
 tree
-true
+TRUE
 try
 t-shirt
 tuesday
@@ -1126,3 +1126,17 @@ your
 yours
 zero
 zoo
+take a photograph
+take a photo
+take a picture
+beginning
+bus station
+carefully
+ebook
+granddaughter
+grandson
+in the morning
+last name
+family name
+personal personally
+the young
